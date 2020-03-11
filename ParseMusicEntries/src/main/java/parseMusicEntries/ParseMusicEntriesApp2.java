@@ -10,7 +10,7 @@ import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
 
-public class ParseMusicEntriesApp {
+public class ParseMusicEntriesApp2 {
 	public static void main(String[] args) {
 		String curCollection = "MA Boston, Congregational Library and Archives--INVENTORY (1).docx"; //name used for collection is file name
 		String collectionDesc = "";			//description of current collection
