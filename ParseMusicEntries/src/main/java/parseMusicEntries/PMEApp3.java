@@ -11,9 +11,9 @@ import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
 
-public class PMEApp {
+public class PMEApp3 {
 	public static void main(String[] args) {
-		String curCollection = "MA Boston, Congregational Library and Archives--INVENTORY.docx"; //name used for collection is file name
+		String curCollection = "test.docx"; //name used for collection is file name
 //		String curCollection = "test.docx"; //name used for collection is file name
 		String collectionDesc = "";			//description of current collection
 		String curParagraphText;
@@ -44,7 +44,7 @@ public class PMEApp {
 				}
 				curParIndex++;				
 			}
-			System.out.println("***********End of Collection Description********************\n\n\n");
+			System.out.println("***********End of Source Description********************\n\n\n");
 			
 
 			//source/entry variables
@@ -98,17 +98,17 @@ public class PMEApp {
 //					System.out.println(curSrc);
 					
 					//analyze runs of current paragraph to extract title and author
-					for (int i = 1; i < curParagraph.getRuns().size(); i++) {
+					for (int i = 0; i < curParagraph.getRuns().size(); i++) {
 						curParagraphRuns = curParagraph.getRuns();
 						curRun = curParagraphRuns.get(i);
 						matcher = pattern.matcher(curRun.toString());	
-//						if(matcher.find())			//if current curRun is source title, disregard *ideal algorithm will just start at 2nd curRun
-//							continue;	
-//						System.out.println(curRun.toString());
-//						System.out.println(curSourceTitle.length());
-//						System.out.println(!curRun.isItalic());
+						System.out.println(curSourceTitle.length());
+						System.out.println(!curRun.isItalic());
+						if(matcher.find())			//if current curRun is source title, disregard *ideal algorithm will just start at 2nd curRun
+							continue;	
+				
 						if(curSourceTitle.length() == 0 && !curRun.isItalic()) {		//source title not found and current curRun is not source title
-//							System.out.println("Adding to Author************************" + curStr);
+							System.out.println("Adding to Author************************" + curStr);
 							curStr += curRun.toString();
 						}
 						else if(curSourceTitle.length() != 0) {		//source title found, so text being added to description

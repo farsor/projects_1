@@ -11,13 +11,12 @@ import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
 
-public class PMEApp {
+public class PMEApp2 {
 	public static void main(String[] args) {
 		String curCollection = "MA Boston, Congregational Library and Archives--INVENTORY.docx"; //name used for collection is file name
 //		String curCollection = "test.docx"; //name used for collection is file name
 		String collectionDesc = "";			//description of current collection
 		String curParagraphText;
-		String srcCallNum = null;
 		int curSrc = 0;
 		Pattern pattern = Pattern.compile("^[\\d]+[\\.]");		
 		Matcher matcher = null;
@@ -44,17 +43,17 @@ public class PMEApp {
 				}
 				curParIndex++;				
 			}
-			System.out.println("***********End of Collection Description********************\n\n\n");
+			System.out.println("***********End of Source Description********************");
 			
 
 			//source/entry variables
-			String curSourceAuthor = "";
+			String curSourceAuthor = null;
 			String curSourceTitle = "";
 			String curSourceDesc = "";
 			String curStr = "";
 			List<Integer> intSrcEntries = new ArrayList<Integer>();
 			List<String[]> strSrcEntries = new ArrayList<String[]>();
-			String[] curStrArr = new String[4];
+			String[] curStrArr = new String[3];
 			
 			//source/entry operations
 			while(curParIndex < paragraphList.size()) {		//perform until end of document is reached
@@ -63,8 +62,6 @@ public class PMEApp {
 				curParagraph = paragraphList.get(curParIndex);
 				curParagraphText = curParagraph.getText();
 				matcher = pattern.matcher(curParagraphText);
-				List<XWPFRun> curParagraphRuns = null;
-				XWPFRun curRun = null;
 				
 				//if current paragraph starts with source number (should always be case after collection description done)
 				if(matcher.find()) {	
@@ -75,21 +72,17 @@ public class PMEApp {
 						System.out.println("Source: " + curSrc);
 						System.out.println("Author: "  +  curSourceAuthor);
 						System.out.println("Title: "  +  curSourceTitle);
-						System.out.println("Call number: " + srcCallNum);
 						System.out.println("Description: "  +  curStr);
-						System.out.println("\n----------------end of source-------------\n");
 						curStrArr[0] = curSourceAuthor;
 						curStrArr[1] = curSourceTitle;
 						curStrArr[2] = curStr;
-						curStrArr[3] = srcCallNum;
 						strSrcEntries.add(curStrArr);
 						//reset entries for new source
 						intSrcEntries.add(curSrc);
-						curSourceAuthor = "";
+						curSourceAuthor = null;
 						curSourceTitle = "";
 						curSourceDesc = "";
 						curStr = "";
-						srcCallNum = null;
 					}
 						
 					
@@ -98,30 +91,25 @@ public class PMEApp {
 //					System.out.println(curSrc);
 					
 					//analyze runs of current paragraph to extract title and author
-					for (int i = 1; i < curParagraph.getRuns().size(); i++) {
-						curParagraphRuns = curParagraph.getRuns();
-						curRun = curParagraphRuns.get(i);
-						matcher = pattern.matcher(curRun.toString());	
-//						if(matcher.find())			//if current curRun is source title, disregard *ideal algorithm will just start at 2nd curRun
-//							continue;	
-//						System.out.println(curRun.toString());
-//						System.out.println(curSourceTitle.length());
-//						System.out.println(!curRun.isItalic());
-						if(curSourceTitle.length() == 0 && !curRun.isItalic()) {		//source title not found and current curRun is not source title
-//							System.out.println("Adding to Author************************" + curStr);
-							curStr += curRun.toString();
+					for (XWPFRun run : curParagraph.getRuns()) {	
+						
+						matcher = pattern.matcher(run.toString());	
+						
+						if(matcher.find())			//if current run is source title, disregard *ideal algorithm will just start at 2nd run
+							continue;	
+
+						else if(curSourceTitle.length() == 0 && !run.isItalic()) {		//source title not found and current run is not source title
+
+							System.out.println("Adding to Author************************" + curStr);
+							curStr += run.toString();
 						}
-						else if(curSourceTitle.length() != 0) {		//source title found, so text being added to description
-							curStr += curRun.toString();
+						else if(curSourceTitle.length() != 0) {		//source title found
+							curStr += run.toString();
 						}
 						
-						else {									//curRun that is italicized on same line as source number is book title
-							curSourceTitle += curRun.toString();	//record source title
+						else {									//run that is italicized on same line as source number is book title
+							curSourceTitle = run.toString();	//record source title
 							curSourceAuthor = curStr;			//text between source number and source title is author
-							while(curParagraphRuns.get(i+ 1).isItalic()) {
-								curSourceTitle += curParagraphRuns.get(i + 1).toString();
-								i++;
-							}
 							curStr = "";						//reset string to record description
 						}
 						
@@ -132,21 +120,11 @@ public class PMEApp {
 //					break;
 				}
 				
-				else if(curParagraph.getRuns().size() > 1 && curParagraph.getRuns().get(1).isBold()) {
-					srcCallNum = curParagraph.getRuns().get(1).toString();
-				}
-				
 				else if(curParagraphText.indexOf("MS. music entries:") != -1) {
 					//record previous entry
-					System.out.println("Source: " + curSrc);
-					System.out.println("Author: "  +  curSourceAuthor);
-					System.out.println("Title: "  +  curSourceTitle);
-					System.out.println("Call Number: " + srcCallNum);			
-					System.out.println("Description: "  +  curStr);				
 					curStrArr[0] = curSourceAuthor;
 					curStrArr[1] = curSourceTitle;
 					curStrArr[2] = curSourceDesc;
-					curStrArr[3] = srcCallNum;
 					strSrcEntries.add(curStrArr);
 					break;
 				}
