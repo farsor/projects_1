@@ -5,14 +5,168 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.apache.poi.openxml4j.opc.OPCPackage;
+import org.apache.poi.xwpf.usermodel.XWPFDocument;
+import org.apache.poi.xwpf.usermodel.XWPFParagraph;
+import org.apache.poi.xwpf.usermodel.XWPFRun;
+
 public class Testing {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
+		ParseMusicEntries2 pme = new ParseMusicEntries2();
+		String curCollection = "MA Boston test.docx"; //name used for collection is file name
+//		String curCollection = "test.docx"; //name used for collection is file name
+		String curParagraphText;
+//		String collectionDesc = "";			//description of current collection
+//		String srcCallNum = null;
+//		int curSrc = 0;
+//		Pattern pattern = Pattern.compile("^[\\d]+[\\.]");		
+//		Matcher matcher = null;
+		int curParIndex = 0;
+		XWPFParagraph curParagraph = null;
+		
+		try {
+			FileInputStream fis = new FileInputStream(curCollection);			//file being analyzed
+			XWPFDocument xdoc = new XWPFDocument(OPCPackage.open(fis));			//document reader
+			List<XWPFParagraph> paragraphList = xdoc.getParagraphs();			//convert document to paragraphs
+			
+			String curSourceAuthor = "";
+			String curSourceTitle = "";
+			String curSourceDesc = "";
+			List<Integer> intSrcEntries = new ArrayList<Integer>();
+			List<String[]> strSrcEntries = new ArrayList<String[]>();
+			List<Boolean> isSecularArr = new ArrayList<Boolean>();
+			String[] curStrArr = new String[4];
+			List<String> entries = new ArrayList<String>();
+			boolean curEntrySecular = true;
 
+			
 
-		List<String[]> strEntries = new ArrayList<String[]>();
-		String[] strArr = {"dog", "boi"};
-		strEntries.add(strArr);
-		System.out.println(strEntries.get(0)[1]);
+			String curStr = "";
+			//get entries
+			//separate each entry into a text of its own in preparation for analysis
+			while(curParIndex < paragraphList.size()) {				//for all paragraphs
+				curParagraph = paragraphList.get(curParIndex);		//current XWPFparagraph
+				curParagraphText = curParagraph.getText()			//get text of current paragraph
+						.replace("	", "");							//remove whitespace caused by tabbing		
+				//separate each entry into its own string and record if secular
+				if(curParagraphText.indexOf(":") != -1) {			//: indicates start of new entry
+																	//for current source
+					if(curStr.length() > 0) {						//if length of curStr is 0, this is first entry for source, 
+																	//		so no need to record previous entry
+						entries.add(curStr);						//add previous entry to arraylist						
+						isSecularArr.add(curEntrySecular);			//record if entry was secular
+						curEntrySecular = true;						//current entry secular by default
+					}
+					curStr = "";									//initiate next entry
+				}
+				curStr += curParagraphText;							//add current paragraph to current entry string
+				if(!pme.isSecular(curParagraph)) {					//determine if current run indicates non-secular entry
+					curEntrySecular = false;						//	if so, entry is not secular
+				}	
+				curParIndex++;										//move to next paragraph
+			}
+			
+			String tunePage = null,
+					tuneTitle = null,
+					tuneCredit = null,
+					tuneVocalPart = null,
+					tuneKey = null,
+					tuneMelodic = null,
+					tuneText = null;	
+			String[] titleAndCredit = null;
+			String[] splitEntries = null;
+			String[] fullTuneEntry = null;			//entry containing all string values for current entry
+			String[] entryLabels = {"tune_page", "tune_title", "tune_credit", "tune_vocal_part",		//labels corresponding to fields
+										"tune_key", "tune_melodic_incipit", "tune_text_incipit"};
+			//separate entries into fields
+			System.out.println(entries.size());
+			for(String entry: entries) {				
+//				System.out.println(entry);
+				tunePage = entry.substring(0, entry.indexOf(":"));				//get page number, which occurs up until colon character
+				entry = entry.substring(entry.indexOf(": ") + 2, entry.length())		//remove page number from current entry to analyze rest of text
+																.replace(",”", "”,")	//replace ," with ", for proper delimiter
+																.replace(", so", " so")	//remove 
+																.replace(", but", " but");	// 	false delimiters
+				splitEntries = entry.split(", ");							//split entry into fields using ", " as delimiter	
+				
+				//entries to string				
+				//display/testing
+//				if(splitEntries.length == 6) {					
+					//display entries as separated
+				for(String str: splitEntries) {					
+					System.out.print(str + "---");
+				}
+				System.out.println();
+//				}
+				
+				
+//				System.out.println(splitEntries[3]);
+				titleAndCredit = pme.parseTitleAndCredit(splitEntries[0]);
+				fullTuneEntry = new String[7];				//reset entry for current tune
+				fullTuneEntry[0] = tunePage;
+				fullTuneEntry[1] = titleAndCredit[0];
+				fullTuneEntry[2] = titleAndCredit[1];
+				if(splitEntries.length < 6){
+					
+					//splitArr to fullArr **create method
+					for(int i = 1; i < splitEntries.length; i++) {
+						fullTuneEntry[i + 2] = splitEntries[i];
+					}
+					
+					//check to see if 
+					if(fullTuneEntry[3] != null && fullTuneEntry[3].length() < 4 ) {
+						pme.shiftCellsRight(fullTuneEntry, 3);
+					}						
+					
+					if(fullTuneEntry[4] != null && pme.isMelodicIncipit(fullTuneEntry[4])) {
+						pme.shiftCellsRight(fullTuneEntry, 3);
+					}
+					
+					if(fullTuneEntry[5] != null && fullTuneEntry[5].indexOf("mm.") != -1) {
+						fullTuneEntry[5] += (", " + fullTuneEntry[6]);
+						fullTuneEntry[6] = null;
+					}
+					
+//					//display exceptions
+//					if(!pme.isMelodicIncipit(fullTuneEntry[5])) {
+//						for(int i = 0; i < fullTuneEntry.length; i++) {
+//							System.out.println(entryLabels[i] + ": " + fullTuneEntry[i]);
+//						}
+//					}
+					
+					for(int i = 0; i < fullTuneEntry.length; i++) {
+						System.out.println(entryLabels[i] + ": " + fullTuneEntry[i]);
+					}
+					
+				System.out.println("*******************");
+				
+				}
+				
+				else {
+					System.out.println("********Skipped**********");
+				}
+			}
+			
+			
+		
+			
+			//display entries
+//			for(int i = 0; i < entries.size(); i++) {
+//				System.out.println(entries.get(i) + "			" + isSecularArr.get(i));				
+//			}
+			
+
+			//list operations
+//		List<String[]> strEntries = new ArrayList<String[]>();
+//		String[] strArr = {"dog", "boi"};
+//		strEntries.add(strArr);
+//		System.out.println(strEntries.get(0)[1]);
 		
 //		//pattern/matcher testing
 //		Pattern pattern = Pattern.compile("^[\\d]+[\\.]");
@@ -31,187 +185,13 @@ public class Testing {
 	//System.out.println(str.indexOf(regexp));
 	//System.out.println(str2.matches(regexp));
 	//System.out.println(str3.matches(regexp));
-
-	}
-
-}
-
-
-package parseMusicEntries;
-
-import java.io.FileInputStream;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import org.apache.poi.openxml4j.opc.OPCPackage;
-import org.apache.poi.xwpf.usermodel.XWPFDocument;
-import org.apache.poi.xwpf.usermodel.XWPFParagraph;
-import org.apache.poi.xwpf.usermodel.XWPFRun;
-
-public class PMEApp {
-	public static void main(String[] args) {
-		String curCollection = "test.docx"; //name used for collection is file name
-//		String curCollection = "test.docx"; //name used for collection is file name
-		String collectionDesc = "";			//description of current collection
-		String curParagraphText;
-		String srcCallNum = null;
-		int curSrc = 0;
-		Pattern pattern = Pattern.compile("^[\\d]+[\\.]");		
-		Matcher matcher = null;
-		int curParIndex = 0;
-		XWPFParagraph curParagraph = null;
-		
-		try {
-			FileInputStream fis = new FileInputStream(curCollection);			//file being analyzed
-			XWPFDocument xdoc = new XWPFDocument(OPCPackage.open(fis));			//document reader
-			List<XWPFParagraph> paragraphList = xdoc.getParagraphs();			//convert document to paragraphs
-			
-			//get information about collection which ends when source number occurs at beginning of paragraph
-			//*create entry in collections database for current document ** later
-			//*current collection as collection name
-			while(curParIndex < paragraphList.size()) {
-				curParagraphText = paragraphList.get(curParIndex).getText();
-				matcher = pattern.matcher(curParagraphText);
-				if(!matcher.find()) {											//if source number IS NOT found at beginning of paragraph
-					collectionDesc += (paragraphList.get(curParIndex).getText() + "\n");					
-				}
-				else {														//if source number IS found
-					System.out.println(collectionDesc);
-					break;													//collection description is done. Move to source operations
-				}
-				curParIndex++;				
-			}
-			System.out.println("***********End of Source Description********************\n\n\n");
-			
-
-			//source/entry variables
-			String curSourceAuthor = "";
-			String curSourceTitle = "";
-			String curSourceDesc = "";
-			String curStr = "";
-			List<Integer> intSrcEntries = new ArrayList<Integer>();
-			List<String[]> strSrcEntries = new ArrayList<String[]>();
-			String[] curStrArr = new String[4];
-			
-			//source/entry operations
-			while(curParIndex < paragraphList.size()) {		//perform until end of document is reached
-				
-				//initialize variables for current paragraph
-				curParagraph = paragraphList.get(curParIndex);
-				curParagraphText = curParagraph.getText();
-				matcher = pattern.matcher(curParagraphText);
-				List<XWPFRun> curParagraphRuns = null;
-				XWPFRun curRun = null;
-				
-				//if current paragraph starts with source number (should always be case after collection description done)
-				if(matcher.find()) {	
-					
-					if(curStr.length() != 0) {	//if this is not the first entry
-						//record previous entry
-//						System.out.println("Matcher found");
-						System.out.println("Source: " + curSrc);
-						System.out.println("Author: "  +  curSourceAuthor);
-						System.out.println("Title: "  +  curSourceTitle);
-						System.out.println("Description: "  +  curStr);
-						System.out.println("Call number: " + srcCallNum);
-						System.out.println("\n----------------end of source-------------\n");
-						curStrArr[0] = curSourceAuthor;
-						curStrArr[1] = curSourceTitle;
-						curStrArr[2] = curStr;
-						curStrArr[3] = srcCallNum;
-						strSrcEntries.add(curStrArr);
-						//reset entries for new source
-						intSrcEntries.add(curSrc);
-						curSourceAuthor = "";
-						curSourceTitle = "";
-						curSourceDesc = "";
-						curStr = "";
-						srcCallNum = null;
-					}
-						
-					
-					//cycle through paragraph runs and extract title and author
-					curSrc = Integer.parseInt(curParagraphText.substring(matcher.start(), matcher.end() - 1));
-//					System.out.println(curSrc);
-					
-					//analyze runs of current paragraph to extract title and author
-					for (int i = 0; i < curParagraph.getRuns().size(); i++) {
-						curParagraphRuns = curParagraph.getRuns();
-						curRun = curParagraphRuns.get(i);
-						matcher = pattern.matcher(curRun.toString());	
-						
-						if(matcher.find())			//if current curRun is source title, disregard *ideal algorithm will just start at 2nd curRun
-							continue;					
-						else if(curSourceTitle.length() == 0 && !curRun.isItalic()) {		//source title not found and current curRun is not source title
-							curStr += curRun.toString();
-						}
-						else if(curSourceTitle.length() != 0) {		//source title found
-							curStr += curRun.toString();
-						}
-						
-						else {									//curRun that is italicized on same line as source number is book title
-							curSourceTitle += curRun.toString();	//record source title
-							curSourceAuthor = curStr;			//text between source number and source title is author
-							while(curParagraphRuns.get(i+ 1).isItalic()) {
-								curSourceTitle += curParagraphRuns.get(i + 1).toString();
-								i++;
-							}
-							curStr = "";						//reset string to record description
-						}
-						
-					}
-//					System.out.println("Source: " + curSrc);
-//					System.out.println("Author: "  +  curSourceAuthor);
-//					System.out.println("Title: "  +  curSourceTitle);
-//					break;
-				}
-				
-				else if(curParagraph.getRuns().size() > 1 && curParagraph.getRuns().get(1).isBold()) {
-					srcCallNum = curParagraph.getRuns().get(1).toString();
-				}
-				
-				else if(curParagraphText.indexOf("MS. music entries:") != -1) {
-					//record previous entry
-					System.out.println("Source: " + curSrc);
-					System.out.println("Author: "  +  curSourceAuthor);
-					System.out.println("Title: "  +  curSourceTitle);
-					System.out.println("Description: "  +  curStr);
-					System.out.println("Call Number: " + srcCallNum);							
-					curStrArr[0] = curSourceAuthor;
-					curStrArr[1] = curSourceTitle;
-					curStrArr[2] = curSourceDesc;
-					curStrArr[3] = srcCallNum;
-					strSrcEntries.add(curStrArr);
-					break;
-				}
-				
-				else {
-//					System.out.println("else");
-					curStr += curParagraphText + "\n";
-				}
-				curParIndex++;
-			}
-				
-
-			
-
-			xdoc.close();
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
+
+
 	}
 
 }
 
-//break;
-//System.out.println(paragraph.getText());
-//System.out.println(paragraph.getAlignment());
-//System.out.print(paragraph.getRuns().size());
-//System.out.println(paragraph.getStyle());
-//// Returns numbering format for this paragraph, eg bullet or lowerLetter.
-//System.out.println(paragraph.getNumFmt());
-//System.out.println(paragraph.getAlignment());
-//System.out.println(paragraph.isWordWrapped());
-//System.out.println("********************************************************************");
+

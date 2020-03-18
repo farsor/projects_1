@@ -13,6 +13,7 @@ import org.apache.poi.xwpf.usermodel.XWPFRun;
 
 public class PMEApp {
 	public static void main(String[] args) {
+		ParseMusicEntries pme = new ParseMusicEntries();
 		String curCollection = "MA Boston, Congregational Library and Archives--INVENTORY.docx"; //name used for collection is file name
 //		String curCollection = "test.docx"; //name used for collection is file name
 		String collectionDesc = "";			//description of current collection

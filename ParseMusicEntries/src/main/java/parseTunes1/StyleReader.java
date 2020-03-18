@@ -12,7 +12,7 @@ public class StyleReader {
 	public static void main(String[] args) {
 		try {
 			FileInputStream fis = new FileInputStream("MA Boston, Congregational Library and Archives--INVENTORY.docx");
-//			FileInputStream fis = new FileInputStream("Atwill n. d. in Nym Cooke collection (1).docx");
+//			FileInputStream fis = new FileInputStream("MA Boston test.docx");
 			XWPFDocument xdoc = new XWPFDocument(OPCPackage.open(fis));
 			List<XWPFParagraph> paragraphList = xdoc.getParagraphs();
 			for (XWPFParagraph paragraph : paragraphList) {
