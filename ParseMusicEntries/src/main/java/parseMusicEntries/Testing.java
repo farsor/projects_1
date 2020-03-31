@@ -6,6 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -19,7 +20,7 @@ import org.apache.poi.xwpf.usermodel.XWPFRun;
 public class Testing {
 	public static void main(String[] args) {
 		ParseMusicEntries2 pme = new ParseMusicEntries2();
-		String curCollection = "MA Boston test.docx"; //name used for collection is file name
+		String curCollection = "MA Boston test 1_1.docx"; //name used for collection is file name
 //		String curCollection = "test.docx"; //name used for collection is file name
 		String curParagraphText;
 //		String collectionDesc = "";			//description of current collection
@@ -29,19 +30,15 @@ public class Testing {
 //		Matcher matcher = null;
 		int curParIndex = 0;
 		XWPFParagraph curParagraph = null;
+		FileOutputStream fos = null;
+		byte[] buf = null;
 		
 		try {
+			fos = new FileOutputStream("file1.txt");
 			FileInputStream fis = new FileInputStream(curCollection);			//file being analyzed
 			XWPFDocument xdoc = new XWPFDocument(OPCPackage.open(fis));			//document reader
-			List<XWPFParagraph> paragraphList = xdoc.getParagraphs();			//convert document to paragraphs
-			
-			String curSourceAuthor = "";
-			String curSourceTitle = "";
-			String curSourceDesc = "";
-			List<Integer> intSrcEntries = new ArrayList<Integer>();
-			List<String[]> strSrcEntries = new ArrayList<String[]>();
+			List<XWPFParagraph> paragraphList = xdoc.getParagraphs();			//convert document to paragraphs	
 			List<Boolean> isSecularArr = new ArrayList<Boolean>();
-			String[] curStrArr = new String[4];
 			List<String> entries = new ArrayList<String>();
 			boolean curEntrySecular = true;
 
@@ -72,13 +69,7 @@ public class Testing {
 				curParIndex++;										//move to next paragraph
 			}
 			
-			String tunePage = null,
-					tuneTitle = null,
-					tuneCredit = null,
-					tuneVocalPart = null,
-					tuneKey = null,
-					tuneMelodic = null,
-					tuneText = null;	
+			String tunePage = null;
 			String[] titleAndCredit = null;
 			String[] splitEntries = null;
 			String[] fullTuneEntry = null;			//entry containing all string values for current entry
@@ -99,12 +90,23 @@ public class Testing {
 				//display/testing
 //				if(splitEntries.length == 6) {					
 					//display entries as separated
-				for(String str: splitEntries) {					
-					System.out.print(str + "---");
-				}
-				System.out.println();
+//				for(String str: splitEntries) {					
+//					System.out.print(str + "---");
 //				}
-				
+//				System.out.println();
+//				}
+
+				//write to .txt file for rest
+//				if(splitEntries.length == 6) {					
+//					display entries as separated
+					for(String str: splitEntries) {
+						buf = str.getBytes();
+						fos.write(buf);
+					}
+//				System.out.println();
+				buf = ("\n").getBytes();
+				fos.write(buf);
+//				}
 				
 //				System.out.println(splitEntries[3]);
 				titleAndCredit = pme.parseTitleAndCredit(splitEntries[0]);
@@ -140,16 +142,26 @@ public class Testing {
 //						}
 //					}
 					
-					for(int i = 0; i < fullTuneEntry.length; i++) {
-						System.out.println(entryLabels[i] + ": " + fullTuneEntry[i]);
-					}
+//					for(int i = 0; i < fullTuneEntry.length; i++) {
+//						System.out.println(entryLabels[i] + ": " + fullTuneEntry[i]);
+//					}
 					
-				System.out.println("*******************");
+				for(int i = 0; i < fullTuneEntry.length; i++) {
+					buf = (entryLabels[i] + ": " + fullTuneEntry[i] + "\n").getBytes();
+					fos.write(buf);
+					
+				}
+				buf = ("*******************\n").getBytes();
+				fos.write(buf);					
+//				System.out.println("*******************");
 				
 				}
 				
 				else {
-					System.out.println("********Skipped**********");
+//					System.out.println("********Skipped**********");
+					buf = ("********Skipped**********\n").getBytes();
+					fos.write(buf);
+					
 				}
 			}
 			
@@ -176,15 +188,6 @@ public class Testing {
 //		Matcher matcher = pattern.matcher(str3);
 //		System.out.println(matcher.find());
 //		System.out.println(matcher.end());
-		
-
-	////reg exp tests
-	//String regexp = "^[\\d]+[\\.]";
-	//String str= "123.";
-	//String str2 = "415.";
-	//System.out.println(str.indexOf(regexp));
-	//System.out.println(str2.matches(regexp));
-	//System.out.println(str3.matches(regexp));
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
