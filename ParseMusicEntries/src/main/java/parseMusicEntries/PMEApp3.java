@@ -12,7 +12,7 @@ public class PMEApp3 {
 		Desktop desktop = Desktop.getDesktop();
 	    try {
 			desktop.open(new File("output.txt"));
-			desktop.open(new File("dump.txt"));
+//			desktop.open(new File("dump.txt"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

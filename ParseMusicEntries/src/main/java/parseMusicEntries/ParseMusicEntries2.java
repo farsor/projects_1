@@ -176,9 +176,7 @@ public class ParseMusicEntries2 {
 			//if start of music entries are indicated to be present in source
 			//parse music entries for current source
 //			else if(curParagraphText.indexOf("MS. music entries:") != -1) {
-			else if((curParagraphText.indexOf("MS. music entries:") != -1) || 
-					((curParagraphText.indexOf("MS.") != -1) && curParagraphText.indexOf(":") < 80 && curParagraphText.indexOf(":") >= 0
-					&& (hasMelodicIncipit(paragraphList.get(curParIndex + 1)) || paragraphList.get(curParIndex + 1).getText().indexOf(":") != -1))) {
+			else if(entryFound(curParIndex)) {
 				//record previous entry
 //				System.out.println(sourceInfoToString());
 				curParIndex++;						//increment paragraph index. "ms music entries" line does not need to be recorded
@@ -230,15 +228,15 @@ public class ParseMusicEntries2 {
 		System.out.println("Current source: " + curSrc + ", " + entries.size());
 		
 		//parse each entry from string form into array organized by field
-		for(String entry: entries) {	
-			parseEntry(entry);
+		for(int i = 0; i < entries.size(); i++) {	
+			parseEntry(entries.get(i), i);
 		}
 	}
 	//------------------------------------------------------------------
 	
 		//parse current entry from string format
 		//write information to text file
-		private void parseEntry(String curEntry) {
+		private void parseEntry(String curEntry, int curIndex) {
 			if(curEntry.indexOf(":") != -1){
 				tunePage = curEntry.substring(0, curEntry.indexOf(":"));				//get page number, which occurs up until colon character
 			}
@@ -276,42 +274,14 @@ public class ParseMusicEntries2 {
 			if(splitEntries.length < 25){	
 				fullTuneEntry = formatEntryArr(tunePage, titleAndCredit, splitEntries);				
 				
-//				//splitArr to fullArr **create method
-//				for(int i = 1; i < splitEntries.length && i < 5; i++) {
-//					fullTuneEntry[i + 2] = splitEntries[i];
-//				}
-//				
-//				//check to see if 
-//				if(fullTuneEntry[3] != null && fullTuneEntry[3].length() < 4 ) {
-//					shiftCellsRight(fullTuneEntry, 3);
-//				}						
-//				
-//				if(fullTuneEntry[4] != null && isMelodicIncipit(fullTuneEntry[4])) {
-//					shiftCellsRight(fullTuneEntry, 3);
-//				}
-//				
-//				if(fullTuneEntry[5] != null && fullTuneEntry[5].indexOf("mm.") != -1) {
-//					fullTuneEntry[5] += (", " + fullTuneEntry[6]);
-//					fullTuneEntry[6] = null;
-//				}
-//				
-//				if(splitEntries.length == 6) {
-//					fullTuneEntry[6] += (", " + splitEntries[5]);
-//				}
-//				
-////				//display exceptions
-////				if(!pme.isMelodicIncipit(fullTuneEntry[5])) {
-////					for(int i = 0; i < fullTuneEntry.length; i++) {
-////						System.out.println(entryLabels[i] + ": " + fullTuneEntry[i]);
-////					}
-////				}
+//				/
 				
 				for(int i = 0; i < fullTuneEntry.length; i++) {
-//					System.out.println(entryLabels[i] + ": " + fullTuneEntry[i]);
 					strToFile(entryLabels[i] + ": " + fullTuneEntry[i] + "\n");
+					if(i == 2) {	//if current field is title
+						strToFile("tune_is_secular: " + isSecularList.get(curIndex) + "\n");	//record secular value
+					}
 				}
-				
-//			System.out.println("*******************");
 			strToFile("*******************\n");
 			entryCount++;
 			}
@@ -345,24 +315,30 @@ public class ParseMusicEntries2 {
 			curParagraphText = curParagraph.getText()			//get text of current paragraph
 					.replace("	", "");							//remove whitespace caused by tabbing
 			//separate each entry into its own string and record if secular
-			if(curParagraphText.indexOf(":") != -1 && entryStrBuilder.length() > 0) {			//: indicates start of new entry and > 0 indicates non-first entry
-																		// (first sources sometimes do not have a : 
+			if(curParagraphText.indexOf(":") != -1 && entryStrBuilder.length() > 0) {			
+				//: indicates start of new entry and > 0 indicates non-first entry
+				// (first sources sometimes do not have a : 
+				
 				//record previous entry information
-				entries.add(entryStrBuilder.toString());			//add previous entry to arraylist						
+				entries.add(entryStrBuilder.toString());			//add previous entry to arraylist	
 				isSecularList.add(curEntrySecular);			//record if entry was secular
 				curEntrySecular = true;						//current entry secular by default (may have been changed by isSecularArray()
 				entryStrBuilder = new StringBuilder();		//initiate next entry
 				
 			}	
-			entryStrBuilder.append(curParagraphText);							//add current paragraph to current entry string
+			
+			entryStrBuilder.append(curParagraphText);		//add current paragraph to current entry string
 			
 			if(!isSecular(curParagraph)) {					//determine if current run indicates non-secular entry
-				curEntrySecular = false;						//	if so, entry is not secular
+				curEntrySecular = false;					//	if so, entry is not secular
 			}	
-			curParIndex++;										//move to next paragraph
+			
+			curParIndex++;									//move to next paragraph
 			matcher = pattern.matcher(paragraphList.get(curParIndex).getText());	//prepare matcher prior to next iteration
 		}
+		
 		entries.add(entryStrBuilder.toString());			//add last entry of current source		
+		isSecularList.add(curEntrySecular);					//^^
 	}	
 	
 	
@@ -372,12 +348,15 @@ public class ParseMusicEntries2 {
 	//returns integer containing index of where title left off
 	//parameter is starting index of source title
 	private int getSrcTitleAuthor(int index) {		
+		
 		curSourceTitle = curRun.toString();		//record source title
 		curSourceAuthor = curStr;				//text between source number and source title is author
+		
 		while(curParagraphRuns.get(index + 1).isItalic()) {	//add each text run to source title while text is still italicized
 			curSourceTitle += curParagraphRuns.get(index + 1).toString();	
 			index++;										//increment
 		}
+		
 		curStr = "";							//reset string to record description
 		return index;
 	}
@@ -386,7 +365,7 @@ public class ParseMusicEntries2 {
 		return Integer.parseInt(parText.substring(match.start(), match.end() - 1));
 	}
 	
-	private void resetEntries() {
+	private void resetEntries() {		
 		curSourceAuthor = "";
 		curSourceTitle = "";
 		curSourceDesc = "";
@@ -402,7 +381,7 @@ public class ParseMusicEntries2 {
 //		strSrcEntries.add(curStrArr);
 //	}
 	
-	private String sourceInfoToString() {
+	private String sourceInfoToString() {		
 		return "Source: " + curSrc +
 				"\nAuthor: "  +  curSourceAuthor + 
 				"\nTitle: "  +  curSourceTitle +
@@ -413,24 +392,27 @@ public class ParseMusicEntries2 {
 	
 	//return array containing [0]: tune title and [1]: tune author by parsing string containing title and author
 	public static String[] parseTitleAndCredit(String str) {
+		
 		String[] titleCredit = new String[2];				//array that will contain title and author
 		String[] authorIndicators = {"[by", "-by", " by "};			//strings that indicate presence of author
 		//check to see if any author indicators occur in parameter string
 		int authorIndex = -1;						//no matches by default
+		
 		for(String curStr: authorIndicators) {
 			if(str.indexOf(curStr) != -1) {			//if there is match
 			authorIndex = str.indexOf(curStr);		//record index of match
 			}
 		}
+		
 		//separate tune title and author into individual strings
 		if(authorIndex != -1) {								//if author name is present
 			titleCredit[0] = str.substring(0, authorIndex);	//text before [by is tune title [0]
 			titleCredit[1] = str.substring(authorIndex, str.length());	//text where [by starts to end of string is tune author [1]
 			return titleCredit;	
 		}
-		titleCredit[0] = str;								//if no author detected, return entire string as title with null author
-		return titleCredit;									
 		
+		titleCredit[0] = str;								//if no author detected, return entire string as title with null author
+		return titleCredit;				
 	}
 	
 	//cycle through text runs in first paragraph of entry to determine if it is secular or not
@@ -453,15 +435,31 @@ public class ParseMusicEntries2 {
 	}
 	
 	public boolean isMelodicIncipit(String str) {	//check if current entry is melodic incipit, indicated by more than three digits
-		int digitCount = 0;		
+		int digitCount = 0,				//total digits in string
+				maxConsecDigits = 0,	//most consecutive digits that occur in a row in given string
+				curConsec = 0;
+		
 		if(str == null)
 			return false;
+		
 		for(char c: str.toCharArray()) {	//check if each character is digit, and increment count if so
+			
 			if(Character.isDigit(c)) {
 				digitCount++;
+				curConsec++;
+			}
+			
+			else {
+				if(curConsec > maxConsecDigits) {
+					maxConsecDigits = curConsec;
+					curConsec = 0;
+				}
+			}
+			if(curConsec > maxConsecDigits) {
+				maxConsecDigits = curConsec;
 			}
 		}
-		return ((digitCount >=3 && (str.indexOf("|") != -1) || str.indexOf("-") != -1) || digitCount >= 8) ? true: false;
+		return ((digitCount >=3 && (str.indexOf("|") != -1) || str.indexOf("-") != -1) || maxConsecDigits  > 4|| digitCount >= 8) ? true: false;
 	}
 	
 	public boolean hasMelodicIncipit(XWPFParagraph par) {	//loose application if isMelodicIncipit method to detect if paragraph contains incipit	
@@ -510,47 +508,45 @@ public class ParseMusicEntries2 {
 	}
 	//--------------------------------------------------------
 	
-	//analyze information for current entry and place it all into its respective array
+	//sort current entry so that each piece of data is in its respective field
 	private String[] formatEntryArr(String page, String[] titleCredit, String[] entriesSplit) {
 //		String[] fullEntry = new String[entriesSplit.length + 3];		//arr containing all entry data; set to total length 
 //																		//of all arrays combined to start
 		String[] fullEntry = null;
-//		if(splitEntries.length < 7) {
 			fullEntry = new String[7];
 			fullEntry[0] = tunePage;
 			fullEntry[1] = titleAndCredit[0];
 			fullEntry[2] = titleAndCredit[1];
 			int shifts = 0;				//amount of shifts that have been made to full array (left is negative, right positive)
 			//splitArr to fullArr 
-			for(int index = 1, j = 5, k = 2; index < entriesSplit.length && index < j; index++) {
-				if(index > 1 && index + k == 4) {
-					if(entriesSplit[index].indexOf("“") != -1 || entriesSplit[index].indexOf("tenor") != -1) {
-						k--;
-						j++;
-						fullEntry[index + k] += " " + entriesSplit[index];
+			for(int index = 1, arrLimit = 5, fullEntryAdjust = 2; index < entriesSplit.length && index < arrLimit; index++) {
+				//index - index of entries split being added, arrLimit - when to end additions. increased by from leftward shifts
+				//fullEntryAdjust - adjust difference between cur index being added from entries split and index of fullentries 
+				//that current value is being placed. Starts at 2 because of tunepage already being added and title/credit being in same index
+				if(index > 1 && index + fullEntryAdjust == 4) {
+					//method for combining multiple values for vocal part, represented in index 4
+					if(isVocalPart(entriesSplit, index)) {
+						//if extra vocal part value is recorded; " “ " indicates presence of vocal part description
+						shifts--;					//record leftward shift of indices relative to fullEntry
+						fullEntryAdjust--;			//record leftward shift for current for loop
+						arrLimit++;					//increment limit of how high of index in entriesSplit will be added to fullEntries
+						fullEntry[index + fullEntryAdjust] += " " + entriesSplit[index];	//combine extra vocal part value 
 					}
 					else {
-						fullEntry[index + k] = entriesSplit[index];
+						fullEntry[index + fullEntryAdjust] = entriesSplit[index];			//if no extra vocal part value detected, proceed as normal
 					}
 				}
 				else {
-					fullEntry[index + k] = entriesSplit[index];
+					fullEntry[index + fullEntryAdjust] = entriesSplit[index];		//add entry to fullentry
 				}
 //				fullEntry[i + 2] = entriesSplit[i];
 			}
 			
-			//if no vocal part was entered and  tune key was placed in its slot, shift cells right
+			//if no vocal part was entered and  tune key was placed vocal part field, shift cells right
 			if(fullEntry[3] != null && fullEntry[3].length() < 4 ) {
 				shiftCellsRight(fullEntry, 3);
 				shifts++;
-			}						
-			
-			//if no tune key was recorded and incipit is in its place, shift cells right
-//			if(fullEntry[4] != null && isMelodicIncipit(fullEntry[4])) {
-//				shiftCellsRight(fullEntry, 3);
-//				shifts++;
-//				System.out.println("Shifting");
-//			}
+			}			
 			
 			if(fullEntry[5] == null || !isMelodicIncipit(fullEntry[5])) {
 				for(int i = 3; i < 5; i++) {
@@ -569,22 +565,60 @@ public class ParseMusicEntries2 {
 				shifts--;
 			}
 			
-			//this needs to be set up so that it also works when there are 5 split entries, but there is at least one right shift
+
+			
+			//add all unrecorded entries that occur after melodic incipit to text field 
 			if(isMelodicIncipit(fullEntry[5])) {
 				for(int i = 5 - shifts; i < entriesSplit.length; i++) {
 					fullEntry[6] += (", " + entriesSplit[i]);
 				}
 			}
 			else {
-				System.out.println("Not incipit: " + fullEntry[1] + "\n" + fullEntry[5]);	
+				for(int i = 5 - shifts; i < entriesSplit.length; i++) {
+					fullEntry[6] += (", " + entriesSplit[i]);
+				}
+//				System.out.println("Not incipit: " + fullEntry[1] + "\n" + fullEntry[5]);	
 				notIncipitCount++;
+				for(int i = 0; i < fullEntry.length; i++) {
+					System.out.println(entryLabels[i] + ": " + fullEntry[i]);
+				}
+				System.out.println();
+			}		
+			
+			for(int i = 0; i < fullEntry.length; i++) {
+				if(fullEntry[i] != null) {
+					//melodic incipits that contained commas had commas replaced by ---. this corrects those
+					fullEntry[i] = fullEntry[i].replace("-*-", ",").replace("**&", ":");					
+				}
 			}
-//		}
-		
-		
-		return fullEntry;
-		
+		return fullEntry;		
 	}
 	
-
+	private boolean isVocalPart(String[] entriesSplit, int index) {
+		String[] vocalPartKeywords = {"tenor", "counter", "bass", "treble", "cantus", "medus", "basus", "meaudus", "voice"};
+		if(entriesSplit[index].indexOf("“") != -1 )
+			return true;
+		for(String kw: vocalPartKeywords) {
+			if(entriesSplit[index].toLowerCase().indexOf(kw) != -1) {
+				return true;
+			}
+		}
+		return false;
+				
+	}
+	//-------------------------------------------------------------------------------
+	private boolean entryFound(int index) {		
+		return (curParagraphText.indexOf("MS. music entries:") != -1) || //most direct indication of music entries
+		//less direct indications
+		(curParagraphText.indexOf("MS.") != -1 &&		//contains keyword 
+		(curParagraphText.indexOf("music") != -1 || curParagraphText.indexOf("entries") != -1) &&	//contains either keyword
+//		curParagraphText.indexOf(":") < 80 && curParagraphText.indexOf(":") >= 0 &&	//colon occurs relatively early in string (late can be false)
+		curParagraphText.indexOf(":") != -1 &&
+		curParagraphText.indexOf(":")  > curParagraphText.indexOf("MS.") &&	//color occurs after MS. this removes false positives
+		paragraphList.get(curParIndex + 1).getText().indexOf("MS.") == -1 &&	//indication of common false positive when MS. in next par
+		//melodic incipit detected after current paragraph
+		(hasMelodicIncipit(paragraphList.get(curParIndex + 1)) || 
+				(curParagraphText.indexOf(":") < 60 && curParagraphText.indexOf(":") >= 0)));		
+	}
 }
+//source 102 not detecting ms entries because colon index late

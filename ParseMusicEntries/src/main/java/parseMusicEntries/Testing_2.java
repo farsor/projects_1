@@ -3,13 +3,18 @@ package parseMusicEntries;
 public class Testing_2 {
 	public static void main(String[] args) {
 		
-		String str = "Let every                                     creature Join to praise the eternal god";
-		char[] strChar = str.toCharArray();
-//		for(char c: strChar) {
-//			System.out.print((int) c + "	");
-//		}
-//		System.out.println(str.trim().replaceAll(Character.toString((char) 160), " "));
-		System.out.println(str.replaceAll("(^\\h*)|(\\h*$)"," "));
+		String str = "hello my-*- name is dogboi";
+		str = str.replace("-*-", ",");
+		System.out.println(str);
+		
+		
+//		String str = "Let every                                     creature Join to praise the eternal god";
+//		char[] strChar = str.toCharArray();
+////		for(char c: strChar) {
+////			System.out.print((int) c + "	");
+////		}
+////		System.out.println(str.trim().replaceAll(Character.toString((char) 160), " "));
+//		System.out.println(str.replaceAll("(^\\h*)|(\\h*$)"," "));
 		
 //		//test shift method in PME class
 //		ParseMusicEntries2 pme = new ParseMusicEntries2();
