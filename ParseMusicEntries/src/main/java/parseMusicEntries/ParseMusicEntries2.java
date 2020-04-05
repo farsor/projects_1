@@ -14,7 +14,7 @@ import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
 
 public class ParseMusicEntries2 {
-	
+	 
 
 	FileInputStream fis = null;					//input stream to contain .docx file being analyzed
 	XWPFDocument xdoc = null;					//.docx reader
