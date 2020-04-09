@@ -14,7 +14,7 @@ import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
 
 public class ParseMusicEntries2 {
-	 
+	 //TODO 195 not recorded
 
 	FileInputStream fis = null;					//input stream to contain .docx file being analyzed
 	XWPFDocument xdoc = null;					//.docx reader
@@ -44,6 +44,7 @@ public class ParseMusicEntries2 {
 	String srcCallNum = null;;							//call number for current source, indicated by bold text
 	String curSourceAuthor = "";						//
 	String curSourceTitle = "";							//
+	String curSourceInscription = null;
 	String curSourceDesc = "";							//description of current source, containing all details that cannot be parsed
 														//	into individual fields
 //	List<String[]> strSrcEntries = new ArrayList<String[]>();	//list of all source information, delete eventually **********
@@ -129,6 +130,8 @@ public class ParseMusicEntries2 {
 			matcher = pattern.matcher(curParagraphText);		//set matcher to current paragraph
 			
 			//if current paragraph starts with source number (should always be case after collection description done)
+			
+			//TODO set up sourceFound method
 			if(matcher.find()) {	//check for source number, which indicates end of last source and beginning of new source				
 				
 				//if this is not the first entry of collection, record previous source information
@@ -165,6 +168,11 @@ public class ParseMusicEntries2 {
 //				System.out.println("Author: "  +  curSourceAuthor);
 //				System.out.println("Title: "  +  curSourceTitle);
 //				break;
+			}
+			
+			else if(curParagraphText.toLowerCase().indexOf("inscription:") != -1) {	//if inscription description detected
+				curSourceInscription = curParagraphText.substring(curParagraphText.indexOf(":") + 2);	//pull text from paragraph, discard
+																									//"inscriptions: "
 			}
 			
 			//if current paragraph contains call number, which is denoted by a run of bold text
@@ -313,7 +321,9 @@ public class ParseMusicEntries2 {
 		while(curParIndex < paragraphList.size() && !matcher.find() && !hasCallNumber(paragraphList.get(curParIndex))) {			
 			curParagraph = paragraphList.get(curParIndex);		//current XWPFparagraph
 			curParagraphText = curParagraph.getText()			//get text of current paragraph
+					.replaceAll(Character.toString((char)160),"")
 					.replace("	", "");							//remove whitespace caused by tabbing
+			
 			//separate each entry into its own string and record if secular
 			if(curParagraphText.indexOf(":") != -1 && entryStrBuilder.length() > 0) {			
 				//: indicates start of new entry and > 0 indicates non-first entry
@@ -334,7 +344,9 @@ public class ParseMusicEntries2 {
 			}	
 			
 			curParIndex++;									//move to next paragraph
-			matcher = pattern.matcher(paragraphList.get(curParIndex).getText());	//prepare matcher prior to next iteration
+			if(curParIndex < paragraphList.size()) {
+				matcher = pattern.matcher(paragraphList.get(curParIndex).getText());	//prepare matcher prior to next iteration
+			}
 		}
 		
 		entries.add(entryStrBuilder.toString());			//add last entry of current source		
@@ -369,6 +381,7 @@ public class ParseMusicEntries2 {
 		curSourceAuthor = "";
 		curSourceTitle = "";
 		curSourceDesc = "";
+		curSourceInscription = null;
 		curStr = "";
 		srcCallNum = null;
 	}
@@ -385,7 +398,8 @@ public class ParseMusicEntries2 {
 		return "Source: " + curSrc +
 				"\nAuthor: "  +  curSourceAuthor + 
 				"\nTitle: "  +  curSourceTitle +
-				"\nCall number: " + srcCallNum + 
+				"\nCall number: " + srcCallNum + 				
+				"\nInscription: " + curSourceInscription +
 				"\nDescription: "  +  curStr +
 				"\n----------------end of source-------------\n\n";
 	}
@@ -490,20 +504,26 @@ public class ParseMusicEntries2 {
 	//-------------------------------------------------------------------------------------------
 	//format string of entry to format optimal for parsing
 	private String formatEntryStr(String entryStr) {
+		int adj = 2;			//number of characters between colon and starting character of title
+								// there is a strange reason why some spaces are not being counted, and this adjusts for that
 		if(entryStr.indexOf(":") != -1){			//if entry includes page number, as indicated by ":"
-			return entryStr.substring(entryStr.indexOf(": ") + 2, entryStr.length())		//remove page number from current entry to analyze rest of text
+			if((int) entryStr.charAt(entryStr.indexOf(":") + 1) != 32) {
+				adj--;
+			}
+			return entryStr.substring(entryStr.indexOf(":") + adj, entryStr.length())		//remove page number from current entry to analyze rest of text
 								.replace(",”", "”,")			//replace ," with ", so quotes are contained together
 								.replace(", so", " so")			//remove false delimiter
 								.replace(", but", " but")		// 	remove false delimiter
 								.replace(", by ", " by ")		//remove false delimiter
-								.trim().replaceAll(" +", " ");	//trim extra spaces	
+								.trim().replaceAll(" +", " ");	//trim extra spaces
 		}
+		
 		else {										//if no page number, no need to remove page number
 			return entryStr.replace(",”", "”,")		//replace ," with ", so quotes are contained together
 					.replace(", so", " so")			//remove false delimiter
 					.replace(", but", " but")		//remove false delimiter
 					.replace(", by",  " by")		//remove false delimiter
-					.trim().replaceAll(" +", " ");	//trim extra spaces	
+					.trim().replaceAll(" +", " ");	//trim extra spaces
 		}
 	}
 	//--------------------------------------------------------
@@ -585,17 +605,19 @@ public class ParseMusicEntries2 {
 				System.out.println();
 			}		
 			
+			//replace commas and colons that were substituted in source document
 			for(int i = 0; i < fullEntry.length; i++) {
 				if(fullEntry[i] != null) {
 					//melodic incipits that contained commas had commas replaced by ---. this corrects those
 					fullEntry[i] = fullEntry[i].replace("-*-", ",").replace("**&", ":");					
 				}
-			}
+			}			
+			
 		return fullEntry;		
 	}
 	
 	private boolean isVocalPart(String[] entriesSplit, int index) {
-		String[] vocalPartKeywords = {"tenor", "counter", "bass", "treble", "cantus", "medus", "basus", "meaudus", "voice"};
+		String[] vocalPartKeywords = {"tenor", "counter", "bass", "treble", "cantus", "medus", "basus", "meaudus", "voice", "TCTB"};
 		if(entriesSplit[index].indexOf("“") != -1 )
 			return true;
 		for(String kw: vocalPartKeywords) {
@@ -607,18 +629,23 @@ public class ParseMusicEntries2 {
 				
 	}
 	//-------------------------------------------------------------------------------
+	//determine next paragraph will contain entry
 	private boolean entryFound(int index) {		
+		
 		return (curParagraphText.indexOf("MS. music entries:") != -1) || //most direct indication of music entries
+				
 		//less direct indications
 		(curParagraphText.indexOf("MS.") != -1 &&		//contains keyword 
 		(curParagraphText.indexOf("music") != -1 || curParagraphText.indexOf("entries") != -1) &&	//contains either keyword
-//		curParagraphText.indexOf(":") < 80 && curParagraphText.indexOf(":") >= 0 &&	//colon occurs relatively early in string (late can be false)
 		curParagraphText.indexOf(":") != -1 &&
 		curParagraphText.indexOf(":")  > curParagraphText.indexOf("MS.") &&	//color occurs after MS. this removes false positives
 		paragraphList.get(curParIndex + 1).getText().indexOf("MS.") == -1 &&	//indication of common false positive when MS. in next par
+		
 		//melodic incipit detected after current paragraph
 		(hasMelodicIncipit(paragraphList.get(curParIndex + 1)) || 
-				(curParagraphText.indexOf(":") < 60 && curParagraphText.indexOf(":") >= 0)));		
+				(paragraphList.get(curParIndex + 1).getText().indexOf(":") < 60 && paragraphList.get(curParIndex + 1).getText().indexOf(":") >= 0)));
+		
 	}
 }
 //source 102 not detecting ms entries because colon index late
+	

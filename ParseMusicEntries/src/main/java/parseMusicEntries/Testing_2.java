@@ -2,10 +2,22 @@ package parseMusicEntries;
 
 public class Testing_2 {
 	public static void main(String[] args) {
+
 		
-		String str = "hello my-*- name is dogboi";
-		str = str.replace("-*-", ",");
-		System.out.println(str);
+		String str = "                        leaf [5] recto: Friendship, treble?, Em, 553|7553|4, thy wrath lies heavy on                 my soul";
+		String str2 = 		"p. 33: WESTFIELD NEW TUNE, “Medius,” “Tenor,” “Bass,” G, 121365#45,				1st 8 notes of a possible altus part written in pencil on 				otherwise blank top staff";
+//
+//		System.out.println(str.replaceAll("\\s+", " "));
+		
+//		String str = "                        ";
+//		String str2 = "               ";
+//		for(char c: str.toCharArray()) {
+//			System.out.println((int)c);
+//		}
+		
+//		String str = "hello my-*- name is dogboi";
+//		str = str.replace("-*-", ",");
+//		System.out.println(str);
 		
 		
 //		String str = "Let every                                     creature Join to praise the eternal god";

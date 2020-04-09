@@ -11,18 +11,22 @@ public class GetParagraphs {
 	public static void main(String[] args) {
 		try {
 //			FileInputStream fis = new FileInputStream("MA Petersham, Nym Cooke collection INVENTORY (1).docx");
-			FileInputStream fis = new FileInputStream("MSEntriesOnly.docx");
+			FileInputStream fis = new FileInputStream("finalized collections/errorTest.docx");
 			XWPFDocument xdoc = new XWPFDocument(OPCPackage.open(fis));
 			List<XWPFParagraph> paragraphList = xdoc.getParagraphs();
 			for (XWPFParagraph paragraph : paragraphList) {
-				for(char i: paragraph.getText().toCharArray()) {
-					System.out.format("%5s", i);
-				}
-				System.out.println();
-				for(char i: paragraph.getText().toCharArray()) {
-					System.out.format("%5s", (int)i);
-				}
-				System.out.println();
+				System.out.println(paragraph.getText());
+				System.out.println("***********************************************************");
+				
+				
+//				for(char i: paragraph.getText().toCharArray()) {
+//					System.out.format("%5s", i);
+//				}
+//				System.out.println();
+//				for(char i: paragraph.getText().toCharArray()) {
+//					System.out.format("%5s", (int)i);
+//				}
+//				System.out.println();
 //				break;
 //				System.out.println(paragraph.getText());
 //				System.out.println(paragraph.getAlignment());

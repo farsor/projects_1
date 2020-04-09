@@ -32,6 +32,7 @@ Source: 1
 Author: “3 fragments from copybooks / c. 1800” (Watkinson Library designation).  3 leaves (no p. nos.; different sizes; 1 leaf folded) with MS. music on 
 Title: recto
 Call number: Music MS 26
+Inscription: null
 Description: s.	leaf [1]: inscription, “Mary Ann”; 3 entries, all apparently treble parts:
 		Religion, Am, 1|12[-]D7U1D5|U3[-]212
 		NewJerusalem [by Ingalls], G, 4[recte 3]55|3234|3
@@ -56,8 +57,8 @@ Source: 2
 Author: Atwill, Thomas H.  
 Title: The New-York Collection of Sacred Harmony
 Call number: M 2062 .N4 1802
-Description: .  [2nd ed.]  Lansingburg, N. Y.: “Engraved for the Editor by Abner Reed,” “Printed by the Author,” 1802.  viii, 104 pp.  Complete.  A perfect copy.	inscription: front cover, “77”
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: front cover, “77”
+Description: .  [2nd ed.]  Lansingburg, N. Y.: “Engraved for the Editor by Abner Reed,” “Printed by the Author,” 1802.  viii, 104 pp.  Complete.  A perfect copy.	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
 
@@ -67,6 +68,7 @@ Source: 3
 Author: Babcock, Samuel.  
 Title: The Middlesex Harmony
 Call number: Special M 2116 .B3 1795
+Inscription: null
 Description: .  Boston: Isaiah Thomas and Ebenezer T. Andrews, 1795.  55, [1] pp.  Complete.  Nice tight copy.	no inscriptions
 	no MS. music 
 	label with name + address of Charles T. Wells pasted inside front cover
@@ -78,8 +80,8 @@ Source: 4
 Author: Babcock, Samuel.  
 Title: The Middlesex Harmony
 Call number: Special M 2116 .B3 1803
-Description: .  2nd ed.  Boston: Isaiah Thomas and Ebenezer T. Andrews, 1803.  vii, [1], [3]-110 pp.  Complete, though lacking covers.	inscription: p. [iii], “ALH Pitkin” [? something of a guess] (pencil) 
-	no MS. music 
+Inscription: p. [iii], “ALH Pitkin” [? something of a guess] (pencil) 
+Description: .  2nd ed.  Boston: Isaiah Thomas and Ebenezer T. Andrews, 1803.  vii, [1], [3]-110 pp.  Complete, though lacking covers.	no MS. music 
 
 Bay Psalm Book – SEE
 	The Psalms, Hymns, and Spiritual Songs, of the Old and New-Testament
@@ -91,6 +93,7 @@ Source: 5
 Author: [Bayley, Daniel.  
 Title: The American Harmony
 Call number: M 2116 .A6 1770
+Inscription: null
 Description: ?]  Fragmentary tunebook; engraved music only.  Is this an edition of The American Harmony unreported in ASMI?  Pagination corresponds to that of no issue listed in ASMI; surviving pp. are 11-14, 25-202, with no 2nd t. p.  Music partially corresponds to “content I” in ASMI’s table of “Content Variations in Daniel Bayley, The American Harmony, Vol. I,” but on pp. 82-83, 86-87, 89, 92-93, and 96 only.  Later pp. carry a number of attributions to “A. W.” (Aaron Williams).	For further clues to this book’s identity, see slip of paper with notes by Ruth 
 		M. Wilson dated 6/22/78, inserted inside front cover.
 	inscriptions: inside back cover, “C. Goodhue & Zoa A. Goodhue / Book,” 
@@ -124,8 +127,8 @@ Source: 6
 Author: Bailey [sic], Daniel.  
 Title: The Essex Harmony
 Call number: Special BS 1440 .W3 1771
-Description: .  Newburyport, Mass.: the author, 1770.  ASMI 64A or 64B?  ASMI says this is 64C, but there is a p. 19 here (and possibly a p. 20).  Pp. [2], 1-6, 9-12, 19-[20?], [17?]-18.  Bound with: [Watts, Isaac.  The Psalms of David, imitated in the language of the New Testament, and applied to the Christian State and Worship.  27th ed.  Boston: Thomas and John Fleet, 1771]; publication data supplied by Trinity College librarian; lacks all before p. v.  Bound with: Watts, I[saac].  Hymns and Spiritual Songs.  27th ed.  Boston: Thomas and John Fleet, 1772.	inscription: 1st preliminary leaf recto, “Hervey N. [Gould?]” (pencil)
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: 1st preliminary leaf recto, “Hervey N. [Gould?]” (pencil)
+Description: .  Newburyport, Mass.: the author, 1770.  ASMI 64A or 64B?  ASMI says this is 64C, but there is a p. 19 here (and possibly a p. 20).  Pp. [2], 1-6, 9-12, 19-[20?], [17?]-18.  Bound with: [Watts, Isaac.  The Psalms of David, imitated in the language of the New Testament, and applied to the Christian State and Worship.  27th ed.  Boston: Thomas and John Fleet, 1771]; publication data supplied by Trinity College librarian; lacks all before p. v.  Bound with: Watts, I[saac].  Hymns and Spiritual Songs.  27th ed.  Boston: Thomas and John Fleet, 1772.	bookplate of Charles T. Wells pasted inside front cover
 
 
 ----------------end of source-------------
@@ -134,8 +137,8 @@ Source: 7
 Author: [Bayley, Daniel.  
 Title: The Essex Harmony
 Call number: Special BS 1440 .W3 1774
-Description: .  Unidentified issue; likely the issue of the 1st ed. described in ASMI, no. 64a, because all music uses round notation, and there were originally 22, not 18 pp.]  Pp. 1-4, 9-12, 15-22.  Bound with: Watts, I[saac].  The Psalms of David, imitated in the language of the New Testament, and applied to the Christian State and Worship.  37th ed.  Boston: John Boyles, 1774.  Bound with: Watts, I[saac].  Hymns and Spiritual Songs.  37th ed.  Boston: John Boyle [sic], 1774.	inscription: verso of Watts Psalms of David t. p., “Aaron young his Book / God 
-		gives him grace their- / Into Look and when the / Summons of death 
+Inscription: verso of Watts Psalms of David t. p., “Aaron young his Book / God 
+Description: .  Unidentified issue; likely the issue of the 1st ed. described in ASMI, no. 64a, because all music uses round notation, and there were originally 22, not 18 pp.]  Pp. 1-4, 9-12, 15-22.  Bound with: Watts, I[saac].  The Psalms of David, imitated in the language of the New Testament, and applied to the Christian State and Worship.  37th ed.  Boston: John Boyles, 1774.  Bound with: Watts, I[saac].  Hymns and Spiritual Songs.  37th ed.  Boston: John Boyle [sic], 1774.		gives him grace their- / Into Look and when the / Summons of death 
 		doth / Com h[?]nay [“come[,] he may” intended?] be ready for / to 
 		receive the warrant / Joanna young was / born decembir 19 day 1762 
 		/ Joseph young was born / [Oct?]ober the 10 day 176”
@@ -149,8 +152,8 @@ Source: 8
 Author: Bayley, Daniel.  
 Title: The Essex Harmony
 Call number: Special ML 3086 .B3 1771
-Description: .  [2nd ed.]  Newburyport, Mass.: Daniel Bayley, 1771.  [2], 18 pp.  Complete.	inscription: additional leaf verso, “James Pos[s?]lethwaite Book” (pencil)
-	no MS. music
+Inscription: additional leaf verso, “James Pos[s?]lethwaite Book” (pencil)
+Description: .  [2nd ed.]  Newburyport, Mass.: Daniel Bayley, 1771.  [2], 18 pp.  Complete.	no MS. music
 
 
 ----------------end of source-------------
@@ -159,6 +162,7 @@ Source: 9
 Author: Bayley, Daniel.  
 Title: The Essex Harmony
 Call number: BS 1440 .W3 1770
+Inscription: null
 Description: .  [2nd ed.]  Newburyport, Mass.: Daniel Bayley, 1771.  [2], 18 pp.  Complete.  Bound with: Watts, I[saac].  The Psalms of David imitated in the language of the New Testament, and apply’d to the Christian State and Worship.  26th ed.  Boston: D. Kneeland, for Nicholas Bowes, 1770.  Bound with: Watts, I[saac].  Hymns and Spiritual Songs.  22nd ed.  Boston: Daniel Kneeland, for Nicholas Bowes, 1771.	no inscriptions
 	no MS. music
 	bookplate of Charles T. Wells pasted inside front cover
@@ -170,6 +174,7 @@ Source: 10
 Author: Bayley, Daniel.  
 Title: The Essex Harmony
 Call number: BS 1440 .W3 1768
+Inscription: null
 Description: .  [3rd ed.]  Newburyport, Mass.: Daniel Bayley, 1772.  [2], 18 pp.  Complete.  Bound with: Watts, I[saac].  The Psalms of David imitated in the language of the New Testament. And applied to the Christian State and Worship.  26th ed.  Boston: Mein and Fleeming, 1768.  Bound with: Watts, Isaac.  Hymns and Spiritual Songs.  22nd ed.  Boston: John Fleeming, 1772.	inscriptions: inside front cover, “Ann Gerrard / 1[8?] May 1805”; slip of 
 		paper laid inside back cover, “Timna Breed’s.”
 	no MS. music
@@ -181,8 +186,8 @@ Source: 11
 Author: Bayley, Daniel.  
 Title: The Psalm-Singer’s Assistant.
 Call number: M 2116 .B38 P7 1770z
-Description:   Newburyport, Mass.: for the author, [ca. 1768].  Typographical details establish this copy as ASMI 77C.  See table in ASMI, p. 148, especially next-to-last column for issue 77C.  8 pp. 16 leaves; leaf 2 mistakenly numbered 4.  	inscription: leaf 10 verso, “Peter [armst?] / [Song?]”
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: leaf 10 verso, “Peter [armst?] / [Song?]”
+Description:   Newburyport, Mass.: for the author, [ca. 1768].  Typographical details establish this copy as ASMI 77C.  See table in ASMI, p. 148, especially next-to-last column for issue 77C.  8 pp. 16 leaves; leaf 2 mistakenly numbered 4.  	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
 
@@ -208,8 +213,8 @@ Source: 12
 Author: [Bayley, Daniel.] Tans’ur, William.  
 Title: The American Harmony: or, Royal Melody Complete.
 Call number: M 2116 .T16 R6 1769
-Description:   5th ed.  Newburyport, Mass.: Daniel Bailey [sic], 1769.  Bound with: Williams, A[aron].  The American Harmony, or Universal Psalmodist.  Newburyport, Mass.: Daniel Bayley, 1769.  Tans’ur vol. lacks 2nd pp. 3-6; Williams vol. lacks pp. 23-24 (and pp. 41-48 are printed + bound in this order [rectos/versos]: 41/46, 47/44, 45/42, 43/48).  ASMI 56, except ASMI (p. 124) says that the Tans’ur vol. in this issue has musical Content II (see Table I, pp. 118-119), whereas this copy has Content I on pp. 1-39 and Content IV[-VII] on pp. 81-96.	inscription: verso of folded leaf bearing MS. music, “Elizabeth Demings”
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: verso of folded leaf bearing MS. music, “Elizabeth Demings”
+Description:   5th ed.  Newburyport, Mass.: Daniel Bailey [sic], 1769.  Bound with: Williams, A[aron].  The American Harmony, or Universal Psalmodist.  Newburyport, Mass.: Daniel Bayley, 1769.  Tans’ur vol. lacks 2nd pp. 3-6; Williams vol. lacks pp. 23-24 (and pp. 41-48 are printed + bound in this order [rectos/versos]: 41/46, 47/44, 45/42, 43/48).  ASMI 56, except ASMI (p. 124) says that the Tans’ur vol. in this issue has musical Content II (see Table I, pp. 118-119), whereas this copy has Content I on pp. 1-39 and Content IV[-VII] on pp. 81-96.	bookplate of Charles T. Wells pasted inside front cover
 
 
 ----------------end of source-------------
@@ -218,6 +223,7 @@ Source: 13
 Author: [Bayley, Daniel.] [Tans’ur, William.  
 Title: The American Harmony: or, Royal Melody Complete.
 Call number: M 2116 .T16 R6 1769 c.2
+Inscription: null
 Description:   5th ed., Newburyport, Mass.: Daniel Bailey [sic], 1769?]  Bound with: Williams, A[aron].  The American Harmony, or Universal Psalmodist.  Newburyport, Mass.: Daniel Bayley, 1769.  Tans’ur vol. lacks 1st pp. [1-2], 2nd pp. 3-6, 9-12, pp. 33-34 of music.  Williams vol. is complete, except pp. 1-8 are printed + bound in this order (rectos/versos): 1/6, 7/4, 5/2, 3/8.  ASMI 56, except ASMI (p. 124) says that the Tans’ur vol. in this issue has musical Content II (see Table I, pp. 118-119), whereas this copy has Content I on pp. 1-39 and Content IV[-VII] on pp. 81-96.	inscriptions: inside front cover, mostly obscured by pasted-on bookplate, “T 
 		[bookplate] ook / Bo[ught?] [bookplate] Day ye 1770”; inside back 
 		cover, [“Cordea Sattwood”? almost illegible] (pencil) 
@@ -231,8 +237,8 @@ Source: 14
 Author: [Bayley, Daniel.] Tans’ur, William.  
 Title: The American Harmony: or, Royal Melody Complete.
 Call number: M 2116 .T16 R6 1771
-Description:   6th ed.  Newburyport, Mass.: Daniel Bailey [sic], 1771.  Bound with: Williams, A[aron].  The American Harmony, or Universal Psalmodist.  Newburyport, Mass.: Daniel Bayley, 1771.  Complete.  ASMI 58, which states that this issue of the Tans’ur vol. has musical Content IV; this copy does, except for St. David’s Old and Bangor on p. 30 rather than Uppingham.  In fact, there are many discrepancies between this volume’s index of tunes and the actual page locations of tunes.	inscription: preliminary leaf recto, “Jonah Hotchkiss  Russel Clark / Their 
-		Book price 7/8 / B in May 1771”
+Inscription: preliminary leaf recto, “Jonah Hotchkiss  Russel Clark / Their 
+Description:   6th ed.  Newburyport, Mass.: Daniel Bailey [sic], 1771.  Bound with: Williams, A[aron].  The American Harmony, or Universal Psalmodist.  Newburyport, Mass.: Daniel Bayley, 1771.  Complete.  ASMI 58, which states that this issue of the Tans’ur vol. has musical Content IV; this copy does, except for St. David’s Old and Bangor on p. 30 rather than Uppingham.  In fact, there are many discrepancies between this volume’s index of tunes and the actual page locations of tunes.		Book price 7/8 / B in May 1771”
 	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
@@ -243,8 +249,8 @@ Source: 15
 Author: [Bayley, Daniel.] Tans’ur, William.  
 Title: The American Harmony: or, Royal Melody Complete.
 Call number: Special M 2116 .T16 R6 1771b
-Description:   7th ed.  Newburyport, Mass.: Daniel Bayley, 1771.  Bound with: Williams, A[aron].  The American Harmony, or, Universal Psalmodist.  Newburyport, Mass.: Daniel Bayley, 1771.  Complete.  ASMI 60A, which omits the 2 engraved leaves from the introduction to the Tans’ur vol.	inscription: inside front cover, “W. S[remainder obscured by pasted-on 
-		bookplate]”
+Inscription: inside front cover, “W. S[remainder obscured by pasted-on 
+Description:   7th ed.  Newburyport, Mass.: Daniel Bayley, 1771.  Bound with: Williams, A[aron].  The American Harmony, or, Universal Psalmodist.  Newburyport, Mass.: Daniel Bayley, 1771.  Complete.  ASMI 60A, which omits the 2 engraved leaves from the introduction to the Tans’ur vol.		bookplate]”
 	bookplate of Charles T. Wells pasted inside front cover
 	one MS. entry on additional leaf [1] recto:
 		untitled tune, counter + tenor melody, G, 1|1D5|1-23|4-32|3,
@@ -453,6 +459,7 @@ Source: 16
 Author: [Bayley, Daniel.] Tans’ur, William.  
 Title: The American Harmony, or, Royal Melody Complete.
 Call number: M 2116 .T16 R6 1773 c.1 
+Inscription: null
 Description:   8th ed.  Newburyport, Mass.: Daniel Bayley, 1773.  Bound with: Williams, A[aron].  The American Harmony, or, Universal Psalmodist.  Newburyport, Mass.: Daniel Bayley, 1773.  Ca. 1/3 of pp. 1-2 of music in Tans’ur vol. is torn off, and both covers are missing; otherwise complete.  Tans’ur vol. has musical Content IV, except: St. David’s Old and Bangor on p. 30; New York and Plymouth on p. 96.  Pp. 89-95 printed from different plates than pp. 89-95 of the copy catalogued as M 2116 .T16 R6 1773 c.2, below; copies have not been compared for further differences.	no inscriptions
 	8 smaller leaves (4 folded leaves) of MS. music sewn in between pp. 4 + 5 of 
 		Williams vol.	
@@ -465,6 +472,7 @@ Source: 17
 Author: [Bayley, Daniel.] Tans’ur, William.  
 Title: The American Harmony, or, Royal Melody Complete.
 Call number: M 2116 .T16 R6 1773 c.2
+Inscription: null
 Description:   8th ed.  Newburyport, Mass.: Daniel Bayley, 1773.  Bound with: [Williams, A[aron].  The American Harmony, or, Universal Psalmodist.  Newburyport, Mass.: Daniel Bayley, 1773].  Tans’ur vol. lacks engraved leaf 7 of rudiments.  Engraved leaf 8 of rudiments bound between 1st pp. 6 + 7; pp. 95-96 of music bound in with music of Williams vol. (see notes following).  Williams vol. lacks typeset pp. [1-4]; music is bound thus: pp. 1-18, (pp. 95-96 of Tans’ur vol.), pp. 24-23 (sic; bound in turned-around position), pp. 19-22, pp. 25-96.  ASMI 61, except there is one deviation in the Tans’ur vol. from musical Content IV, which ASMI assigns to this issue: St. David’s Old and Bangor on p. 30, rather than Uppingham.	inscriptions: inside front cover, mostly obscured by pasted-on bookplate: “J. 
 		[or T.] [bookplate] / [Ps?]alm / [Singin?]g Book”; p. [3], “Elisha Allen / 
 		his Book” (pencil), “Abijah Woodwards Book / Giving [sic] to him by 
@@ -480,8 +488,8 @@ Source: 18
 Author: [Bayley, Daniel.] Tans’ur, William.  
 Title: The American Harmony, or, Royal Melody Complete.
 Call number: M 2116 .T16 R6 1773
-Description:   8th ed.  Newburyport, Mass.: Daniel Bayley, 1774.  Bound with: Williams, A[aron].  The American Harmony, or, Universal Psalmodist.  Newburyport, Mass.: Daniel Bayley, 1774.  Complete.  ASMI 61E.	inscription: preliminary leaf recto, “Price 9/0 / Samuel Kirtlands Book march 
-		1775”
+Inscription: preliminary leaf recto, “Price 9/0 / Samuel Kirtlands Book march 
+Description:   8th ed.  Newburyport, Mass.: Daniel Bayley, 1774.  Bound with: Williams, A[aron].  The American Harmony, or, Universal Psalmodist.  Newburyport, Mass.: Daniel Bayley, 1774.  Complete.  ASMI 61E.		1775”
 	no MS. music
 
 
@@ -491,6 +499,7 @@ Source: 19
 Author: [Bayley, Daniel.]  Tans’ur, William.  
 Title: The Royal Melody Complete: or The New Harmony of Zion.
 Call number: M 2116 .T16 R6 1767 c.1
+Inscription: null
 Description:   3rd ed.  Boston: W. M’Alpine, 1767.  Lacks pp. 11-14 of music.  ASMI 54.	inscriptions: inside front cover (partly obscured by pasted-on bookplate), 
 		“[Ken]t Library [Suffield, Conn.; their bookplate is pasted inside front 
 		cover] / 1904 / [Charle]s T. Wells”; additional leaf verso, “Henry 
@@ -509,6 +518,7 @@ Source: 20
 Author: [Bayley, Daniel.]  [Tans’ur, William.  
 Title: The Royal Melody Complete: or The New Harmony of Zion
 Call number: M 2116 .T16 R6 1767 c.2
+Inscription: null
 Description: .  3rd ed., Boston: W. M’Alpine, 1767?]  Bound with: Williams, A[aron]. The American Harmony: or Universal Psalmodist.  Newburyport, Mass.: Daniel Bayley, 1769.   The American Harmony: or Universal Psalmodist is complete, with [4], 96 pp.  The Royal Melody Complete contains pp. [3]-13, [3] (leaf with pp. [2-3] is bound in such that some text disappears into the binding, and the outer edge of the leaf is about 1” short of the adjoining leaves), 1-6; 2 leaves (the first fragmentary, blank on its recto side, and presumably numbered 7 on its printed verso; the second numbered 8 on its printed recto side, blank on its verso), pp. 9-14, fragmentary pp. 1-2 (music), pp. 1-96 (music; complete leaf with pp. 1-2 of music supplied from another copy); therefore, The Royal Melody Complete lacks 1st pp. [1-2] (t.p. + blank verso) + 2nd pp. [15-16] (index + advertisement for M’Alpine).  With reference to Table I in ASMI, pp. 118-119, The Royal Melody Complete’s music is consistent with Content I on pp. 1-39 and consistent with Content IV[-VII] on pp. 81-96, suggesting that this is a composite copy.  Arguing for this being an issue of The Royal Melody Complete and not an issue of The American Harmony: or, Royal Melody Complete is the presence both of Tans’ur’s dedication on p. [3] and of the 2 leaves of engraved rudiments.  The “Advertisement” on p. [2] of The American Harmony: or Universal Psalmodist is dated “Newbury-Port, January 5th, 1769,” and the sample error in this vol.’s index given on pp. 124-125 of ASMI (Barnet listed in the index as on p. 44, and actually printed on p. 54) is present.	inscriptions: inside front cover, “Stillman / Wethers[field?—obscured by 
 		pasted-on label]; p. [3], “Red’d [from?] m[?] / the Sum of 18[S?, 
 		abbreviation of shillings?] / [tor.?] Timothy O(lcott) to be pa[id?]; 2nd 
@@ -523,8 +533,8 @@ Source: 21
 Author: Belcher, S[upply].  
 Title: The Harmony of Maine
 Call number: M 1495 .B42 H4 1794
-Description: .  Boston: Isaiah Thomas and Ebenezer T. Andrews, 1794.  Lacks pp. [3]-6, 11-14, 99-102.	inscription: inside front cover, “Christopher Salisbury” (pencil)
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: inside front cover, “Christopher Salisbury” (pencil)
+Description: .  Boston: Isaiah Thomas and Ebenezer T. Andrews, 1794.  Lacks pp. [3]-6, 11-14, 99-102.	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
 
@@ -550,6 +560,7 @@ Source: 22
 Author: Belknap, Daniel.  
 Title: The Evangelical Harmony
 Call number: Special M 2116 .B45 E8
+Inscription: null
 Description: .  Boston: Isaiah Thomas and Ebenezer T. Andrews, for the author, 1800.  79, [1] pp.  Complete, though lacking covers.	inscriptions: verso side of folded leaf pasted to preliminary leaf, “Ezekiel 
 		[H?]udley / Bradford”; preliminary leaf recto, “David Bryant / Book           		Boston / 1800”; t. p., “David Bryant / Book / Boston”
 	label with name + address of Charles T. Wells pasted to p. [ii]
@@ -561,6 +572,7 @@ Source: 23
 Author: [Belknap, Daniel.  
 Title: The Evangelical Harmony
 Call number: Special M 2116 .B45 E8 c.2
+Inscription: null
 Description: .  Boston: Isaiah Thomas and Ebenezer T. Andrews, for the author, 1800.]  Lacks pp. [i-ii].  	no inscriptions
 	no MS. music
 	wallpaper (?) used to line inside front + back covers
@@ -572,6 +584,7 @@ Source: 24
 Author: Belknap, Daniel.  
 Title: The Harmonist’s Companion.
 Call number: M 2116 .B45 H3 1797
+Inscription: null
 Description:   Boston: Isaiah Thomas and Ebenezer T. Andrews, 1797.  31, [1] pp.  Complete.	inscriptions: preliminary leaf recto, “December 1st 1797 / James Pierce,” 
 		“Charles T. Wells / Hartford / 1905          Conn”
 	bookplate of Charles T. Wells pasted inside front cover
@@ -584,6 +597,7 @@ Source: 25
 Author: Belknap, Daniel.  
 Title: The Middlesex Collection of Sacred Harmony.
 Call number: M 2116 .B45 M5
+Inscription: null
 Description:   Boston: Isaiah Thomas and Ebenezer T. Andrews, for the author, 1802.  111, [1] pp.  Complete.	no inscriptions
 	no MS. music
 
@@ -594,6 +608,7 @@ Source: 26
 Author: Belknap, Daniel.  
 Title: The Village Compilation of Sacred Musick
 Call number: M 2116 .B45 V5
+Inscription: null
 Description: .  Boston: J. T. Buckingham, for the author, 1806.  151, [1] pp.  Complete.  printed “ERRATA” slip pasted inside back cover.	inscriptions: preliminary leaf recto, “Sumner Stone” (pencil), “Mary W. Stone 			/ Anna J[.] Stone Brackett.  1901”
 	no MS. music
 
@@ -604,6 +619,7 @@ Source: 27
 Author: [Benham, Asahel.  
 Title: Federal Harmony
 Call number: Special M 2116 .B46 F26 1793 c.1
+Inscription: null
 Description: .  2nd or 3rd ed., 1792 or [ca. 1793].]  Lacks all before p. 7; thus, 7-10, [9]-14, [2], 15-58 pp.	inscriptions: inside front cover, “April / 26 / 1793. /Bought of Mr. Wood the 
 		Singin[g] Master” [photo], “[obscured by pasted-on label]eth 
 		[C?....t…][illegible] / Long Island” (pencil); inside back cover, “William
@@ -694,6 +710,7 @@ Source: 28
 Author: [Benham, Asahel.  
 Title: Federal Harmony
 Call number: Special M 2116 .B46 F26 1793 c.2
+Inscription: null
 Description: .  4th, 5th, or 6th ed., [1794?], [1795?], or [1796?].]  Lacks all before p. 7; thus, 7-10, [9]-16, 15-58 pp. 	inscriptions: added leaf [2] recto, “George Hart,s Book” (above poem: “This 
 		book is new and purc[h]asd dear / But this in one argument is clear / 
 		If I have borrowed of a friend / I freely to the [sa?]me will lend / But 
@@ -782,6 +799,7 @@ Source: 29
 Author: Benham, Asahel.  
 Title: Social Harmony
 Call number: M 2116 .B46 S6 1799
+Inscription: null
 Description: .  Preface (p. [3]) dated Wallingford (Conn.), 6 September 1799, so this is ASMI 96.  56 pp.  Complete.	inscriptions: preliminary leaf recto, “JUSTUS KIMBERLY’S / SINGING BOOK / 
 		Northford       Feb, 17th,”; 4 other Justus Kimberly ownership 
 		inscriptions in other locations [photo]
@@ -812,6 +830,7 @@ Source: 30
 Author: Benjamin, Jonathan.  
 Title: Harmonia Cœlestis: A Collection of Church Music
 Call number: M 2116 .H267
+Inscription: null
 Description: .  Northampton, Mass.: Andrew Wright, for Oliver D. and I. Cooke, 1799.  79, [1] pp.  Complete.	inscriptions: t. p., “Pemberton       &        Crocker” (pencil)
 	printed poem “A HYMN.” (lines 1-2: “BEHOLD! The circling seasons bring /			Creation’s morn, reviving Spring”) pasted to recto of additional leaf
 
@@ -958,6 +977,7 @@ Source: 31
 Author: 
 Title: 
 Call number: Music MS 28
+Inscription: null
 Description: “Berlin [copybook fragment]” (Watkinson Library designation).  10 unnumbered leaves, without covers.	no inscriptions
 	all MS. music entries are sacred tunes in 4-voice settings, melody in tenor:
 
@@ -994,6 +1014,7 @@ Source: 32
 Author: Billings, William.  
 Title: The Continental Harmony
 Call number: M 2023 .B55 C6 1794
+Inscription: null
 Description: .  Boston: Isaiah Thomas and Ebenezer T. Andrews, 1794.  [1], 199, [1] pp. (index on verso of p. 199).  Complete.  Bound with: Mann, Elias.  The Northampton Collection of Sacred Harmony.  [2nd ed.]  Northampton, Mass.: Andrew Wright, for Daniel Wright, 1802.  135, [1] pp.  Complete.  ASMI (no. 375) reports that p. no. 108 was not struck in Mann’s tunebook, but it shows clearly here, as does the 9 of p. no. 89.	inscriptions: Billings t. p., “Jos: May’s”; Mann t. p., “Jos: May’s / 1804”
 	bookplate of Charles T. Wells pasted inside front cover
 	pp. 130-135 of Mann’s tunebook are printed blank staves; MS. music on pp. 
@@ -1006,6 +1027,7 @@ Source: 33
 Author: Billings, William.  
 Title: The New-England Psalm-Singer: or, American Chorister
 Call number: Special M 2116 .B59 N4 1770
+Inscription: null
 Description: .  Boston: Edes and Gill, [1770].  Frontispiece, 10, [1], 8, [1], 9-22, 109, [2] pp.  Complete, with original covers.  	inscriptions: recto of leaf with frontispiece on verso, “John Hurd” (pencil);  
 		t. p., “John Hurd junr. 1776”
 	bookplate of Charles T. Wells pasted inside front cover
@@ -1018,8 +1040,8 @@ Source: 34
 Author: Billings, William.  
 Title: The New-England Psalm-Singer: or, American Chorister
 Call number: Special M 2116 .B59 N4 1770 c.2
-Description: .  Boston: Edes and Gill, [1770].  All complete and as described in ASMI (no. 106) through p. 88, then: pp. 105-106, 97-98, 103-104, 107-108; so this copy lacks pp. 89-96, 99-102, 109 and the final 2 unnumbered pp.  Not in original covers.	inscription: preliminary leaf recto, “Charles T Wells / Hartford / Conn / 
-		1903”
+Inscription: preliminary leaf recto, “Charles T Wells / Hartford / Conn / 
+Description: .  Boston: Edes and Gill, [1770].  All complete and as described in ASMI (no. 106) through p. 88, then: pp. 105-106, 97-98, 103-104, 107-108; so this copy lacks pp. 89-96, 99-102, 109 and the final 2 unnumbered pp.  Not in original covers.		1903”
 	front cover has pasted-on label reading “POWER.”
 	no MS. music
 
@@ -1030,6 +1052,7 @@ Source: 35
 Author: Billings, William.  
 Title: The Psalm-Singer’s Amusement
 Call number: M 1999 .B5 P8
+Inscription: null
 Description: .  Boston, 1781.  103, [1] pp.  Complete.	no inscriptions
 	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music	
@@ -1041,6 +1064,7 @@ Source: 36
 Author: [Billings, William.  
 Title: The Singing Master’s Assistant, or Key to Practical Music
 Call number: M 2116 .B59 S4 1778
+Inscription: null
 Description: .  Boston: Draper and Folsom.]  Lacks title page, so could be either the corrected issue of the 1st ed. (1778; ASMI 109A), the 2nd ed. ([1779-80]; ASMI 110), or the 3rd ed. (1781; ASMI 111); but note that a pencil annotation inside the back cover reads “1781.”  Lacks first pp. [1-2], 7-8.	inscriptions: p. [3], “Willard. &c.     No. 2.              Moses [Gills Book?]” (Google 
 		“William Billings” “Moses Gill” for links between Billings + Gill); p. 5, 
 		“John [illegible]” (pencil)
@@ -1053,6 +1077,7 @@ Source: 37
 Author: Billings, William.  
 Title: The Singing Master’s Assistant, or Key to Practical Musick
 Call number: M 2116 .B59 S4 1781
+Inscription: null
 Description: .  4th ed.  [Boston:] E. Russell, [1786-89].  15, [1], 104 pp.  Complete, though lacking covers, and pages are trimmed very close with some loss of text.	no inscriptions
 	no MS. music
 
@@ -1063,6 +1088,7 @@ Source: 38
 Author: Billings, William.  
 Title: The Suffolk Harmony
 Call number: M 2116 .B59 S8 1786
+Inscription: null
 Description: .  Boston: J. Norman, for the author, [1786] (page trimmed so that date is lacking).  [2], 56 pp.  Complete, though lacking covers, and pages are trimmed very close with some loss of text.  Bound with: Billings’s An Anthem for Easter (also includes Billings’s Crucifiction and Resurrection; 8 pp.), An Anthem. Psalm 127 (8 pp.), An Anthem. Psalm 47. For thanksgiving ([4] pp.), The Bird ([2] pp.), and The Lark ([2] pp.).  	no inscriptions
 	no MS. music
 
@@ -1073,8 +1099,8 @@ Source: 39
 Author: Blanchard, Amos.  
 Title: The American Musical Primer
 Call number: 783.9 B63
-Description: .  Exeter, N. H.: Norris and Sawyer, 1808.  Lacks pp. 7-8; pp. 9-10 fragmentary.  	inscription: inside front cover, “[L]ibrary / [?] / [Charles T.] Wells” (mostly 
-		covered by pasted-on bookplate)
+Inscription: inside front cover, “[L]ibrary / [?] / [Charles T.] Wells” (mostly 
+Description: .  Exeter, N. H.: Norris and Sawyer, 1808.  Lacks pp. 7-8; pp. 9-10 fragmentary.  		covered by pasted-on bookplate)
 	bookplates of Kent Library, Suffield, Conn. + Charles T. Wells pasted inside 			front cover
 	no MS. music 	
 
@@ -1085,8 +1111,8 @@ Source: 40
 Author: Boston: Handel and Haydn Society.  
 Title: Old Colony Collection of Anthems…Vol. II.
 Call number: Quarto M 2040 .O56 1818 v.2
-Description:   Boston: James Loring, [1818?].  [2], 194 pp.  Appears to be complete.	inscription: inside front cover, “N. S. Wheaton”	
-	printed bookplate inside front cover, dated 1862, honors Nathaniel Sheldon 
+Inscription: inside front cover, “N. S. Wheaton”	
+Description:   Boston: James Loring, [1818?].  [2], 194 pp.  Appears to be complete.	printed bookplate inside front cover, dated 1862, honors Nathaniel Sheldon 
 		Wheaton, 2nd President of Trinity College; this same bookplate 
 		appears inside the front cover of Vol. I (inventoried here under Old 
 		Colony Musical Society and Handel and Haydn Society [Boston]; see 
@@ -1104,6 +1130,7 @@ Source: 41
 Author: 
 Title: The Boston Collection of Sacred and Devotional Hymns
 Call number: 783.9 B74
+Inscription: null
 Description: .  Boston: Manning and Loring, 1808.  Complete.	(this one book found + examined for me by student assistant at the Library)
 	inscriptions: t. p., “Sophroni[e?]; inside back cover [check location], “John 
 		Locke   Seabrook   181[5? 3?]”
@@ -1116,6 +1143,7 @@ Source: 42
 Author: Brown, Barthlomew, and others.  
 Title: Columbian and European Harmony: or, Bridgewater Collection of Sacred Music
 Call number: 783.95 B87
+Inscription: null
 Description: .  Boston: Isaiah Thomas and Ebenezer T. Andrews, 1802.  159, [1] pp.  Complete.	inscriptions: front cover, “Jas: Gregory. 1802”; t. p., “[J?] [?] Gregory’s” (mostly 
 		scratched out)
 	bookplate of Charles T. Wells pasted inside front cover
@@ -1128,6 +1156,7 @@ Source: 43
 Author: [Brown, Bartholomew, and others?].  
 Title: Templi Carmina. Songs of the Temple, or Bridgewater Collection of Sacred Music.
 Call number: M 2116 .B885 T4 1820
+Inscription: null
 Description:   8th ed.  Boston: J. H. A. Frost, for Richardson and Lord, 1820.  [i]-xvi, 17-240, [2], 241-321, [3] pp.  Appears to be complete.	inscriptions: inside front cover, “Pauls / No 1,” “F L. Gleason” (pencil)
 	no MS. music
 
@@ -1138,8 +1167,8 @@ Source: 44
 Author: [Brownson, Oliver.  
 Title: A New Collection of Sacred Harmony
 Call number: M 2116 .B7 N4
-Description: .]  T.p. leaf (pp. [1-2]) missing, so it can’t be determined whether this is ASMI 130 or 130A; both issues were printed at Simsbury, Conn. by Brownson, ASMI 130 in 1797 and ASMI 130A sometime after 1797.  Otherwise complete, with pp. 3-56.	inscription: inside back cover, “Mer[r?]iden” (Connecticut town name; also 
-		the title of a tune on p. 33 of this book) 
+Inscription: inside back cover, “Mer[r?]iden” (Connecticut town name; also 
+Description: .]  T.p. leaf (pp. [1-2]) missing, so it can’t be determined whether this is ASMI 130 or 130A; both issues were printed at Simsbury, Conn. by Brownson, ASMI 130 in 1797 and ASMI 130A sometime after 1797.  Otherwise complete, with pp. 3-56.		the title of a tune on p. 33 of this book) 
 	printed label pasted inside front cover: “Given to the / Watkinson Library / 
 		Hartford / through the generosity of / Sydney Stanley, / who died 
 		October 18th 1878, / and by will created a fund for this purpose. / 
@@ -1299,6 +1328,7 @@ Source: 45
 Author: Bull, Amos.  
 Title: The Responsary
 Call number: Special M 1999 .B9 R4
+Inscription: null
 Description: .  Worcester, Mass.: Isaiah Thomas, for the editor in Hartford, Conn., 1795.  100 pp.  Complete.  	inscriptions: inside front cover: “Margaret Lawrence”; t. p., “A[?] Pit[?]” 
 		(pencil?)
 	MS. music + texts on 4 leaves of varying sizes bound in after printed portion, 
@@ -1509,8 +1539,8 @@ Source: 46
 Author: [Bull, Amos.  
 Title: The Responsary.
 Call number: M 2117 .P8 1800 
-Description:   Worcester, Mass.: Isaiah Thomas, for the editor in Hartford, Conn., 1795.]  Lacks all before p. 11.	inscription: inside front cover, “Merriam Williams Property”
-	MS. bass parts inside both covers + on additional leaves at end of book:
+Inscription: inside front cover, “Merriam Williams Property”
+Description:   Worcester, Mass.: Isaiah Thomas, for the editor in Hartford, Conn., 1795.]  Lacks all before p. 11.	MS. bass parts inside both covers + on additional leaves at end of book:
 		inside front cover: Flanders, E, 1|1D5|U12|3-2-1D5|U1
 		inside front cover: Denmark [by Madan], D, 1|13|1D6|4#4|5, six 
 			internal text phrases included, probably to orient the singer
@@ -1563,6 +1593,7 @@ Source: 47
 Author: 
 Title: Church Music: selected by a committee of the First Ecclesiastical Society in Hartford
 Call number: M 2116 .H3
+Inscription: null
 Description: .  Hartford: George Goodwin and Sons (New London, Conn.: printed by Samuel Green), 1817.  Lacks pp. 7-8; otherwise apparently complete.	inscriptions: inside (newer) front cover, “Charles T Wells / Hartford / Conn”; 
 		inside original front cover, “1902” [next to Charles T. Wells’s name + 
 		address stamp], “[J J Stones?] (pencil); preliminary leaf verso, “[? To 
@@ -1808,8 +1839,8 @@ Source: 48
 Author: 
 Title: Church Music: selected by a committee of the First Ecclesiastical Society in Hartford
 Call number: M 2116 .H3 cop.2
-Description: .  Hartford: George Goodwin and Sons (New London, Conn.: printed by Samuel Green), 1817.  40 pp.  Appears to be complete, though last 2 leaves have been chewed with loss of text.	inscription: preliminary leaf recto, “Apollos Hillyer / East Granby / Conn[.]”; 
-		last additional leaf verso, “Apollos Hillyer”
+Inscription: preliminary leaf recto, “Apollos Hillyer / East Granby / Conn[.]”; 
+Description: .  Hartford: George Goodwin and Sons (New London, Conn.: printed by Samuel Green), 1817.  40 pp.  Appears to be complete, though last 2 leaves have been chewed with loss of text.		last additional leaf verso, “Apollos Hillyer”
 	4 leaves w/ printed staff lines bound in at end of printed music; 1st 3 of these 
 		leaves contain MS. music (continuing numbering from printed portion 
 		of the book, a. l. [1] verso is numbered 42, a. l. [2] recto is numbered 
@@ -1850,8 +1881,8 @@ Source: 49
 Author: 
 Title: The Collection of Psalm and Hymn Tunes sung at the Chapel of the Lock Hospital
 Call number: Quarto M 2116 .M23 C6 1809
-Description: .  Boston: West and Blake, and Manning and Loring, [1809].  198, [2] pp. (with blank leaf, unpaged, between p. viii + p. 9).  Complete. 	inscription: t. p., “Jona. Barnes Jr.”
-	single unpaged leaf of MS. music (originally folded in half, almost torn along 
+Inscription: t. p., “Jona. Barnes Jr.”
+Description: .  Boston: West and Blake, and Manning and Loring, [1809].  198, [2] pp. (with blank leaf, unpaged, between p. viii + p. 9).  Complete. 	single unpaged leaf of MS. music (originally folded in half, almost torn along 
 		fold ) laid inside front cover
 
 
@@ -1861,8 +1892,8 @@ Source: 50
 Author: 
 Title: The Columbian Harp, a Collection of Sacred Vocal and Instrumental Music
 Call number: M 2062 .C64 1812
-Description: .  “By an American.”  Northampton, Mass.: Wright and Ware, for the author, 1812.  80 pp.  Appears to be complete.	inscription: “Charles T. Wells / With regards from / Frederick W. Skiff / 
-		Hartford, Conn, Dec 21 1900.”
+Inscription: “Charles T. Wells / With regards from / Frederick W. Skiff / 
+Description: .  “By an American.”  Northampton, Mass.: Wright and Ware, for the author, 1812.  80 pp.  Appears to be complete.		Hartford, Conn, Dec 21 1900.”
 	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
@@ -1876,8 +1907,8 @@ Source: 51
 Author: Cooper, William.  
 Title: The Beauties of Church Music; and The Sure Guide to the Art of Singing
 Call number: M 2082 .C66 B43 1804z
-Description: .  Boston: Manning and Loring, [1804].  199, [1] pp.  Complete.	inscription: t. p., “Enoch Peirce”
-	no MS. music
+Inscription: t. p., “Enoch Peirce”
+Description: .  Boston: Manning and Loring, [1804].  199, [1] pp.  Complete.	no MS. music
 
 
 ----------------end of source-------------
@@ -1886,6 +1917,7 @@ Source: 52
 Author: 
 Title: David’s Harp
 Call number: 783.95 D25
+Inscription: null
 Description: .  2nd ed.  New London, Conn.: Samuel Green, 1818.  38, 12 pp. (caption heading on 2nd p. [1]: “APPENDIX.”).  Appears to be complete; but see item below, inventory no. 53.	no inscriptions
 	no MS. music
 
@@ -1972,6 +2004,7 @@ Source: 53
 Author: 
 Title: David’s Harp
 Call number: 783.95 D25b
+Inscription: null
 Description: .  2nd ed.  New London, Conn.: Samuel Green, 1818.  38 pp., [8] leaves with printed staves + clefs.  Appears to be a complete variant issue of the 2nd ed. (see item above, inventory no. 52). 	inscriptions: 1st preliminary leaf recto, “S [P? or S?] Bishops”; t. p., “Al[ex?] 
 		Pit[kin?]” (pencil)
 
@@ -1985,6 +2018,7 @@ Source: 54
 Author: Dyer, Samuel.  
 Title: A New Selection of Sacred Music
 Call number: M 2117 .D99 N4 1820
+Inscription: null
 Description: .  2nd ed.  Baltimore: J. Robinson, for the author, [1819 or 1820].  xx pp., tunes numbered 1-244.  Appears to be complete.	inscriptions: p. [ii], “Luther Parmelee[’]s / Book / Saybrook”; inside back 
 		cover, “Music is Sacred”
 	printed label reading “Presented by / Geo. L. Parmele” pasted inside front 
@@ -2001,6 +2035,7 @@ Source: 55
 Author: [Elliot, Moses].  
 Title: The Psalms of David
 Call number: M 2116 .W35 P6
+Inscription: null
 Description: …by Isaac Watts, D. D.  Exeter, N. H.: J. J. Williams, 1818.  Bound in tandem with: A Valuable Collection of Sacred Musick, adapted to the various metres in Watts.  Exeter: J. J. Williams, 1818.  Both titles appear to be complete: The Psalms of David with 250, [6] pp. and A Valuable Collection with [2], 251, [3] pp. 	2 titles bound dutch-door style, one above the other inside the same covers; 
 		they can be paged through independently, permitting any tune to be 
 		matched with any text of the appropriate meter 
@@ -2016,6 +2051,7 @@ Source: 56
 Author: 
 Title: The Federal Harmony
 Call number: M 2116 .F288 1792
+Inscription: null
 Description: .  4th, i.e., “6th” ed. (see ASMI, pp. 265-66, 269).  Boston: John Norman, 1792.  Pp. 17-18 fragmentary; otherwise complete, with 130 pp. 	inscriptions: preliminary leaf recto, “Jabez [Tr?]ue’s Book”; preliminary leaf 
 		verso, “Nancy Little her Book Bought / for her December the 24th 
 		1793”
@@ -2029,6 +2065,7 @@ Source: 57
 Author: 
 Title: The First Church Collection of Sacred Musick.
 Call number: M 2116 .F52 1815 
+Inscription: null
 Description:   2nd ed.  Boston: Thomas and Andrews, for the First Church Singing Society, [1806] (date from end of preface, p. 4; note differences in imprint from ASMI nos. 123, 123A).  135, [1] pp.  Complete. 	no inscriptions
 	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
@@ -2040,6 +2077,7 @@ Source: 58
 Author: Forbush, Abijah.  
 Title: The Psalmodist’s Assistant
 Call number: M 2116 .F6 P8 1806
+Inscription: null
 Description: .  2nd ed.  Boston: Manning and Loring, 1806.  107, [1] pp.  Complete.	bookplates of Kent Library, Suffield, Conn. + Charles T. Wells pasted inside 			front cover 
 	inscriptions: inside front cover, on Kent Library bookplate, after printed 			word “Added,” “Oct. 15. 1903”; inside front cover, partly obscured by 			Charles T. Wells bookplate, “Bought of Kent Library / [Sept?] 7th 1904 			/ [C]harles T Wells / [Hartfor?]d / Conn”
 	no MS. music
@@ -2058,8 +2096,8 @@ Source: 59
 Author: French, Jacob.  
 Title: Harmony of Harmony
 Call number: M 1999 .F7 H37
-Description: .  Northampton, Mass.: Andrew Wright, for the compiler, 1802.  Complete.  	inscription: preliminary leaf recto, “Gardner Lewis”
-	no MS. music
+Inscription: preliminary leaf recto, “Gardner Lewis”
+Description: .  Northampton, Mass.: Andrew Wright, for the compiler, 1802.  Complete.  	no MS. music
 
 
 ----------------end of source-------------
@@ -2068,6 +2106,7 @@ Source: 60
 Author: French, Jacob.  
 Title: The Psalmodist’s Companion
 Call number: M 2116 .F74 1793
+Inscription: null
 Description: .  Worcester, Mass.: Leonard Worcester, for Isaiah Thomas, 1793.  100 pp.  Complete.  ASMI, no. 196 (p. 279) notes “p. 45 wrongly numbered 54”; in this copy, p. 31 appears to have been numbered 32 (corrected to 31 in ink), and p. 58 was unnumbered (no. added in ink).	inscriptions: slip of paper pasted to front cover, “Nathaniel R[oo?]t Jr / 			Coventry / 1816       Conn”; t. p., “William Dorrance[’]s / Book,” 
 		“Chester Looms’s B[ook?],” also the p. nos. of 5 tunes (3 of these by 			Lewis Edson Sr.), as French’s tunebook lacks an index
 	printed label pasted inside front cover: “Given to the / Watkinson Library / 			Hartford / through the generosity of / Sydney Stanley, / who died
@@ -2458,6 +2497,7 @@ Source: 61
 Author: 
 Title: A Gamut, or Scale of Music
 Call number: M 2116 .G14
+Inscription: null
 Description: .  Hartford: Oliver D. Cooke (Northampton, Mass.: printed by Graves and Clap), 1807.  32 pp.  Complete.	inscriptions: preliminary leaf recto, “Ursula Humphreys / Property Dec 18 AD 		1810”; “[illegible name] / April 16 . 83” (pencil)
 	7 leaves with printed staff lines are bound in after printed music; these 
 		additional leaves contain music in MS.
@@ -2795,6 +2835,7 @@ Source: 62
 Author: [
 Title: A Gamut, or Scale of Music
 Call number: M 2116 .G14 cop.2
+Inscription: null
 Description: .  Hartford: Oliver D. Cooke (Northampton, Mass.: printed by Graves and Clap), 1807]; lacks first leaf with pp. [i]-ii; title etc. supplied by Watkinson librarian; ca. 1/8 of second leaf with pp. iii-iv also lacking; then pp. v-32 complete.	inscriptions: inside front cover, “Jemima Price”; inside back cover, “Jemima 
 		Price her Book,” “Sally Price her Book” (partly rubbed out?)
 	8 leaves with printed staff lines are bound in after printed music; these 
@@ -2943,6 +2984,7 @@ Source: 63
 Author: 
 Title: A Gamut, or Scale of Music
 Call number: M 2116 .G15
+Inscription: null
 Description: .  Hartford: Oliver D. Cooke (New London, Conn.: printed by Samuel Green), 1811.  32 pp.  Complete.	inscriptions: preliminary leaf recto, “Harriet Olmsted”; verso, “F. L Gleason” 
 		(pencil)
 	MS. music on 2 additional leaves bound in after printed portion; appears to 
@@ -3371,6 +3413,7 @@ Source: 64
 Author: 
 Title: A Gamut, or Scale of Music
 Call number: M 2116 .G16
+Inscription: null
 Description: .  Hartford: Oliver D. Cooke (New London, Conn.: printed by Samuel Green), 1814.  32 pp.  Complete.	inscriptions: inside front cover, “Treble”; preliminary leaf recto, “Anna 			Porter’s / Property”; “MS. adds.   a new set up      A. H. Pitkin’s copy” 			(pencil); a. l. [13] verso, “Chester Loomis”
 	8 leaves with printed staff lines bound in after printed portion of book; MS. 			music on these leaves, on 5 leaves with hand-drawn staff lines sewn in 		after the first 8, and on a single smaller leaf laid inside back cover; all 			these leaves are numbered here a. l. [1-14] 
 	MS. music appears to be mainly treble parts, with one part labeled “Tenor” +
@@ -4059,8 +4102,8 @@ Source: 65
 Author: 
 Title: A Gamut, or Scale of Music
 Call number: M 2116 .G19
-Description: .  Hartford: Cooke and Hale (New London, Conn.: printed by Samuel Green), 1816.  32 pp. Complete.	inscription: preliminary leaf recto, “Nelly Strickland’s / Book / 2d Treble”
-	19 leaves, 17 with MS. music, bound in (first 8) or later sewn in (remaining 			11, smaller, various sizes) after printed portion 
+Inscription: preliminary leaf recto, “Nelly Strickland’s / Book / 2d Treble”
+Description: .  Hartford: Cooke and Hale (New London, Conn.: printed by Samuel Green), 1816.  32 pp. Complete.	19 leaves, 17 with MS. music, bound in (first 8) or later sewn in (remaining 			11, smaller, various sizes) after printed portion 
 
 
 ----------------end of source-------------
@@ -4805,6 +4848,7 @@ Source: 66
 Author: Gillet, Rodolphas.  MS. music book.  Undated, but repertory suggests the MS. was compiled ca. 1805; certainly no earlier than 1803, when Stephen Jenks + Elijah Griswold’s 
 Title: The American Compiler of Sacred Harmony
 Call number: Music MS 33
+Inscription: null
 Description: , which contains first (and sometimes the only) printings for some of the tunes here, was published.  Another source for this copyist was Timothy Swan’s New England Harmony (1801), which contains 13 of the tunes found here (many in their first printings).  94 pp., the first 21 numbered by the original owner (pp. 7-8 + 17-18 missing), pp. [69-74] fragmentary + with no MS. music, pp. [87-88] (containing Southwic[k?], [Upton], Mount Vernon) fragmentary + loose (laid in, in mylar sleeve).  Several leaves are missing after p. 21, but the numbers assigned here continue sequentially.  	inscriptions: p. [70], “Rodolphas Gillet   of    Granly / Granby  January / 
 		Rodolphas Gillet   Granby”; inside back cover, “Rodolpas Gillet / 
 		Rodolphas”
@@ -4820,6 +4864,7 @@ Source: 67
 Author: [Gram, Hans, Samuel Holyoke, and Oliver Holden.]  
 Title: The Massachusetts Compiler of Theoretical and Practical Elements of Sacred Vocal Music
 Call number: Quarto M 2116 .M382 1795
+Inscription: null
 Description: .  Boston: Isaiah Thomas and Ebenezer T. Andrews, 1795.  Lacks pp. [1]-8 (music).	inscriptions: front cover, “[O?]. B[r?]ay’s,” “[?]yms --- his Book / Symms --- 
 		his Book”
 	bookplate of Charles T. Wells pasted inside front cover
@@ -4832,6 +4877,7 @@ Source: 68
 Author: [Graupner, Gottlieb.]  
 Title: The Monitor, or Celestial Melody
 Call number: Quarto M 2117 .M66 1806
+Inscription: null
 Description: .  Boston: G. Graupner, [1806].  Lacks preliminary leaf [2] + covers; otherwise complete.	no inscriptions
 	no MS. music
 
@@ -4842,6 +4888,7 @@ Source: 69
 Author: Griswold, Elijah, Stephen Jenks, and John C. Frisbie.  
 Title: The Hartford Collection of Sacred Harmony
 Call number: M 1999 .H3
+Inscription: null
 Description: .  Hartford: Lincoln and Gleason, 1807.  60 pp.  Complete.	inscriptions: inside front cover, “[J?]. C. Hammond / from M. E. B.”; t. p., 
 		“Alfred Owen”; p. 30, next to printed tunes New-Durham by Austin + 
 		Mortality by Smith, “Father’s + Mother’s tunes – they sang with / 
@@ -5043,6 +5090,7 @@ Source: 70
 Author: [Griswold, Elijah, and Thomas Skinner.  
 Title: Connecticut Harmony
 Call number: Special BS 1440 .G68
+Inscription: null
 Description: .  ca. 1798.]  Lacks all before p. 11, also pp. 43-46; pp. 35-38 fragmentary.  This is the later issue of the tunebook (“[2d ed., ca. 1798]”—ASMI 231), because pp. in the first ed. that only carried blank staves now have printed music.	inscriptions: inside back cover, “L[o?]nd Best Pins and Chapel Need[les?],” 
 		“Book / Benja / Benj [?] [Cooke?]”
 	MS. music, almost all bass parts, is on printed staves found on p. 62 + four 
@@ -5055,8 +5103,8 @@ Source: 71
 Author: 
 Title: The Hallowell Collection of Sacred Music
 Call number: M 2116 .H19
-Description: .  Hallowell, Me.: E. Goodale, 1817.  [4], 197, [3] pp.  Appears to be complete.	inscription: 2nd preliminary leaf recto, “From Elizabeth Gilman / to / Miss 
-		Catherine Downer / Septr. 20th 1818—”
+Inscription: 2nd preliminary leaf recto, “From Elizabeth Gilman / to / Miss 
+Description: .  Hallowell, Me.: E. Goodale, 1817.  [4], 197, [3] pp.  Appears to be complete.		Catherine Downer / Septr. 20th 1818—”
 	bookplate of Charles T. Wells pasted inside front cover; also, Wells’s stamp 
 		on 1st preliminary leaf recto: “CHARLES T. WELLS, / 17 SPRING 
 		STREET, / HARTFORD, CONN.”
@@ -5075,6 +5123,7 @@ Source: 72
 Author: 
 Title: Harmonia Sacra, or A Compilation of Psalm and Hymn Tunes
 Call number: Quarto M 2116 .H268
+Inscription: null
 Description: .  Andover, Mass.: Flagg and Gould, 1816.  243 pp.  Appears to be complete.	no inscriptions
 	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
@@ -5086,6 +5135,7 @@ Source: 73
 Author: [Hastings, Thomas].  
 Title: Musica Sacra: A Collection of Psalm Tunes, Hymns and Set Pieces.
 Call number: M 2116 .M975 1816b
+Inscription: null
 Description:   “Compiled at the Request, and Published under the Patronage of the Oneida Musical Society.”  2nd ed.  Utica, N. Y.: Seward and Williams, 1816.  184 pp.  Appears to be complete; between p. 184 (last p. of music) + the single unnumbered page carrying the index are 2 additional sections of music: Select Chants, and Psalm Tunes, for the Episcopal Church (16 pp.), and 20 pp. containing the following pieces: The Christian Sabbath: A Sacred Cantata; Nativity, an Anthem; Portsea; and Pressburgh. A Hymn.  Index lists neither the pieces in these 2 shorter sections of music nor the Hallelujah Chorus on pp. 177-184 of the first, main section of music.	inscriptions: preliminary leaf recto, “S. Crosby / 1820”; p. 5 of Select Chants, 
 		and Psalm Tunes, “Helen M Cowles” (pencil); verso of unnumbered 
 		Index p., “Thomas Cowles” (pencil); various other first names appear 
@@ -5099,6 +5149,7 @@ Source: 74
 Author: Hastings, Thomas, and Solomon Warriner.  
 Title: Musica Sacra: or Springfield and Utica Collections United
 Call number: M 2116 .H35 M11
+Inscription: null
 Description: .  Rev. ed.  Utica: William Williams, 1818.  [2], 273, [3] pp. Appears to be complete.  p. iv numbered vi, p. 16 numbered 61, p. 48 numbered 47.	inscriptions: 1st preliminary leaf recto, “George Plummer / 1818”; “N. H. Allen 
 		/ Apr 1900” (pencil); “Gift N. H. Allen, Sept. 9, 1913.” (pencil)
 	no MS. music
@@ -5126,8 +5177,8 @@ Source: 75
 Author: Hastings, Thomas, and Solomon Warriner.  
 Title: Musica Sacra: or Springfield and Utica Collections United
 Call number: M 2116 .H35 M22a
-Description: .  2nd rev. ed.  Utica: William Williams, 1819.  277, [3] pp.  Appears to be complete.	inscription: preliminary leaf recto, “[Elector? Chester?] P[??]sons”
-	bookplate of Charles T. Wells pasted to additional leaf recto
+Inscription: preliminary leaf recto, “[Elector? Chester?] P[??]sons”
+Description: .  2nd rev. ed.  Utica: William Williams, 1819.  277, [3] pp.  Appears to be complete.	bookplate of Charles T. Wells pasted to additional leaf recto
 
 
 ----------------end of source-------------
@@ -5136,6 +5187,7 @@ Source: 76
 Author: Hewitt, J[ames].  
 Title: Harmonia Sacra
 Call number: M 2116 .H4 1812
+Inscription: null
 Description: .  Boston: Joseph T. Buckingham, 1812.  120 pp.  Appears to be complete.	no inscriptions
 	no MS. music
 
@@ -5146,6 +5198,7 @@ Source: 77
 Author: Hill, Uri K.  
 Title: The Sacred Minstrel. No. 1
 Call number: M 2116 .H5 S3
+Inscription: null
 Description: .  Boston: Manning and Loring, 1806.  71, [1] pp.  Complete, though lacking covers and disbound. 	no inscriptions
 	no MS. music
 
@@ -5156,6 +5209,7 @@ Source: 78
 Author: Hill, Uri K.  
 Title: Solfeggio Americano[:] A System of Singing for the American Conservatorio with a variety of Psalmody suited to every metre.
 Call number: M 2116 .H5 S6
+Inscription: null
 Description:   [New York, 1820].  96 pp.; appears to be complete.  The 6 leaves carrying pp. 73-84 are printed thus (/ between recto + verso of a leaf): pp. 73/83 upside-down, pp. 77/76, pp. 75/78, pp. 79/82, pp. 81/80, pp. 74 upside-down/84.	inscriptions: preliminary leaf recto: “Charles T. Wells / from his friend / 
 		Frederick W. T[r?]iff / Hartford, Conn.  Dec[.] 13 1900.”; t. p., “N. E. 
 		Hill.”
@@ -5169,6 +5223,7 @@ Source: 79
 Author: Hill, Uri K. 
 Title: The Vermont Harmony. Volume I.
 Call number: M 2116 .H5 V4
+Inscription: null
 Description:   Northampton, Mass.: Andrew Wright, for the compiler, 1801.  79, [1] pp.  Complete, though re-bound in modern covers.	no inscriptions
 	no MS. music
 
@@ -5685,6 +5740,7 @@ Source: 80
 Author: 
 Title: 
 Call number: Music MS 27
+Inscription: null
 Description: Hills, Catherine.  MS. music book, dated 1804.  22 unnumbered leaves; 1 or more leaves missing between leaf [11] and leaf [12].	inscriptions: inside front cover, “Catherine-Hills’ / Psalmody. / MDCCCIV. / 
 		1804.”; leaf [1] recto, “Music written – words printed / by E. Todd” (in 
 		pencil) (was E. Todd related to Rachel Todd, whose MS. music book, 
@@ -6024,6 +6080,7 @@ Source: 81
 Author: 
 Title: 
 Call number: Music MS 29
+Inscription: null
 Description: [Hills, Catherine?]  MS. music book, undated but likely copied between 1810 + 1830.  48 unnumbered leaves with printed staves; MS. music on leaves [1-13] and [47-48].  Watkinson Library identifies this as “Tune Book / Catherine Hills.”  See inventory no. 183, Rachel Todd MS. music book, which is almost identical.	no inscriptions
 	most MS. music entries are for 3 or 4 voices; if 4, “Treble,” “2d Treble,” 
 		“Tenor,” “Bass”; if 3, 2nd treble or tenor omitted; melody in treble
@@ -6039,8 +6096,8 @@ Source: 82
 Author: Holden, Oliver.  
 Title: The Union Harmony, or Universal Collection of Sacred Music…Vol. I
 Call number: M 2116 .H63 U54 1796 v.1
-Description: .  2nd edition.  Boston: Isaiah Thomas and Ebenezer T. Andrews, 1796.  Lacks pp. 57-60, 71-72, 75-76, 79-80; pp. 23-24 fragmentary (about 1/5 of the leaf survives).	inscription: inside front cover, “C     W      C”
-	no MS. music
+Inscription: inside front cover, “C     W      C”
+Description: .  2nd edition.  Boston: Isaiah Thomas and Ebenezer T. Andrews, 1796.  Lacks pp. 57-60, 71-72, 75-76, 79-80; pp. 23-24 fragmentary (about 1/5 of the leaf survives).	no MS. music
 
 
 ----------------end of source-------------
@@ -6049,6 +6106,7 @@ Source: 83
 Author: Holden, Oliver.  
 Title: The Union Harmony, or Universal Collection of Sacred Music…Vol. II.
 Call number: M 2116 .H63 U54 1796 v.2 
+Inscription: null
 Description:   Boston: Isaiah Thomas and Ebenezer T. Andrews, 1793.  Pp. [1]-82, 87-166; lacks pp. 83-86, all after 166.	no inscriptions
 	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music	
@@ -6061,6 +6119,7 @@ Source: 84
 Author: Holt, Benjamin, Jr.  
 Title: The New-England Sacred Harmony
 Call number: M 2116 .H638 N4 1803
+Inscription: null
 Description: .  Boston: Isaiah Thomas and Ebenezer T. Andrews, 1803.  55, [1] pp.  Complete.	inscriptions: front cover, illegible; preliminary leaf recto, “Jason Gager’s / 
 		Windham / Connecticut,” pencil note (by librarian?) on Gager, 
 		including “lived in Scotland par. [short for parish?],” pencil note (by 
@@ -6076,6 +6135,7 @@ Source: 85
 Author: Holyoke, Samuel.  
 Title: The Christian Harmonist.
 Call number: Quarto M 2116 .C462 1804
+Inscription: null
 Description:   Salem, Mass.: Joshua Cushing, 1804.  Lacks pp. 169-176, covers.  Seems scorched; pages towards the end are brittle.	no inscriptions
 	no MS. music
 
@@ -6086,6 +6146,7 @@ Source: 86
 Author: Holyoke, Samuel.  
 Title: The Columbian Repository of Sacred Harmony
 Call number: Quarto M 2116 .H76 C5 1800
+Inscription: null
 Description: .  Exeter, N. H.: Henry Ranlet, [1803].  Lacks final leaf.	no inscriptions
 	no MS. music
 	bookplate of Charles T. Wells pasted inside front cover
@@ -6097,6 +6158,7 @@ Source: 87
 Author: Holyoke, Samuel.  
 Title: Harmonia Americana.
 Call number: M 2116 .H64 1791
+Inscription: null
 Description:   Boston: Isaiah Thomas and Ebenezer T. Andrews, 1791.  119, [1] pp.  Complete, though lacking covers.	no inscriptions
 	no MS. music
 
@@ -6107,6 +6169,7 @@ Source: 88
 Author: Holyoke, Samuel.  
 Title: The Vocal Companion
 Call number: M 2116 .H76 V6
+Inscription: null
 Description: .  Exeter, N. H.: Norris and Sawyer, 1807.  174, [2] pp.; pp. 161-168 bound between p. 152 + p. 153.  Complete.	inscriptions: t. p., “E--- Nason     1861 / From F. Grant EsqR Feb[.] 1. 1861---“; 
 		inside back cover, “F Grant’s” (pencil)
 	bookplate of Charles T. Wells pasted inside front cover
@@ -6119,8 +6182,8 @@ Source: 89
 Author: [Hopkinson, Francis.]  
 Title: The Psalms of David, with the Ten Commandments, Creed, Lord’s Prayer, &c. in metre. Also, the Catechism, Confession of Faith, Liturgy, &c. Translated from the Dutch. For the use of the Reformed Protestant Dutch Church of the City of New-York.
 Call number: Special BS 1440 .R4 1767
-Description:   New York: James Parker, 1767.  [4], 479, [9] pp.  Complete.    Bound with: The Heidelbergh Catechism, or Method of Instruction, in the Christian Religion, as the same is taught in the Reformed Churches and Schools in Holland.  [New York: James Parker, 1767?].  143, [1] pp.  Complete.	inscription: The Psalms of David t. p., “Anna Bauman / her Book / [Nvr?] / 27 
-		1784”
+Inscription: The Psalms of David t. p., “Anna Bauman / her Book / [Nvr?] / 27 
+Description:   New York: James Parker, 1767.  [4], 479, [9] pp.  Complete.    Bound with: The Heidelbergh Catechism, or Method of Instruction, in the Christian Religion, as the same is taught in the Reformed Churches and Schools in Holland.  [New York: James Parker, 1767?].  143, [1] pp.  Complete.		1784”
 	label with name + address of Charles T. Wells pasted inside front cover; 
 		bookplate of Charles T. Wells pasted inside back cover
 	no MS. music
@@ -7398,8 +7461,8 @@ Source: 90
 Author: 
 Title: 
 Call number: Music MS 31
-Description: Howe, Harvey.  MS. music book.  Undated; repertory suggests ca. 1810.  MS. music on pp. numbered 1-69, 71-120.	inscription: inside front cover, “Harvey Howe”
-	label with name + address of Charles T. Wells pasted inside front cover
+Inscription: inside front cover, “Harvey Howe”
+Description: Howe, Harvey.  MS. music book.  Undated; repertory suggests ca. 1810.  MS. music on pp. numbered 1-69, 71-120.	label with name + address of Charles T. Wells pasted inside front cover
 	MS. index of tunes on verso of final leaf
 	MS. music is almost entirely sacred tunes in 3- and 4-voice settings; melody 
 		in tenor voice, except where noted
@@ -7411,8 +7474,8 @@ Source: 91
 Author: Howe, Solomon.  
 Title: Worshipper’s Assistant
 Call number: M 2116 .H85 W6 1799
-Description: .  Northampton, Mass.: Andrew Wright, for the author, 1799.  32 pp.  Complete.	inscription: front cover, “Tailor’s Mag[?] / Singing Book”
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: front cover, “Tailor’s Mag[?] / Singing Book”
+Description: .  Northampton, Mass.: Andrew Wright, for the author, 1799.  32 pp.  Complete.	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
 Howe, Solomon.  Worshipper’s Assistant, call no. Special M 2116 .W55 1799 – 
@@ -7430,6 +7493,7 @@ Source: 92
 Author: Hubbard, John.  
 Title: A Volume of Sacred Musick, containing Thirty Anthems.
 Call number: Quarto M 2117 .H79 V6 1814
+Inscription: null
 Description:   Newburyport, Mass.: C. Norris and Company, for E. Little and Company, 1814.  119, [1] pp.  Appears to be complete.  	no inscriptions
 	no MS. music
 
@@ -7440,6 +7504,7 @@ Source: 93
 Author: Huntington, Jonathan.  
 Title: Classical Sacred Musick
 Call number: M 2116 .H951 1812
+Inscription: null
 Description: .  Boston: Munroe and Francis, for the compiler (J. T. Buckingham, printer), 1812.  4, 75, [1] pp.  Complete.	no inscriptions
 	8 leaves w/ staff lines bound inside back cover, but no MS. music
 
@@ -7450,6 +7515,7 @@ Source: 94
 Author: Jackson, G[eorge] K[nowil].  
 Title: A Choice Collection of Chants for Four Voices with a Gloria Patri & Sanctus
 Call number: M 2170.6 .J33 1816
+Inscription: null
 Description: .  [Boston?, 1816].  26 unnumbered leaves + 1 fold-out leaf, equal in size to 3 of the regular leaves.  Appears to be complete.	inscriptions: front cover, “E. Nason”; preliminary leaf recto, “Rev. Elias Nason, 
 		/ from his friend, / D. [C.?]”
 	printed presentation plate pasted inside front cover: “Gift of / Nathan D. 
@@ -7467,8 +7533,8 @@ Source: 95
 Author: Jackson, G[eorge] K[nowil].  
 Title: The Choral Companion, and Elucidation of Dr. G. K. Jackson’s Chants: the whole composed, arranged, and published by him, for the use of the Episcopal churches.
 Call number: M 2116 .J2 C4
-Description:   Boston: Ezra Lincoln, [for G. K. Jackson], [1817].  28 pp.  Appears to be complete (printed “ERRATA” list at foot of p. 28).  	inscription: p. [2], “Chants of the / Protestant Episcopal / Church / 1817. / 
-		Justin Dayton / Wolcottville Ct / 1836” (pencil)
+Inscription: p. [2], “Chants of the / Protestant Episcopal / Church / 1817. / 
+Description:   Boston: Ezra Lincoln, [for G. K. Jackson], [1817].  28 pp.  Appears to be complete (printed “ERRATA” list at foot of p. 28).  		Justin Dayton / Wolcottville Ct / 1836” (pencil)
 	“J DAYTON” in ink stamp on back cover
 	no MS. music
 
@@ -7479,8 +7545,8 @@ Source: 96
 Author: anes, Walter.  
 Title: The Harmonic Minstrelsey
 Call number: M 2116 .J3 H3 1807
-Description: .  Dedham, Mass.: H[erman] Mann, 1807.  103, [1] pp.  Complete.	inscription: inside back cover, “[His?] Book / November 1[7?]th 1820 / 
-		Partrick [sic] Long”
+Inscription: inside back cover, “[His?] Book / November 1[7?]th 1820 / 
+Description: .  Dedham, Mass.: H[erman] Mann, 1807.  103, [1] pp.  Complete.		Partrick [sic] Long”
 	no MS. music
 
 
@@ -7490,6 +7556,7 @@ Source: 97
 Author: Janes, Walter.  
 Title: The Massachusetts Harmony, consecrated to Devotion.
 Call number: M 2116 .J3 M3 1803
+Inscription: null
 Description:   Boston: Manning and Loring, for the author, 1803.  128 pp.  Complete.	no inscriptions
 	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
@@ -7501,6 +7568,7 @@ Source: 98
 Author: [Jenks, Stephen.  
 Title: The Delights of Harmony
 Call number: Special M 2116 .J46 1804
+Inscription: null
 Description: .  New Haven, Conn.: for the editor, 1804.]  Lacks all before p. 17, all after p. 56.	no inscriptions
 	no MS. music
 
@@ -7511,6 +7579,7 @@ Source: 99
 Author: Jenks, Stephen.  
 Title: The Delights of Harmony; or, Norfolk Compiler.
 Call number: M 2116 .J54 1805a
+Inscription: null
 Description:   Dedham, Mass.: H[erman] Mann, “for the AUTHOR, & Co.”, 1805 [recte 1805 or 1806].  112 pp. (including Additional Music—caption title on p. [97]).  Complete.   	no inscriptions
 	no MS. music
 	bookplate of Charles T. Wells pasted inside front cover
@@ -7522,6 +7591,7 @@ Source: 100
 Author: Jenks, Stephen.  
 Title: Laus Deo! The Delights of Harmony; or Union Compiler. No. II.
 Call number: M 2116 .J54 1806
+Inscription: null
 Description:   Dedham, Mass.: H[erman] Mann, for the author, 1806.  Lacks covers, pp. 41-48.	no inscriptions
 	no MS. music
 		
@@ -7578,8 +7648,8 @@ Source: 101
 Author: Jenks, Stephen.  
 Title: Laus Deo! The Harmony of Zion, or Union Compiler
 Call number: M 2116 .H27
-Description: .  Dedham, Mass.: Daniel Mann, for the author, 1818.  79, [1] pp.  Appears to be complete.  	inscription: preliminary leaf recto, “Amasa Carpenter[’]s Property. / Killingly 
-		October 16th 1818”
+Inscription: preliminary leaf recto, “Amasa Carpenter[’]s Property. / Killingly 
+Description: .  Dedham, Mass.: Daniel Mann, for the author, 1818.  79, [1] pp.  Appears to be complete.  		October 16th 1818”
 	7 leaves sewn inside back cover; first 4 of these contain MS. music 
 		(apparently in Amasa Carpenter’s hand), last 3 are blank
 
@@ -7856,6 +7926,7 @@ Source: 102
 Author: Jenks, Stephen, and Elijah Griswold.  
 Title: The American Compiler of Sacred Harmony.  No. I.
 Call number: Special M 2116 .J46 1803
+Inscription: null
 Description:   Northampton, Mass.: for the compilers, 1803.  63, [1] pp.  Complete.  Covers reinforced with pp. from the newspaper American Mercury (Hartford, Conn., issue of 26 Sept. 1811; vol. XXVIII, no. 1421). 	inscriptions: added leaf [1] recto, “Julia Hayden / Book”; additional leaf verso, 
 		“Isaac Hayden Junr.”
 	MS. music on 6 added leaves bound inside front cover + on preliminary leaf 
@@ -7868,6 +7939,7 @@ Source: 103
 Author: [Jocelin, Simeon.]  
 Title: The Chorister’s Companion.
 Call number: M 2116 .J65 C5 1788
+Inscription: null
 Description:   2nd ed.  New Haven: Simeon Jocelin, 1788.  [2], 26, [2], 120 pp.  Complete.	inscriptions: t. p., “Nancy Fitz Randolph / Woodbridge / New Jersey”; 
 		additional leaf verso, “Nancy Fitz Randolph”
 	MS. list of 11 tunes with their p. nos. pasted inside front cover
@@ -7946,8 +8018,8 @@ Source: 104
 Author: [Jocelin, Simeon.]  
 Title: Supplement to the Chorister’s Companion
 Call number: M 2116 .J65 C5 1792
-Description: .  New Haven, Conn.: Simeon Jocelin, 1792.  16 pp.  Complete.	inscription: p. [1], “[Wells?]” (pencil; reference to Charles T. Wells?)
-	MS. music on 4 additional leaves, originally sewn to the printed Supplement
+Inscription: p. [1], “[Wells?]” (pencil; reference to Charles T. Wells?)
+Description: .  New Haven, Conn.: Simeon Jocelin, 1792.  16 pp.  Complete.	MS. music on 4 additional leaves, originally sewn to the printed Supplement
 		
 
 ----------------end of source-------------
@@ -7956,8 +8028,8 @@ Source: 105
 Author: Kimball, Jacob, Jr.  
 Title: The Essex Harmony
 Call number: M 2116 .K48
-Description: .  Exeter, N. H.: H[enry] Ranlet, for T. C. Cushing and B. B. Macanulty, 1800.  111, [1] pp.  Complete.	inscription: preliminary leaf recto, [illegible] [Goulet?] (pencil)
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: preliminary leaf recto, [illegible] [Goulet?] (pencil)
+Description: .  Exeter, N. H.: H[enry] Ranlet, for T. C. Cushing and B. B. Macanulty, 1800.  111, [1] pp.  Complete.	bookplate of Charles T. Wells pasted inside front cover
 	MS. music on 3 slips of paper pasted inside back cover; “Tenor,” “Soprano,” 
 		“Bass” for the same untitled piece in D, all 3 parts begin identically; 
 		531|5-4-32[-]1|5-4-32[-]1|5, tenor written in pencil, soprano + bass 
@@ -7970,6 +8042,7 @@ Source: 106
 Author: Kimball, Jacob, Jr.  
 Title: The Rural Harmony
 Call number: M 2116 .K54 R86
+Inscription: null
 Description: .  Boston: Isaiah Thomas and Ebenezer T. Andrews, 1793.  111, [1] pp.  Complete.	inscriptions: preliminary leaf recto, “No 147 / Property of the Franklin 
 		Musical Society. / Boston  June / 1801.”; additional leaf verso, 
 		“[illegible] [at Mr West’s meeting?]” (pencil)
@@ -7986,6 +8059,7 @@ Source: 107
 Author: Law, Andrew.  
 Title: The Art of Singing…Part II
 Call number: Special M 2116 .L39 C4 1794
+Inscription: null
 Description: .  Cheshire, Conn.: William Law, 1794.  [2nd t. p.:] Law, Andrew.  The Christian Harmony; or the Second Part of The Art of Singing…Vol. I.  64 pp.  Complete.	inscriptions: inside front cover, “Jeremiah Sawyar [sic]. / His Book May th  9th 
 		1795”; preliminary leaf verso, “3s/1d     Jeremiah Sawyer his Christian 
 		/ Harmony”
@@ -8026,6 +8100,7 @@ Source: 108
 Author: Law, Andrew.  
 Title: The Art of Singing…Part I
 Call number: MT 820 .L38 1800
+Inscription: null
 Description: .  [2nd ed.]  Cheshire, Conn.: [Samuel Andrews], 1800.  [2nd t. p.:] Law, Andrew.  The Musical Primer; or the First Part of The Art of Singing.  3rd [i.e., 2nd] ed.  208 pp.  Complete.  Bound with: Law, Andrew.  The Musical Magazine…Number Sixth.  1801.  Pp. [209]-224.  Complete.  	inscriptions: preliminary leaf [1] recto, “Ephraim Abbot from / Th. M. Jones.”; 
 		preliminary leaf [2] recto, “T. M. Jones. 1803. / to / E. A.”; 1st t. p., 
 		“Ephraim Abbot[’]s 18[31?]”
@@ -8037,6 +8112,7 @@ Source: 109
 Author: Law, Andrew.  
 Title: The Art of Singing
 Call number: MT 820 .L38 1803 pt.1
+Inscription: null
 Description: .  4th [i.e., 3rd] ed.  Cambridge, Mass.: W. Hilliard, 1803.  [2nd t. p.:] Law, Andrew.  The Musical Primer; or the First Part of The Art of Singing.  96 pp.  Complete.  	inscriptions: inside front cover, “Jono Chester ----------”; 1st t. p., “John. 
 		Chester.    Owner”
 	no MS. music
@@ -8048,8 +8124,8 @@ Source: 110
 Author: Law, Andrew.  
 Title: The Art of Singing…Part Second.
 Call number: MT 820 .L38 1803 pt.2
-Description:   4th [i.e., 3rd] ed.  Windsor, Vt.: Nahum Mower, 1805.  [2nd t. p.:] Law, Andrew.  The Christian Harmony: or the Second Part of The Art of Singing.  Pp. [97]-160.  Complete, though disbound and lacking back paper cover.	inscription: preliminary leaf [1] recto, “Wm. Sheldon Jun[r?].”
-	bookplate of Charles T. Wells pasted on recto of preliminary leaf [1]
+Inscription: preliminary leaf [1] recto, “Wm. Sheldon Jun[r?].”
+Description:   4th [i.e., 3rd] ed.  Windsor, Vt.: Nahum Mower, 1805.  [2nd t. p.:] Law, Andrew.  The Christian Harmony: or the Second Part of The Art of Singing.  Pp. [97]-160.  Complete, though disbound and lacking back paper cover.	bookplate of Charles T. Wells pasted on recto of preliminary leaf [1]
 	no MS. music
 
 Law, Andrew.  The Art of Singing, 4th [i.e., 3rd] ed.? – SEE
@@ -8071,6 +8147,7 @@ Source: 111
 Author: Law, Andrew.  
 Title: A Collection of Hymn Tunes from the most modern and approv’d authors.
 Call number: M 2116 .L41 C65 1783
+Inscription: null
 Description:   Cheshire, Conn.: William Law, [1783].  [4], 36 pp. (contains leaf with [apparently] MS. index between t. p. leaf + music).  Complete.	ASMI no. 341 lists copy at CtHC with “printed ‘Index’ of music pasted to 
 		inside back cover”
 	bound with Andrew Law, A Collection of Hymns, for Social Worship, [1783] 
@@ -8085,6 +8162,7 @@ Source: 112
 Author: Law, Andrew.  
 Title: A Collection of Hymn Tunes from the most modern and approv’d authors.
 Call number: M 2116 .L41 C65 1783 c.2
+Inscription: null
 Description:   Cheshire, Conn.: William Law, [1783].  [2], 36 pp.  Complete; pp. 21-24 bound between p. 16 + p. 17.	bound with Andrew Law, A Collection of Hymns, for Social Worship, [1783] 
 		(copy of this title is in bad shape; leaves with pp. 43-44, 45-46, 47-48 
 		fragmentary)
@@ -8102,8 +8180,8 @@ Source: 113
 Author: Law, Andrew.  
 Title: Harmonic Companion, and Guide to Social Worship
 Call number: Special M 2116 .L39 H3 1807
-Description: .  Philadelphia: the author and David Hogan (printed by Thomas T. Stiles), [1807].  112 pp.  Complete, though back cover is mostly gone.	inscription: inside front cover, “Aug[st?] / 1819”
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: inside front cover, “Aug[st?] / 1819”
+Description: .  Philadelphia: the author and David Hogan (printed by Thomas T. Stiles), [1807].  112 pp.  Complete, though back cover is mostly gone.	bookplate of Charles T. Wells pasted inside front cover
 
 Law, Andrew.  Harmonic Companion.  3rd ed., [1813] – SEE
 	Law, Andrew.  Musical Primer.  3rd ed.  
@@ -8124,8 +8202,8 @@ Source: 114
 Author: Law, Andrew.  
 Title: The Musical Primer.
 Call number: MT 825 .L3
-Description:   Cheshire, Conn.: William Law, 1793.  Complete as described in ASMI, no. 351, with 32 pp.;  bound in after p. 32 are the 8  pp. of typeset music, paged 33-40, that Law added to The Musical Primer when its 2nd ed.  became part of his The Art of Singing (see ASMI, no. 315A).	inscription: t. p., “Charles T Wells / Hartford . Conn”
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: t. p., “Charles T Wells / Hartford . Conn”
+Description:   Cheshire, Conn.: William Law, 1793.  Complete as described in ASMI, no. 351, with 32 pp.;  bound in after p. 32 are the 8  pp. of typeset music, paged 33-40, that Law added to The Musical Primer when its 2nd ed.  became part of his The Art of Singing (see ASMI, no. 315A).	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
 Law, Andrew.  The Musical Primer.  3rd [i.e., 2nd] ed.  – SEE
@@ -8138,6 +8216,7 @@ Source: 115
 Author: Law, Andrew.  
 Title: Musical Primer.
 Call number: Special ML 3270 .L39 M8 1817 BW/1-4
+Inscription: null
 Description:   3rd ed.  Philadelphia: Anderson and Meehan, for the author, [1817].  16 pp.  Appears to be complete.  Bound with: Law, Andrew.  Supplement to the Musical Primer.  Philadelphia: Robert and William Carr, for the author, [1811].  7, [1], 25-64 pp.  Complete?  Bound with: Law, Andrew.  Harmonic Companion, and Guide to Social Worship.  3rd ed.  Philadelphia: R. and W. Carr, for the author and William W. Woodward, [1813].  120 pp.  Appears to be complete.  Bound with: Law, Andrew.  The Art of Singing…Part Third.  5th [i.e., 4th] ed.  Philadelphia: Robert and William Carr, for the author, [1811]. [2nd t.p.:] Law, Andrew.  Musical Magazine, being the Third Part of The Art of Singing…Number First.  5th [i.e., 4th] ed.  Philadelphia: Robert and William Carr, for the author, [1811].  96 pp.  Appears to be complete.  Bound with: Law, Andrew.  The Art of Singing…Part Third.  Philadelphia: Jane Aitken, [1810].  [2nd t.p.:] Law, Andrew.  The Musical Magazine; being the Third Part of The Art of Singing…Number Second.  Philadlephia: Jane Aitken, [1810].  Pp. [97]-128.  Complete.  Music in all items printed in staffless shape-notation.	inscriptions: preliminary leaf verso, list of names (pencil) including Stetson, 
 		Dyer, Newcomb, White, Haywood (others only partially legible); 2nd 
 		additional leaf verso, list of names (pencil) including Francis Worthen, 
@@ -8155,6 +8234,7 @@ Source: 116
 Author: [Law, Andrew.  
 Title: The Rudiments of Music: or A Short and Easy Treatise on the Rules of Psalmody.
 Call number: Special M 2116 .L39 R8 1786
+Inscription: null
 Description:   2nd ed.]  Typeset pp. 3-[4], engraved pp. 1-[48] (leaf with pp. 47 + 48 is fragmentary, so p. nos. aren't present).  Pp. 29-32 printed + bound in this order (rectos/versos): 32/30, 31/29.  This tunebook comes closest to ASMI 354, except it has the signature of tunes paged 13-20 that is discussed in the 2nd full paragraph on p. 426 of ASMI.  The printed index on typeset p. [4] corresponds only partially to the musical content.  An early owner has listed the titles and p. nos. of the tunes on pp. 13-20 on the index page.	inscriptions: single leaf accompanying the vol., a list of men’s names: “John 
 		[illegible] / P[?] [illegible] / Erastus [Hosket?] / Sewell [Fifield?] / 
 		Joseph Turner / Thomas Townsend / James Gooch / [illegible] Wade / 
@@ -8169,6 +8249,7 @@ Source: 117
 Author: [Law, Andrew.  
 Title: The Rudiments of Music: or A Short and Easy Treatise on the Rules of Psalmody
 Call number: M 5000 .F6 1785
+Inscription: null
 Description: .  ?3rd ed., [Cheshire, Conn.: William Law, 1791], + likely one other post-2nd ed.].  Pp. 5-12 (signature H), 29-36 (signature L), 21-28 (signature K), 33-40 (signature E), 53-60 (signature O), 13-14 (part of a signature I or J?).  All except signature E could fit into one page sequence.  Note similarity of material (and its sequence) to inventory no. 118, below.  	inscriptions: cover, “Fragments – save”; inside front cover, “George Olcott, 
 		Singing Book / … / George Olcott’s Librum Cantum / Cece[n?]i in hoc 
 		Librum Non muth[m?]”
@@ -8183,6 +8264,7 @@ Source: 118
 Author: [Law, Andrew.  
 Title: The Rudiments of Music: or A Short and Easy Treatise on the Rules of Psalmody
 Call number: M 5000 .F6 1785 
+Inscription: null
 Description: .  ?3rd ed., [Cheshire, Conn.: William Law, 1791], + likely one other post-2nd ed.].  Pp. 5-12 (signature H), 11-16 (part of an unmarked signature), 29-36 (signature L), 21-28 (signature K), 33-40 (signature E); no covers.  All except the unmarked signature + signature E could fit into one page sequence.  Note similarity of material (and its sequence) to inventory no. 117, above.  	August 2019: all pp. still (barely) sewn together; threads rapidly falling out!
 	inscriptions: p. 5, “[S or J] H Mitchell,”; 2nd p. 11, “by the right how, B. Plutus 
 		E[s?]qr”
@@ -8202,6 +8284,7 @@ Source: 119
 Author: Law, Andrew.  
 Title: Select Harmony
 Call number: M 2116 .L41 S4 1778
+Inscription: null
 Description: .  Cheshire, Conn., 1778.  [4], 1-10, 19-44 pp.  Lacks pp. 11-18.  	inscriptions: on label pasted inside front cover, “[printed:] THE GIFT OF 
 		[handwritten:] Mr. Coe”; inside front cover, “MEH[I?]TA Bel Pek”; t. p., 
 		“Meh[i?]ta B[ul?] Peck”; 1st p. [2], “Meh[i?]ta Beal Peck”; inside back 
@@ -8215,8 +8298,8 @@ Source: 120
 Author: [Law, Andrew.  
 Title: Select Harmony
 Call number: Special M 2116 .L41 S4 1781-82
-Description: .  [1781-82].]  Lacks 1st leaf (first pp. [1-2]; then complete, with 8, 100 pp.	inscription: 1st (surviving) p. [1], “D Wadsworth”
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: 1st (surviving) p. [1], “D Wadsworth”
+Description: .  [1781-82].]  Lacks 1st leaf (first pp. [1-2]; then complete, with 8, 100 pp.	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
 
@@ -8226,6 +8309,7 @@ Source: 121
 Author: Law, Andrew.  
 Title: Select Harmony.
 Call number: Special M 2116 .L41 S4 1782-87
+Inscription: null
 Description:   [1782-87].  [2], 4, 100 pp.  Complete.	no inscriptions
 	no MS. music
 	bookplate of Charles T. Wells pasted inside front cover
@@ -8237,8 +8321,8 @@ Source: 122
 Author: [Law, Andrew.  
 Title: Select Harmony.
 Call number: Special M 2116 .L41 S4 1782-87 C.2
-Description:   [1782-87].]  Lacks 1st leaf (first pp. [1-2]); then complete, with 4, 100 pp.	inscription: inside front cover, “Wm Rogers’,” “[John?]” (pencil)
-	slip of paper with Charles T. Wells’s name + address printed on it pasted 
+Inscription: inside front cover, “Wm Rogers’,” “[John?]” (pencil)
+Description:   [1782-87].]  Lacks 1st leaf (first pp. [1-2]); then complete, with 4, 100 pp.	slip of paper with Charles T. Wells’s name + address printed on it pasted 
 		inside front cover
 	no MS. music
 
@@ -8249,6 +8333,7 @@ Source: 123
 Author: [Law, Andrew.  
 Title: Select Harmony
 Call number: M 5000 .F6 1785
+Inscription: null
 Description: .  Complete edition of 1779 or later.]  Pp. 69-92.  Signature K, pp. 69-76, may be from a different copy than the remaining pp.; its pp. are sewn together, and are of a different hue than the others.  	no inscriptions
 	no MS. music
 	August 2019: found with several other items in box titled “Fragments of 
@@ -8261,6 +8346,7 @@ Source: 124
 Author: Law, Andrew.  
 Title: Select Harmony.
 Call number: Special M 2116 .L41 S4 1812
+Inscription: null
 Description:   Philadelphia: Robert and William Carr, for the author, [1812].  64 pp.  Appears to be complete.	no inscriptions
 	no MS. music
 	bookplate of Charles T. Wells pasted inside front cover
@@ -8272,6 +8358,7 @@ Source: 125
 Author: Law, Andrew.  
 Title: Select Harmony
 Call number: null
+Inscription: null
 Description: , call no. M 2116 .L41 S4 1780z – not located, 2019
 
 ----------------end of source-------------
@@ -8296,8 +8383,8 @@ Source: 126
 Author: Law, Andrew.  
 Title: A Select Number of Plain Tunes adapted to Congregational Worship
 Call number: Special BS 1440 .W3 1772
-Description: .  [1781].  16 pp.  Complete.  Bound with: Watts, I[saac].  The Psalms of David, imitated in the Language of the New-Testament.  27th ed.  Boston: J. Hodgson, 1772.  Bound with: [Watts, Isaac.] Hymns and Spiritual Songs. [lacks t. p.; caption title, p. [3]]  Bound with:  Niles, Nathaniel.  The American Hero: A Sapphick Ode.  Norwich, Conn., 1775.  	inscription: Watts Psalms p. iii, “Alexander Gillet’s 1776.”
-	MS. hymn + anthem texts: Watts Psalms, p. [ii]; unnumbered leaf before Law, 
+Inscription: Watts Psalms p. iii, “Alexander Gillet’s 1776.”
+Description: .  [1781].  16 pp.  Complete.  Bound with: Watts, I[saac].  The Psalms of David, imitated in the Language of the New-Testament.  27th ed.  Boston: J. Hodgson, 1772.  Bound with: [Watts, Isaac.] Hymns and Spiritual Songs. [lacks t. p.; caption title, p. [3]]  Bound with:  Niles, Nathaniel.  The American Hero: A Sapphick Ode.  Norwich, Conn., 1775.  	MS. hymn + anthem texts: Watts Psalms, p. [ii]; unnumbered leaf before Law, 
 		A Select Number; 5 unnumbered leaves after Niles, The American Hero 
 		(“Hymn for, Littleton”; “Hymn: for Middletown”; “An Anthem – Psalm 
 		104”; et al.)
@@ -8314,8 +8401,8 @@ Source: 127
 Author: Lewis, Freeman.  
 Title: The Beauties of Harmony
 Call number: M 2116 .B4 1820
-Description: .  4th ed.  Pittsburgh: Cramer and Spear, 1820.  200 pp., with additional leaf (engraved) bound in between p. 12 + p. 13.  Appears to be complete.  Modern binding.	inscription: t. p., “Espy L. Anderson.  Bedford [County?]”
-	no MS. music
+Inscription: t. p., “Espy L. Anderson.  Bedford [County?]”
+Description: .  4th ed.  Pittsburgh: Cramer and Spear, 1820.  200 pp., with additional leaf (engraved) bound in between p. 12 + p. 13.  Appears to be complete.  Modern binding.	no MS. music
 
 
 ----------------end of source-------------
@@ -8324,6 +8411,7 @@ Source: 128
 Author: [Little, William, and William Smith.  
 Title: The Easy Instructor, or A New Method of Teaching Sacred Harmony
 Call number: M 2116 .L7 E3 1802
+Inscription: null
 Description: .  Philadelphia, [1801] or New York, [1802].]  Lacks all pp. before p. 14 and after p. 101; pp. 14-17 fragmentary; lacks covers.  ASMI claims (for reason/s unknown to this writer, as the content of the 1801 and 1802 issues appears to be identical, and this is a fragmentary copy) that this is the 1802 issue (ASMI 363A), stating erroneously (in an apparent confusion of this copy with         inventory no. 129, below) that it “lacks all before p. 13, all after p. 100.”	no inscriptions
 	no MS. music
 
@@ -8334,6 +8422,7 @@ Source: 129
 Author: [Little, William, and William Smith.  
 Title: The Easy Instructor, or A New Method of Teaching Sacred Harmony
 Call number: M 2116 .L3 E3 1808b C.2
+Inscription: null
 Description: .  2nd, 3rd, 4th, or 5th ed.  Albany, N. Y., 1805-1808.]  Contains only pp. 13-100, so edition can’t be determined; but rudiments continue through p. 17, so this is not the 1st ed., and the music is engraved, so this is not later than the 5th ed.  Lacks original covers.	no inscriptions
 	no MS. music
 	handwritten letter draft (apparently incomplete) dated “Falmouth N. H. Jan. 
@@ -8347,8 +8436,8 @@ Source: 130
 Author: Little, William, and William Smith.  
 Title: The Easy Instructor, or, A New Method of Teaching Sacred Harmony
 Call number: M 2116 .L3 E3 1808b
-Description: .  [5th ed.; Lowens ed. E.]  Albany: Websters and Skinner and Daniel Steele, 1808.  Pp. [1]-8 (typeset), 13-108 (engraved).  Appears to be complete (see ASMI, no. 367).	inscription: inside front cover, “Engraved by Snyder” (pencil)
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: inside front cover, “Engraved by Snyder” (pencil)
+Description: .  [5th ed.; Lowens ed. E.]  Albany: Websters and Skinner and Daniel Steele, 1808.  Pp. [1]-8 (typeset), 13-108 (engraved).  Appears to be complete (see ASMI, no. 367).	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
 
@@ -8358,6 +8447,7 @@ Source: 131
 Author: Little, William, and William Smith.  
 Title: The Easy Instructor; or, A New Method of Teaching Sacred Harmony.
 Call number: M 2116 .L7 E3 1814
+Inscription: null
 Description:   Albany, N. Y.: Websters and Skinners and Daniel Steele, [1814].  112 pp.  Complete.  P. 113 from a later edition, containing the tune New Jordan, pasted inside back cover.  This copy was determined to be Lowens edition Mb because of specific bibliographical points; see Table VI on pp. 296-297 of Irving Lowens, Music and Musicians in Early America, New York: Norton, 1964.  	inscriptions: t.p., “Sharp”; leaf of music pasted inside back cover, “Mary 
 		Sharpe”
 	bookplate of Charles T. Wells pasted inside front cover
@@ -8370,6 +8460,7 @@ Source: 132
 Author:  [Little, William, and William Smith, 
 Title: The Easy Instructor
 Call number: M 2116 .L7 E3 1800z
+Inscription: null
 Description: , probably an edition published in 1817, for Websters and Skinners and Daniel Steele in Albany, N. Y.]  Contains only pp. 7-10, 15-18, 23-34, 39-118, so the precise edition can’t be determined.  However, reference to Irving Lowens’s “Check-list of Editions and Issues” of The Easy Instructor (pp. 292-310 of his Music and Musicians in Early America, New York: Norton, 1964) narrows down the possibilities.  No edition longer than 112 pp. appeared before 1817, and the presence of the tune Delight on p. 45 and the tune Exhortation on p. 102 (see Lowens’s Table XI, p. 305) suggests that this is a copy of Lowens edition Q, or possibly edition P (though P’s content needs to be checked to verify this), both published in 1817.  But there’s a wrinkle: Lowens’s Table VI, pp. 296-7, states that in edition Q, the title on p. 89 is “Easter Anthm,” whereas here it’s “Easter Anthem,” suggesting that this must be edition P, not Q, and that edition P, correcting this error, followed edition Q.  But edition P has 120 pp., and edition Q has 127, [1] pp.  Why make a correction in the title of a piece and re-issue the tunebook in a shorter form?  Note also that the title page of edition Q has “REVISED AND ENLARGED EDITION.” along the top of the page, whereas edition P’s title page lacks those words (see Lowens, pp. 309-10).  Lowens lists a copy of edition P, not Q, at the Watkinson Library (see pp. 303-4), but that is surely inventory no. 133, below. 	inscriptions: inside front cover, “John Barney’s / Book” (pencil), “St. 
 		Johnsbury”; inside back cover, “L. Moore not his book” [!], “Singing 
 		Book / St. Johnsbury”
@@ -8382,6 +8473,7 @@ Source: 133
 Author: Little, William, and William Smith.  
 Title: The Easy Instructor; or, A New Method of Teaching Sacred Harmony.
 Call number: M 2116 .L7 E3 1817a
+Inscription: null
 Description:   Albany, N. Y.: Websters and Skinners and Daniel Steele, [1817].  120 pp.  Complete.  An unusually pristine copy, for this title.  Lowens edition P.	inscriptions: preliminary leaf recto, “Smith” (pencil); p. [3], “Mary (A) 
 		Smith’s”
 	no MS. music
@@ -8393,6 +8485,7 @@ Source: 134
 Author: Little, William, and William Smith.  
 Title: The Easy Instructor; or, A New Method of Teaching Sacred Harmony
 Call number: M 2116 .L7 E3 1818
+Inscription: null
 Description: .  Utica, N. Y.: William Williams, 1818.  126, [1] pp.  Complete, though lacks original back cover.  Lowens edition S.	no inscriptions
 	no MS. music
 	t. p. of Ananias Davisson’s Kentucky Harmony, 2nd ed. (Harrisonburg, Va., 
@@ -8405,6 +8498,7 @@ Source: 135
 Author: Little, William, and William Smith.  
 Title: The Easy Instructor; or A New Method of Teaching Sacred Harmony
 Call number: M 2116 .L7 E3 1818 C2
+Inscription: null
 Description: .  Utica, N. Y.: William Williams, 1818.  126, [1] pp.  Complete; note absence of comma after “or” in title; t. p. has several other typographical differences from inventory no. 134, above, and typographical differences persist throughout the two copies.	inscriptions: inside front cover, “Steal not this Book for fear / of shame for 
 		here you see the owners / name / Abner Porter” (pencil); verso of leaf 
 		with Index on recto, “Harriet Holmes [bracket; next 2 names above 
@@ -8448,6 +8542,7 @@ Source: 136
 Author: [Lyon, James.  
 Title: Urania.  
 Call number: M 2116 .L99 1761
+Inscription: null
 Description: Philadelphia, 1761 or [1767].]  i-xii, 1-194 pp.  Lacks typeset front matter, pp. 195-198 of engraved music.  Because the front matter is missing, it’s impossible to say which edition or issue this is; see ASMI, pp. 445-448.	inscriptions: inside front cover, “P1/6,” “1773,” “Elisha Lane / moses 
 		griswo[u[l]d?],” “Oliver Kelsey his Book”; p. [4] of single folded leaf 
 		inserted inside back cover, “[Nam?]es of Schollars which have / 
@@ -8467,6 +8562,7 @@ Source: 137
 Author: Mann, Elias.  
 Title: The Massachusetts Collection of Sacred Harmony
 Call number: M 2116 .M38
+Inscription: null
 Description: .  Boston: Manning and Loring, for the author, 1807.  Lacks pp. 197-198 (printed staves; but see description of MS. music entry, below); back cover missing.  	inscriptions: preliminary leaf recto + t. p., “Melvin Lord”
 	pasted to preliminary leaf recto is a bill from West and Richardson in Boston 
 		to Elias Mann, for boxes in which to pack unsold copies of Mann’s 
@@ -8511,6 +8607,7 @@ Source: 138
 Author: Mann, Elias.  
 Title: The Northampton Collection of Sacred Harmony
 Call number: M 2116 .M67
+Inscription: null
 Description: .  Northampton, Mass.: Daniel Wright and Company, 1797.  Lacks pp. 3-6, 11-14, 19-22, 27-30, 35-38, 51-54, 137-138.	no inscriptions
 
 
@@ -8676,8 +8773,8 @@ Source: 139
 Author: Mann, Elias.  
 Title: The Northampton Collection of Sacred Harmony
 Call number: M 2116 .M67 1802
-Description: .  [2nd ed.]  Northampton, Mass.: Andrew Wright, for Daniel Wright, 1802.  [1]35, [1] pp.  Complete.	inscription: inside front cover (partly obscured by pasted-on bookplate), 			“[Ke]nt Library [Suffield, Conn.; their bookplate is pasted inside front 
-		cover] / 1904 / [Charle]s T Wells”
+Inscription: inside front cover (partly obscured by pasted-on bookplate), 			“[Ke]nt Library [Suffield, Conn.; their bookplate is pasted inside front 
+Description: .  [2nd ed.]  Northampton, Mass.: Andrew Wright, for Daniel Wright, 1802.  [1]35, [1] pp.  Complete.		cover] / 1904 / [Charle]s T Wells”
 	bookplate of Charles T. Wells pasted inside front cover
 
 Mann, Elias.  The Northampton Collection of Sacred Harmony.  [2nd ed.] – SEE
@@ -8690,6 +8787,7 @@ Source: 140
 Author: [
 Title: The Middlesex 
 Call number: M 2116 .M53 1807
+Inscription: null
 Description: Collection of Church Music: or, Ancient Psalmody Revived.  Boston: Manning and Loring, 1807.]  Lacks pp. [i-ii], ix-x, 11-12, 67-70; pp. 45-46 fragmentary.  Back cover missing.	no inscriptions
 	no MS. music
 	bookplate of Charles T. Wells pasted inside front cover
@@ -8701,6 +8799,7 @@ Source: 141
 Author: 
 Title: The Middlesex Collection of Church Music: or, Ancient Psalmody Revived.
 Call number: M 2116 .M53 1808
+Inscription: null
 Description:   2nd ed.  Boston: Manning and Loring, 1808.  167, [1] pp.  Complete.	inscriptions: front cover, “Ben. Champney / 1[8?]09,” “John Harris / Sept. 
 		1810”; inside front cover, “John Harris,” “ryV [3 dots in triangular 
 		arrangement] yy” [code?]; preliminary leaf recto, “June 4. 1809”; t. p., 
@@ -8715,6 +8814,7 @@ Source: 142
 Author: 
 Title: 
 Call number: [uncatalogued]
+Inscription: null
 Description: [miscellaneous uncatalogued MS. music, in folders contained in a large white envelope labeled “Music / Loose Mss.”]	folder labeled “Warner, C. D., coll. – Miscellaneous pieces of music in MS.”; 
 	folded protective paper inside reads “CHARLES DUDLEY WARNER 
 	COLLECTION / B / F /I”
@@ -8755,8 +8855,8 @@ Source: 143
 Author: 
 Title: A New Collection of Psalm Tunes adapted to Congregational Worship
 Call number: BS 1440 .W3 1785c
-Description: .  [Boston: John Norman?; 1779-1784].  16 pp.  Complete.  Bound with: Watts, Isaac.  The Psalms of David, imitated in the Language of the New Testament.  45th ed.  Boston: Norman and Bowen, 1785.  Bound with: Watts, I[saac].  Hymns and Spiritual Songs (caption title; no publication information).	inscription: preliminary leaf recto, “Lona Albee’s / Psalm Book / Given her by 
-		/ John Hayward / of Mendon / Written by Zuriel Albee / of 
+Inscription: preliminary leaf recto, “Lona Albee’s / Psalm Book / Given her by 
+Description: .  [Boston: John Norman?; 1779-1784].  16 pp.  Complete.  Bound with: Watts, Isaac.  The Psalms of David, imitated in the Language of the New Testament.  45th ed.  Boston: Norman and Bowen, 1785.  Bound with: Watts, I[saac].  Hymns and Spiritual Songs (caption title; no publication information).		/ John Hayward / of Mendon / Written by Zuriel Albee / of 
 		Westmorland” 
 	no MS. music 
 
@@ -8767,6 +8867,7 @@ Source: 144
 Author: 
 Title: The New Haven Collection of Sacred Music.
 Call number: M 2116 .R4 N4 1818 c.1
+Inscription: null
 Description:   “By an Association of Gentlemen for the promotion of Classical Sacred Music in the United Society in New Haven.”  Dedham: Daniel Mann, 1818.  143, [1] pp.  Appears to be complete.	no inscriptions
 	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
@@ -8778,6 +8879,7 @@ Source: 145
 Author: 
 Title: The New Haven Collection of Sacred Music.
 Call number: M 2116 .R4 N4 1818 c.2
+Inscription: null
 Description:   “By an Association of Gentlemen for the promotion of Classical Sacred Music in the United Society in New Haven.”  Dedham: Daniel Mann, 1818.  143, [1] pp.  Appears to be complete.  Printed errata slip pasted inside back cover.  		“Harriet M [illegible, + partly covered by pasted-on label]”; t. p., 
 		“Harriet M[??]’s,” “William Burwell”
 	printed label pasted inside front cover: “The / PROPERTY / of the / United 
@@ -8794,6 +8896,7 @@ Source: 146
 Author: [Old Colony Musical Society.  
 Title: Old Colony Collection of Anthems.  No. 1
 Call number: Quarto M 2040 .O56 1814
+Inscription: null
 Description: .  Boston: Manning and Loring, [1813?].]  24 pp.  Lacks paper front cover; otherwise complete.	no inscriptions
 	no MS. music
 	with this item is an undated 8-page choral score of the same size, printed by 
@@ -8809,6 +8912,7 @@ Source: 147
 Author: Old Colony Musical Society.  
 Title: Old Colony Collection of Anthems.  No. 2
 Call number: Quarto M 2040 .O56 1814
+Inscription: null
 Description: .  Boston: Manning and Loring, [1813].  Pp. [25]-48.  Complete.	no inscriptions
 	no MS. music
 	also with this item is No. 1 of the Old Colony Collection of Anthems; see above
@@ -8820,6 +8924,7 @@ Source: 148
 Author: Old Colony Musical Society and Handel and Haydn Society [Boston].  
 Title: Old Colony Collection of Anthems…Vol. I
 Call number: Quarto M 2040 .O56 1818 v.1 c.2
+Inscription: null
 Description: .  Boston: James Loring, [1817?].  Lacks pp. 109-110, apparently pp. 161-164 (except note that the p. after 160 has this printed as its p. no.: “[161]  165”; also, neither piece on either side of the gap is incomplete), pp. 195-196 (see 2nd ed. of this vol., next item in this inventory, which has these pp.).  Pp. 145-148 occur twice, with different content (i.e., p. sequence is …144, 145, 146, 147, 148, 145, 146, 147, 148, 149…).  	in gold on label pasted to front cover: “ISAAC SILSB[2 letters scratched out]Y” 
 		(another vol. in the Watkinson’s collection. The Boston Handel and 
 		Haydn Society Collection of Sacred Music, vol. I, 1821, call no. Quarto M 
@@ -8835,6 +8940,7 @@ Source: 149
 Author: Old Colony Musical Society and Handel and Haydn Society [Boston].  
 Title: Old Colony Collection of Anthems…Vol. I
 Call number: Quarto M 2040 .O56 1818 v.1
+Inscription: null
 Description: .  2nd ed.  Boston: James Loring, [1817?].  [2], 196 pp.  Appears to be complete.  	no inscriptions
 	no MS. music
 	printed bookplate inside front cover, dated 1862, honors Nathaniel Sheldon 
@@ -8855,8 +8961,8 @@ Source: 150
 Author: Olmsted, Timothy.  
 Title: The Musical Olio
 Call number: M 2116 .O4 M88 1805 c.1
-Description: .  Northampton: Andrew Wright, 1805.  10, [2], [9]-112 pp.  Complete.  Pp. 49-56 (signature G) appear twice in succession.  Printed copyright notice pasted inside front cover.  	inscription: preliminary leaf recto, “Mary Marsh”
-	bookplate of Charles T. Wells pasted inside back cover
+Inscription: preliminary leaf recto, “Mary Marsh”
+Description: .  Northampton: Andrew Wright, 1805.  10, [2], [9]-112 pp.  Complete.  Pp. 49-56 (signature G) appear twice in succession.  Printed copyright notice pasted inside front cover.  	bookplate of Charles T. Wells pasted inside back cover
 	no MS. music 
 
 
@@ -9072,6 +9178,7 @@ Source: 151
 Author: [Olmsted, Timothy.  
 Title: The Musical Olio
 Call number: M 2116 .O4 M88 1805 c.2
+Inscription: null
 Description: .  Northampton: Andrew Wright, 1805.]  Pp. 25-112.  Followed by pp. 51-56 and 77-84 from a tunebook printed in staffless shape notation (Andrew Law’s The Art of Singing, 4th [i.e., 3rd] ed.?), pp. 51-56 sewn together but not bound in, and pp. 77-84 bound in; pp. 81-82 and 65-72 from an engraved tunebook that may be the second vol. of Daniel Bayley’s The American Harmony because almost every piece is attributed to “A. W.” (Aaron Williams); a 6-p. printed Grand Hallelujah Chorus (Handel’s, from Messiah), either unpaged or p. nos. trimmed off, the music engraved in a style unfamiliar to this writer (this is probably not ASMI 227, which has 7 pp.); and 9 leaves of MS. music, mostly or all treble parts.	inscriptions: inside front cover, “Amo[r?] et Amicus [illegible] / [unus?]” 
 		(pencil); MS. music leaf [7] verso, “Beauchamp. [?]jen [?]el        from 
 		Emily [?] [pieces?]        Henry” (pencil); MS. music leaf [9] verso, [much 
@@ -9094,6 +9201,7 @@ Source: 152
 Author: Olmsted, Timothy.  
 Title: The Musical Olio
 Call number: M 2116 .O4 M88 1811
+Inscription: null
 Description: .  2nd ed.  Hartford: Peter B. Gleason and Company (New London, Conn.: printed by Samuel Green), 1811.  [2], 127, [1] pp.  Appears to be complete.  	no inscriptions
 	no MS. music
 	printed label pasted inside front cover: “Given to the / Watkinson Library / 			Hartford / through the generosity of / Sydney Stanley, / who died
@@ -9107,8 +9215,8 @@ Source: 153
 Author: 
 Title: Psalm and Hymn Tunes, selected for the use of the Hollis-Street Society, in Boston.
 Call number: M 2116 .P8 1811
-Description:   Boston: J. T. Buckingham, 1811.  71, [1] pp.  Appears to be complete.  P. 54 misnumbered 45.	inscription: preliminary leaf recto, “Samuel May Boston / Hollis St. Church   
-		Pew 78” (pencil)
+Inscription: preliminary leaf recto, “Samuel May Boston / Hollis St. Church   
+Description:   Boston: J. T. Buckingham, 1811.  71, [1] pp.  Appears to be complete.  P. 54 misnumbered 45.		Pew 78” (pencil)
 	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
@@ -9135,6 +9243,7 @@ Source: 154
 Author: “Psalmody.”  MS. music book, mainly secular + instrumental.  Unpaged.  Undated, but 9th to last leaf 
 Title: recto
 Call number: Music MS 5
+Inscription: null
 Description:  has the inscription “1816 March,” so the MS. was not completed until 1816 or later.	last leaf verso: “E. R. M” 5 times, in pencil; owner’s initials?
 	leaf [1] recto: “Psalmody” (ironic, given the overwhelmingly secular contents 
 		of the MS.)
@@ -9148,8 +9257,8 @@ Source: 155
 Author: 
 Title: The Psalms, Hymns, and Spiritual Songs, of the Old and New-Testament: faithfully translated into English Meeter.
 Call number: BS 1440 .B4 1726
-Description:   21st ed.  Boston: S. Kneeland and T. Green, for J. Franklin, 1726.  Ends with “The TUNES of the PSALMS,” pp. 301-309.  P. 309 fragmentary; otherwise complete.	inscription: inside front cover, “J. Wingate Thornton to” (followed by printed 
-		label pasted inside front cover: “JAMES BROWN THORNTON.”)
+Inscription: inside front cover, “J. Wingate Thornton to” (followed by printed 
+Description:   21st ed.  Boston: S. Kneeland and T. Green, for J. Franklin, 1726.  Ends with “The TUNES of the PSALMS,” pp. 301-309.  P. 309 fragmentary; otherwise complete.		label pasted inside front cover: “JAMES BROWN THORNTON.”)
 	bookplates of Charles T. Wells pasted inside front + back covers
 	no MS. music
 
@@ -9160,6 +9269,7 @@ Source: 156
 Author: Read, Daniel.  
 Title: The American Singing Book; or A New and Easy Guide to the Art of Psalmody
 Call number: Special M 1999 .R4 A4 1786
+Inscription: null
 Description: .  2nd ed.  New Haven, Conn.: for the author, 1786.  72, [1] pp.  Complete.	inscriptions: preliminary leaf recto, “[G?] Morgan”; t. p., “Samuel B. Barlow”
 	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
@@ -9220,15 +9330,15 @@ tune_key: Am
 tune_melodic_incipit: 1|3-4-3-21|23-4|5-3-21D7|U1
 tune_text_incipit: Now in the heat of youthfull blood
 *******************
-The [God?] of Nature---Cm---1|3111|D533|63+53+5|5+6---1|311D7|5U1D7|U1---Thro all this world below god is seen all around [photo]---
+The [God?] of Nature---Cm---1|3111|D533|63+53+5|5+6-*- 1|311D7|5U1D7|U1---Thro all this world below god is seen all around [photo]---
 tune_page: a. l. [1] verso
 tune_title: The [God?] of Nature
 tune_credit: null
 tune_is_secular: false
 tune_vocal_part: null
 tune_key: Cm
-tune_melodic_incipit: 1|3111|D533|63+53+5|5+6
-tune_text_incipit: 1|311D7|5U1D7|U1, Thro all this world below god is seen all around [photo]
+tune_melodic_incipit: 1|3111|D533|63+53+5|5+6, 1|311D7|5U1D7|U1
+tune_text_incipit: Thro all this world below god is seen all around [photo]
 *******************
 50th Pslam tune to the 50 pslam [!]---E---535|U1-D6-5-4-3-2-|11|456U1[-]D6|5---
 tune_page: a. l. [1] verso
@@ -9277,6 +9387,7 @@ Source: 157
 Author: Read, Daniel.  
 Title: The Columbian Harmonist, No. 2
 Call number: Special M 2116 .R4 C6 1801
+Inscription: null
 Description:  with “Additional Music.”  New Haven, Conn., [1801].  Complete as described in ASMI (no. 420).  Followed by 4 leaves with printed staves for MS. music.  Bound with: [Benham, Asahel.  Federal Harmony.  2nd or 3rd ed. (ASMI says 3rd ed.).  New Haven, Conn.: A. Morse, 1792 or Middletown, Conn.: Moses H. Woodward, 1793].  Lacks pp. [1-4].  As described in ASMI (no. 91, but could equally be an incomplete copy of no. 90).  Bound with: Edson, Lewis, Jr.  The Social Harmonist.  3rd ed.  New York: Sage and Clough, 1803.  79 pp.  Complete.  Followed by 11 leaves with hand-ruled staves for MS. music.	no inscriptions
 	“PETER ROOME” tooled in gold on red rectangle pasted to front cover
 	inside front cover: “Words for the Elegy page 81” (see itemization of MS. 
@@ -9291,26 +9402,11 @@ Description:  with “Additional Music.”  New Haven, Conn., [1801].  Complete as d
 
 ----------------end of source-------------
 
-
-xxxxxxxxxxxxxxxx Start of Source Entries xxxxxxxxxxxxxxxx
-
-title or text---no clef or key signature; if treble clef is intended and key is F---notes are 11D7+6U12[or 3]221D77767U13631D6---
-tune_page: null
-tune_title: title or text
-tune_credit: null
-tune_is_secular: true
-tune_vocal_part: no clef or key signature; if treble clef is intended and key is F
-tune_key: null
-tune_melodic_incipit: notes are 11D7+6U12[or 3]221D77767U13631D6
-tune_text_incipit: null
-*******************
-
-xxxxxxxxxxxxxxxx End of Source Entries xxxxxxxxxxxxxxxx
-
 Source: 158
 Author: Read, Daniel.  
 Title: The Columbian Harmonist.
 Call number: M 2116 .R4 C6 1807
+Inscription: null
 Description:   3rd ed.  Boston: Manning and Loring, 1807.  111, [1] pp.  Complete.  	sewn inside back cover: pp. 41-48 (signature E of engraved music; letter 
 		appears twice on p. 41) and 17-24 (signature B; letter appears twice 
 		on p. 17) of Eliakim Doolittle’s The Psalm Singer’s Companion (New 
@@ -9320,6 +9416,9 @@ Description:   3rd ed.  Boston: Manning and Loring, 1807.  111, [1] pp.  Complet
 		Mitchell” (pencil); additional leaf verso, “Bot. of. Mr. Read”; p. 46 of 
 		Doolittle tunebook, “[F?]     T”
 	bookplate of Charles T. Wells pasted inside front cover
+	MS. music entry, additional leaf verso: 20 notes on hand-drawn staves, no 
+		title or text, no clef or key signature; if treble clef is intended and key 
+		is F, notes are 11D7+6U12[or 3]221D77767U13631D6 
 
 
 ----------------end of source-------------
@@ -9328,8 +9427,8 @@ Source: 159
 Author: Read, Daniel.  
 Title: The Columbian Harmonist.
 Call number: M 2116 .R4 C6 1810
-Description:   4th ed.  Boston: Manning and Loring, 1810.  Lacks only final leaf, with pp. 111, [1]; also lacks back cover.	inscription: preliminary leaf recto, “[H?]. D. [H?] __ Ward”
-	no MS. music
+Inscription: preliminary leaf recto, “[H?]. D. [H?] __ Ward”
+Description:   4th ed.  Boston: Manning and Loring, 1810.  Lacks only final leaf, with pp. 111, [1]; also lacks back cover.	no MS. music
 
 
 ----------------end of source-------------
@@ -9338,6 +9437,7 @@ Source: 160
 Author: Read, Joel.  
 Title: The New-England Selection; or Plain Psalmodist
 Call number: M 2116 .R41 N4 1808
+Inscription: null
 Description: .  Boston: J. T. Buckingham, for the author, 1808.  127, [1] pp.  Complete.	inscriptions: preliminary leaf recto, “Deborah Ross’s Book   Price $-[11?]-66
 		---- / Burrillville [R. I.] D R”; inside back cover, “Deborah Ross in 
 		Burrillville”
@@ -9351,6 +9451,7 @@ Source: 161
 Author: Read, Joel.  
 Title: The New-England Selection; or, Plain Psalmodist
 Call number: M 2116 .R41 N4 1812
+Inscription: null
 Description: .  2nd ed.  Boston: Manning a[nd Loring], for the author, [1812].  127, [1] pp.  Leaf with pp. [1-2] fragmentary; otherwise complete.  P. 46 misnumbered 45; p. 66 not numbered; p. 90 misnumbered 89.	“W. H. Madison” stamped upside-down on front cover
 	inscriptions: inside front cover, “[William?] Madison / [Stratford?] / 
 		[illegible]” (pencil); p. [2], “Gift of / Mrs Fred Griffin” (pencil; last 
@@ -9367,8 +9468,8 @@ Source: 162
 Author: Reed, Ephraim.  
 Title: Musical Monitor; or New-York Collection of Devotional Church Music
 Call number: M 2116 .R42 M9 1817
-Description: .  Utica, N. Y.: William Williams, 1817.  119, [1] pp.  Lacks pp. 15-16; otherwise, appears to be complete. 	inscription: fragmentary preliminary leaf recto, “Proverbs 31[tt?]– 30th / 
-		Favour is deceitful, and beauty is vain: / but a women [sic] that 
+Inscription: fragmentary preliminary leaf recto, “Proverbs 31[tt?]– 30th / 
+Description: .  Utica, N. Y.: William Williams, 1817.  119, [1] pp.  Lacks pp. 15-16; otherwise, appears to be complete. 		Favour is deceitful, and beauty is vain: / but a women [sic] that 
 		feareth the Lord, she / shall be praised.”
 	no MS. music
 
@@ -9379,8 +9480,8 @@ Source: 163
 Author: Reed, Ephraim.  
 Title: Musical Monitor, or New-York Collection of Devotional Church Music
 Call number: M 2116 .R42 M9 1820
-Description: .  Rev. ed.  Ithaca, N. Y.: Mack and Searing, 1820.  199, [1] pp.  Appears to be complete.  	inscription: additional leaf verso, “Alfred Hough       8”
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: additional leaf verso, “Alfred Hough       8”
+Description: .  Rev. ed.  Ithaca, N. Y.: Mack and Searing, 1820.  199, [1] pp.  Appears to be complete.  	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
 Reformed Protestant Dutch Church – SEE
@@ -10169,8 +10270,8 @@ Source: 164
 Author: 
 Title: 
 Call number: Music MS 18
-Description: Robbins, Mary.  MS. music book.  Paged 4-114 by original owner in ink and pencil; this pagination has been continued through p. [118] to accommodate the final 2 MS. music entries.  Undated, but repertory suggests pre-1821, possibly pre-1811.	inscription: inside front cover, “Mary Robbins” (on slip of paper pasted to 
-		front paste-down)
+Inscription: inside front cover, “Mary Robbins” (on slip of paper pasted to 
+Description: Robbins, Mary.  MS. music book.  Paged 4-114 by original owner in ink and pencil; this pagination has been continued through p. [118] to accommodate the final 2 MS. music entries.  Undated, but repertory suggests pre-1821, possibly pre-1811.		front paste-down)
 	MS. music is 3- and 4-voice settings of sacred tunes, with melody in treble or 
 		tenor (or what appears to be tenor, by its position in the vocal line-
 		up; evidence later in the MS. suggests that this third voice from the top 
@@ -10186,8 +10287,8 @@ Source: 165
 Author: Roberts, Eli.  
 Title: The Hartford Collection, of Classical Church Music.
 Call number: M 2116 .R63 H36
-Description:   New London, Conn.: Samuel Green, for the compiler, 1812.  187, [5] pp.  Appears to be complete.	inscription: preliminary leaf recto, “Martha C. Southmann.     Middletown. 
-		[date; indecipherable]”
+Inscription: preliminary leaf recto, “Martha C. Southmann.     Middletown. 
+Description:   New London, Conn.: Samuel Green, for the compiler, 1812.  187, [5] pp.  Appears to be complete.		[date; indecipherable]”
 	printed label pasted inside front cover: “Given to the / Watkinson Library / 			Hartford / through the generosity of / Sydney Stanley, / who died
 		October 18th 1878, / and by will created a fund for this purpose. / 
 		19[added in ink:]24”
@@ -11166,6 +11267,7 @@ Source: 166
 Author: Rogers, Jesse.  MS. music book.  Ca. 1712 (see inscription below)-after 1762 (1762 is 1st printing of a tune found in this MS., St. Martin’s [p. 71; not the St. Martin’s by William Tans’ur]).  Contents: 1) 2 leaves—unnumbered, or numbers no longer visible, most of first leaf detached, both leaves printed at right angles to the volume’s horizontal format (i. e., top of p. to left, bottom of p. to right)—from the rudiments section of a printed tunebook (1st p. headed “[G]AM[UT] / or, / 
 Title: Scale of 
 Call number: Music MS 24
+Inscription: null
 Description: MUSICK.”; 2nd p. headed “The RULE for finding out your / Mi by Flatts.” with poem from John Playford’s tunebook starting “If that no Flat be set in B”; 3rd p. contains 16 staff-fragments with various musical symbols, starting with “A single and / double Bar.”; 4th p. blank; 4 photos); 2) 4 unnumbered leaves containing MS. rudiments (photo; also one tune, Exeter, with letter “A,” on leaf [2] verso + leaf [3] recto of this set); 3) 21 leaves, numbered by original owner on alternate facing versos + rectos; 4) pp. 22-120, numbered by original owner, + p. [121], blank; 6) laid inside back cover, 2 unnumbered leaves containing partial index (letter G on) of the tunes on the numbered leaves + pages, and “An Index for The Tunes at ye Beginning of the Book Sence ye Book was paged” (pp. between numbered versos + rectos of leaves with MS. music contain tunes identified by letters B-I, K-L, used like p. nos.; this 2nd index lists those tunes with their corresponding letters + nearest numbered p.). 	inscriptions: inside front cover, “Jesse Rogers of Springfield / [Ji?]lyth [= July, 
 		the?] / Day [paste-down torn away at this point, so day in July + year, 
 		if they were present, are no longer legible]”; inside back cover, “March 
@@ -11200,8 +11302,8 @@ Source: 167
 Author: 
 Title: Sacred Harmony: being a Selection of Tunes of approved excellence, suited to the various subjects and metres of the Psalms and Hymns of Dr. Watts, and also to the Supplement attached to them, by the Rev. Mr. Winchell
 Call number: BS 1440 .W4 W5 1820
-Description: .  Boston: James Loring, 1819.  7, [113] pp.  Appears to be complete.  Bound with Winchell, James M.  An Arrangement of the Psalms, Hymns, and Spiritual Songs of the Rev. Isaac Watts, D. D.  2nd ed.  Boston: James Loring, for Lincoln and Edmands, and James Loring, 1820; and Winchell, James M.  A Selection of more than three hundred Hymns, from the most approved authors, on a great variety of subjects.  2nd ed.  Boston: James Loring, for Lincoln and Edmands, and James Loring, 1820.  The two Winchell books are texts only.	inscription: inside front cover, “Anna M Cooke”	
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: inside front cover, “Anna M Cooke”	
+Description: .  Boston: James Loring, 1819.  7, [113] pp.  Appears to be complete.  Bound with Winchell, James M.  An Arrangement of the Psalms, Hymns, and Spiritual Songs of the Rev. Isaac Watts, D. D.  2nd ed.  Boston: James Loring, for Lincoln and Edmands, and James Loring, 1820; and Winchell, James M.  A Selection of more than three hundred Hymns, from the most approved authors, on a great variety of subjects.  2nd ed.  Boston: James Loring, for Lincoln and Edmands, and James Loring, 1820.  The two Winchell books are texts only.	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
 
@@ -11211,6 +11313,7 @@ Source: 168
 Author: 
 Title: The Salem Collection of Classical Sacred Musick.
 Call number: M 2116 .S3 1805
+Inscription: null
 Description:   Salem, Mass.: Joshua Cushing, 1805.  Lacks all after p. 104.  In terrible shape: only fragments of front cover remain, back cover is missing, + 1st 3 leaves are in 2 pieces each.	no inscriptions
 	no MS. music
 
@@ -11221,6 +11324,7 @@ Source: 169
 Author: [
 Title: The Salem Collection of Classical Sacred Musick.
 Call number: M 2116 .S3 1806
+Inscription: null
 Description:   2nd ed.  Boston: Manning and Loring, for Cushing and Appleton, 1806.]  Lacks 1st pp. [i]-iv; 1st pp. v-vi fragmentary.	no inscriptions
 	no MS. music
 
@@ -11231,6 +11335,7 @@ Source: 170
 Author: 
 Title: A Selection of Psalm Tunes, for the use of the Protestant Episcopal Church in the State of New-York
 Call number: M 2125 .S4
+Inscription: null
 Description: .  New York: T. and J. Swords, 1812.  4 pp. (assumed to be pp. [i-iv]), pp. [xxiii]-xxiv, pp. 1-72.  Lacks pp. v-xxii.  24 blank leaves (heavy paper) bound in between end of printed book and back flyleaves.  Front cover reproduces t. p. text.	no inscriptions
 	no MS. music
 
@@ -11244,6 +11349,7 @@ Source: 171
 Author: Seymour, Lewis, and Thaddeus Seymour.  
 Title: The Musical Instructer: or An Easy Introduction to Psalmody.
 Call number: M 2116 .M87 1808
+Inscription: null
 Description:   2nd ed.  New York, 1808.  [2], 5-53, [1] pp.  Complete.  Pp. 27-34 printed + bound in this order (rectos/versos): 27/32, 33/30, 31/28, 29/34.	ownership inscription inside front cover, but pasted-on library bookplate + 
 		illegibility make what’s visible not worth transcribing
 	no MS. music
@@ -11255,8 +11361,8 @@ Source: 172
 Author: Shaw, Oliver.  
 Title: Melodia Sacra: or Providence Selection of Sacred Musick
 Call number: M 2116 .S5 M4
-Description: .  Providence: Miller and Hutchens, 1819.  167, [1] pp.  Appears to be complete.	inscription: additional leaf recto, “J. BYOM” (pencil)
-	beautiful ink drawing of a bird, etc. on preliminary leaf recto [photo]
+Inscription: additional leaf recto, “J. BYOM” (pencil)
+Description: .  Providence: Miller and Hutchens, 1819.  167, [1] pp.  Appears to be complete.	beautiful ink drawing of a bird, etc. on preliminary leaf recto [photo]
 	printed dedication to “the Psallonian Society, of Providence, R. I.” on p. [iii]
 	opening piece (pp. [9]-15), by Shaw, is titled Brown University.  A Hymn of 
 		Praise suitable for Thanksgiving.
@@ -11273,6 +11379,7 @@ Source: 173
 Author: Shaw, O[liver], A[mos] Albee, and H[erman] Mann.  
 Title: The Columbian Sacred Harmonist: or, Collection of Grammatical Music.
 Call number: M 2116 .S5 C6
+Inscription: null
 Description:   Dedham, Mass.: H[erman] Mann, 1808.  126, [2] pp.  Complete.	no inscriptions
 	no MS. music
 	bookplate of Charles T. Wells pasted inside front cover
@@ -11284,6 +11391,7 @@ Source: 174
 Author: Shumway, Nehemiah.  
 Title: The American Harmony.
 Call number: M 2116 .S59 A6
+Inscription: null
 Description:   2nd ed.  Philadelphia: John M’Culloch, 1801.  [2], 220 pp.  Complete.  	inscriptions: inside front cover, “P. Wh[it?]ney” (pencil), “William Williams / 
 		June 19th 1849.”; 1st preliminary leaf recto, “H. R. & S. H. Norman / 
 		Stonington Conn. / June 19th A. D. 1849.”; 2nd preliminary leaf verso, “J. 
@@ -11295,29 +11403,17 @@ Description:   2nd ed.  Philadelphia: John M’Culloch, 1801.  [2], 220 pp.  Compl
 
 ----------------end of source-------------
 
-
-xxxxxxxxxxxxxxxx Start of Source Entries xxxxxxxxxxxxxxxx
-
-Anthem from 14th of Revelations---treble?---Bb---1|12|32|1,|23|43|D7U32|1D7|U1---
-tune_page: null
-tune_title: Anthem from 14th of Revelations
-tune_credit: null
-tune_is_secular: false
-tune_vocal_part: treble?
-tune_key: Bb
-tune_melodic_incipit: 1|12|32|1,|23|43|D7U32|1D7|U1
-tune_text_incipit: null
-*******************
-
-xxxxxxxxxxxxxxxx End of Source Entries xxxxxxxxxxxxxxxx
-
 Source: 175
 Author: 
 Title: 
 Call number: M 5000 .F6 1785
+Inscription: null
 Description: [Single leaf with MS. music entry.]	no inscriptions
 	August 2019: found with several other items in box titled “Fragments of 
 		hymn and song books”
+	MS. music entry:
+		Anthem from 14th of Revelations, treble?, Bb, 
+			1|12|32|1,|23|43|D7U32|1D7|U1
 
 
 ----------------end of source-------------
@@ -11326,8 +11422,8 @@ Source: 176
 Author: Stickney, John.  
 Title: The Gentleman and Lady’s Musical Companion.
 Call number: M 2116 .S86 G5 1774
-Description:   Newburyport, Mass.: Daniel Bayley, [1780?].  ASMI 475A.  Lacks pp. 65-72, 97-100.	inscription: inside front cover, “Bachelor ;” (a first name may be covered by 
-		the bookplate pasted inside the front cover)
+Inscription: inside front cover, “Bachelor ;” (a first name may be covered by 
+Description:   Newburyport, Mass.: Daniel Bayley, [1780?].  ASMI 475A.  Lacks pp. 65-72, 97-100.		the bookplate pasted inside the front cover)
 	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
@@ -11338,8 +11434,8 @@ Source: 177
 Author: Stickney, John.  
 Title: The Gentleman and Lady’s Musical Companion.
 Call number: M 2116 .S86 G5 1774 c.2
-Description:   [2nd ed.]  Newburyport, Mass.: Daniel Bayley, [1783].  Lacks all pp. after p. 152; pp. 53-54 fragmentary.	inscription: inside front cover, “John [F.?] Stickney, Esq[.] / Newburyport / 
-		Mass, / Essex County” (pencil); t. p., between printed “JOHN” and 
+Inscription: inside front cover, “John [F.?] Stickney, Esq[.] / Newburyport / 
+Description:   [2nd ed.]  Newburyport, Mass.: Daniel Bayley, [1783].  Lacks all pp. after p. 152; pp. 53-54 fragmentary.		Mass, / Essex County” (pencil); t. p., between printed “JOHN” and 
 		printed “STICKNEY,” “F.” (pencil)
 	no MS. music
 
@@ -11350,6 +11446,7 @@ Source: 178
 Author: Stone, Joseph, and Abraham Wood.  
 Title: The Columbian Harmony
 Call number: M 2116 .S87 C6
+Inscription: null
 Description: .  [1793].  Viii, 112 pp.  Complete, though pp. iii-vi are frayed with some loss of text and pp. 109-112 are missing their bottom outside corners, with loss of text; both covers are lacking.	no inscriptions
 	no MS. music
 
@@ -11360,6 +11457,7 @@ Source: 179
 Author: Swan, Timothy.  
 Title: New England Harmony
 Call number: M 2116 .S9 N4
+Inscription: null
 Description: .  Northampton, Mass.: Andrew Wright, 1801.  Lacks pp. 99-102; last leaf (p. 103 + unpaged index) fragmentary; both covers fragmentary.	no inscriptions
 	no MS. music
 	bookplate of Charles T. Wells pasted inside front cover
@@ -11371,8 +11469,8 @@ Source: 180
 Author: Sweeny, George C., and William Cooper.  
 Title: Sacred Musick.
 Call number: M 2116 .S974 1810
-Description:   Boston: J. T. Buckingham, 1810.  Lacks pp. 27-30; pp. [1-2] fragmentary, but with no loss of text; several pages ripped; in generally poor condition.	inscription: inside front cover, “[Calvin?] Allen’s Book / [Presented by?] A T 
-		Jones Septr 29 / 1826”
+Inscription: inside front cover, “[Calvin?] Allen’s Book / [Presented by?] A T 
+Description:   Boston: J. T. Buckingham, 1810.  Lacks pp. 27-30; pp. [1-2] fragmentary, but with no loss of text; several pages ripped; in generally poor condition.		Jones Septr 29 / 1826”
 	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
@@ -11383,8 +11481,8 @@ Source: 181
 Author: Sweeny, George C., and William Cooper.  
 Title: Sacred Musick.
 Call number: M 2116 .S974 1810 c.2
-Description:   Boston: J. T. Buckingham, 1810.  71, [1] pp.  Complete; paper front cover has text duplicating that on t. p., with surrounding ornament. 	inscription: front cover, “O. Br[a?]y’s”
-	no MS. music
+Inscription: front cover, “O. Br[a?]y’s”
+Description:   Boston: J. T. Buckingham, 1810.  71, [1] pp.  Complete; paper front cover has text duplicating that on t. p., with surrounding ornament. 	no MS. music
 
 Tans’ur, William.  The Royal Melody Complete: or The New Harmony of Zion – SEE
 	[Bayley, Daniel.]  [Tans’ur, William.  The Royal Melody Complete: or The New 
@@ -11397,6 +11495,7 @@ Source: 182
 Author: Temple, Samuel.  
 Title: An Anthem for Ordination
 Call number: M 2078 .O6 1808
+Inscription: null
 Description: .  “Published for the South Church and congregation in Dorchester, (Mass.).”  Boston: Manning and Loring, for the author, 1808.  8 pp.  Complete.  Not in ASMI; no other copy known to this writer.      [5 photos]
 	printed presentation notice on p. [2] dated Dorchester, Nov. 16, 1808; 
 		anthem “Selected as a part of the Musical Performances on the 7th day 
@@ -11776,8 +11875,8 @@ Source: 183
 Author: 
 Title: 
 Call number: Music MS 30
-Description: Todd, Rachel. MS. music book, undated but likely copied between 1810 + 1830.  46 unnumbered leaves with printed staves; MS. music on leaves [1-13] and [45-46].  See inventory no. 81, [Catherine Hills?] MS. music book, which is almost identical.	inscription: front cover, along edge of leather overlap from spine: “Rachel 
-		Todd” 
+Inscription: front cover, along edge of leather overlap from spine: “Rachel 
+Description: Todd, Rachel. MS. music book, undated but likely copied between 1810 + 1830.  46 unnumbered leaves with printed staves; MS. music on leaves [1-13] and [45-46].  See inventory no. 81, [Catherine Hills?] MS. music book, which is almost identical.		Todd” 
 	most MS. music entries are for 3 or 4 voices; if 4, “Treble,” “2d Treble,” 
 		“Tenor,” “Bass”; if 3, 2nd treble or tenor omitted; melody in treble
 	1st 30 entries numbered I [sic]-30
@@ -11789,8 +11888,8 @@ Source: 184
 Author: Turner, James A.  
 Title: To learn to sing, observe these rules…
 Call number: BS 1440 .B3
-Description:   Boston: James A. Turner, 1752.  16 numbered leaves.  Leaf 16 partial; otherwise complete.  Bound with: Barnard, John.  A New Version of the Psalms of David; fitted to the Tunes used in the Churches: with several hymns, out of the Old, and New, Testament.  Boston: J. Draper, for T. Leverett, 1752.  	inscription: leaf 16 verso, “Thomas / Brown / his Book”
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: leaf 16 verso, “Thomas / Brown / his Book”
+Description:   Boston: James A. Turner, 1752.  16 numbered leaves.  Leaf 16 partial; otherwise complete.  Bound with: Barnard, John.  A New Version of the Psalms of David; fitted to the Tunes used in the Churches: with several hymns, out of the Old, and New, Testament.  Boston: J. Draper, for T. Leverett, 1752.  	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
 A Valuable Collection of Sacred Musick – SEE
@@ -11839,6 +11938,7 @@ Source: 185
 Author: Van Rensselaer, Elizabeth Sanders.  MS. music book.  Mostly secular (marches, dance tunes, songs), but with several sacred pieces which are inventoried here.  45 leaves, the first 22 numbered on their 
 Title: verso
 Call number: Music MS 8
+Inscription: null
 Description: s; leaves [38-45] copied from the back of the book and in inverse vertical orientation to the first 37 leaves (Denmark on 2 of these last 8 leaves will be located with the numbering system used for and continued on from the first 37 leaves, thus it is located on leaf [39] recto-leaf [38] verso).  Dates of 1782 + 1793 inside front + back covers (see inscriptions below).	inscriptions: inside front cover, “Elizabeth Sanders Van Rensselar [sic],” 
 		“Elizabeth Van Renss[elaer] her Note Music Book   Boston / 1782”; 
 		leaf 1 recto, “Elizabeth Phil Van Rensselaer”; inside back cover, “Peter 
@@ -11851,6 +11951,7 @@ Source: 186
 Author: 
 Title: The Village Harmony: or, Youth’s Assistant to Sacred Music.
 Call number: M 2116 .V55 1800
+Inscription: null
 Description:   5th ed.  Exeter, N. H.:  Henry Ranlet, 1800.  [2], 205, [1] pp.  Complete; a nice clean copy.	inscriptions: t. p., “Jos May” (pencil); additional leaf recto, list of 6 pieces in 
 		the book, all by William Billings, with their p. nos. (pencil); inside back 
 		cover, “Jos: May’s. / 1801.”
@@ -11863,6 +11964,7 @@ Source: 187
 Author: 
 Title: The Village Harmony: or, Youth’s Assistant to Sacred Music.
 Call number: M 2116 .V55 1810
+Inscription: null
 Description:  10th ed.  Exeter, N. H.: C. Norris and Company, [1810].  [2], 283, [3] pp.  Complete, though some leaves are frayed, tattered, + worm-eaten.  
 	inscriptions: inside front cover, “[Dorothy] Ward” (pencil); inside back cover, 
 		“The property of / AM[OS?] [MERRILL?] / Salisbury January 1823,” 
@@ -11878,6 +11980,7 @@ Source: 188
 Author: 
 Title: The Village Harmony: or, Youth’s Assistant to Sacred Musick.
 Call number: M 2116 .V8 1813
+Inscription: null
 Description:   11th ed.  Newburyport, Mass.: E. Little and Company, [1813].  [2], 323, [3] pp., lacking pp. 73-76.  Pp. 1st [1-2], 2nd [1-2], [3]-4, 5-6, 63-64 trimmed, with minimal loss of text.  P. 254 misnumbered 252.	inscriptions: inside front cover, “Jan. 1813 – Lyman Spaulding Barnes.”; on 
 		pasted-in printed poem inside front cover, “Belle” + “Nov. 2nd / 1874.”
 	printed poem pasted inside front cover: “An Old Song” by “C. J. S.”; begins 
@@ -11900,8 +12003,8 @@ Source: 189
 Author: [
 Title: The Village Harmony: or, Youth’s Assistant to Sacred Musick.
 Call number: Special M 2116 .V8 1813 C.2
-Description:   11th ed.  Newburyport, Mass.: E. Little and Company, [1813].] Lacks all before p. 7; otherwise complete, with p. 254 misnumbering corrected, so this copy must post-date inventory no. 188, above. 	inscription: inside front cover, “G. Olcott. 1814.” (12th ed., with same 
-		pagination, was issued in 1815)
+Inscription: inside front cover, “G. Olcott. 1814.” (12th ed., with same 
+Description:   11th ed.  Newburyport, Mass.: E. Little and Company, [1813].] Lacks all before p. 7; otherwise complete, with p. 254 misnumbering corrected, so this copy must post-date inventory no. 188, above. 		pagination, was issued in 1815)
 	no MS. music
 
 
@@ -11927,8 +12030,8 @@ Source: 190
 Author: 
 Title: The Village Harmony: or, New-England Repository of Sacred Musick.
 Call number: M 2116 .V54 1819
-Description:   16th ed.  Exeter, N. H.: J. J. Williams, for the proprietor, 1819.  [2], 347, [3] pp.  Appears to be complete.	inscription: inside front cover, “Jemima Price was Born in Rocky Hill Conn / 
-		Feb 2d 1798 – This was her Book from which / she sang in the Choir of 
+Inscription: inside front cover, “Jemima Price was Born in Rocky Hill Conn / 
+Description:   16th ed.  Exeter, N. H.: J. J. Williams, for the proprietor, 1819.  [2], 347, [3] pp.  Appears to be complete.		Feb 2d 1798 – This was her Book from which / she sang in the Choir of 
 		the Congregational Church / at twelve years of Age”
 
 
@@ -11938,8 +12041,8 @@ Source: 191
 Author: 
 Title: The Village Harmony: or, New-England Repository of Sacred Musick.
 Call number: M 2116 .V8 1820
-Description:   17th ed.  Exeter, N. H.: J. J. Williams, for the proprietor, 1820.  [2], 347, [3] pp.  Appears to be complete, though the final leaf is fragmentary.	inscription: t. p., “W Palfr[ay?]” (pencil)  (possibly the composer/compiler 
-		Warwick Palfray)
+Inscription: t. p., “W Palfr[ay?]” (pencil)  (possibly the composer/compiler 
+Description:   17th ed.  Exeter, N. H.: J. J. Williams, for the proprietor, 1820.  [2], 347, [3] pp.  Appears to be complete, though the final leaf is fragmentary.		Warwick Palfray)
 	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
@@ -12606,6 +12709,7 @@ Source: 192
 Author: W., J.  MS. music book dated 1772.  53 leaves, numbered erratically (sometimes numbering tunes rather than leaves or pages) by original owner: leaf [1] unnumbered; leaf [2] originally numbered “P 1” on 
 Title: recto
 Call number: Music MS 25
+Inscription: null
 Description:  side, but “1” smudged out; leaves [3-40] numbered “P 1”-“P 38” on rectos; leaf [41] numbered “P 39” on recto + “P 40” on verso; leaf [42] numbered “41” on recto + “42” on verso; leaves [43-45] numbered “43”-“45” on versos; leaf [46] unnumbered; leaf [47] numbered “46” on recto; leaf [48] numbered “50” on recto + “51” on verso; leaf [49] numbered “52” on verso; leaf [50] numbered “53” on recto; leaves [51-53] unnumbered.  Leaves [48-53] are smaller and not bound in.  Psalm 3, started on leaf [49] verso, doesn’t continue on leaf [50] recto, which has Brookfield—suggesting that these last 6 leaves (at least) were numbered at some point after the music was copied, and after at least one leaf had been lost.	inscriptions: inside front cover, “This book was found in E. Hartford” (pencil); 
 		leaf [50] verso, “Ben” (blue ink); back cover, “J W. 1772” 
 	repertory is mostly sacred, but secular tunes (most in blue ink or pencil) are 
@@ -12627,6 +12731,7 @@ Source: 193
 Author: [Wainwright, Jonathan M.].  
 Title: A Set of Chants adapted to the hymns in the Morning and Evening Prayer, and to the Communion Service, of the Protestant Episcopal Church in the United States of America.
 Call number: M 2125 .W3 S48
+Inscription: null
 Description:   Boston: Thomas Badger, Jr., 1819.  49, [1] pp.  Appears to be complete.	no inscriptions
 	no MS. music
 
@@ -12723,6 +12828,7 @@ Source: 194
 Author: Walter, Thomas.  
 Title: The Grounds and Rules of Musick Explained: or, An Introduction to the Art of Singing by Note.
 Call number: Special M 2116 .W2
+Inscription: null
 Description:   Boston: J. Franklin, for S. Gerrish, 1721.  [2], iii, [1], 24 pp., [16] leaves, printed on alternate facing versos + rectos.  Lacks pp. 7-8 of introductory matter.  Leaves with printed music + following 9 additional leaves paged 26-73 by original owner; additional leaves contain MS. music; owner’s added pagination used here to locate MS. annotations on leaves with printed music + MS. music entries on additional leaves.	inscriptions: inside front cover, “D Woodbridg[e]”; t. p., “William 
 		Woodbridge”; inside back cover, “Dudley Woodbridge / His Book”
 	MS. index to printed + MS. music on preliminary leaf [2] recto
@@ -12742,10 +12848,387 @@ Description:   Boston: J. Franklin, for S. Gerrish, 1721.  [2], iii, [1], 24 pp.
 
 ----------------end of source-------------
 
+
+xxxxxxxxxxxxxxxx Start of Source Entries xxxxxxxxxxxxxxxx
+
+Meer [sic] Tune---“Cantus”---“Medus”---“Bassus”---cantus + medius crossed out but still legible (“Rong” written after medius part-*- then crossed out)---F---1|5533|1-232---diamond notation---
+tune_page: a. l. [1] recto
+tune_title: Meer [sic] Tune
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Cantus” “Medus” “Bassus” cantus + medius crossed out but still legible (“Rong” written after medius part, then crossed out)
+tune_key: F
+tune_melodic_incipit: 1|5533|1-232
+tune_text_incipit: diamond notation
+*******************
+New York Tune---“Cantus”---F? (G clef---+ possible key signature on middle line—looks like an S or 8)-*- if in F---incipit is 13541212,235345---round notation---
+tune_page: a. l. [1] recto
+tune_title: New York Tune
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Cantus”
+tune_key: F? (G clef
+tune_melodic_incipit: + possible key signature on middle line—looks like an S or 8), if in F
+tune_text_incipit: incipit is 13541212,235345, round notation
+*******************
+100 of New Tunes [sic!—“of” + “s” added later]---“Cantus”---“Bassus”---Am---11D7U354-321---round notation---
+tune_page: a. l. [2] recto
+tune_title: 100 of New Tunes [sic!—“of” + “s” added later]
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Cantus” “Bassus”
+tune_key: Am
+tune_melodic_incipit: 11D7U354-321
+tune_text_incipit: round notation
+*******************
+Quercey---“Cantus”---“Bassus”---G---133232D7U1---round notation---
+tune_page: a. l. [2] recto
+tune_title: Quercey
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Cantus” “Bassus”
+tune_key: G
+tune_melodic_incipit: 133232D7U1
+tune_text_incipit: round notation
+*******************
+Humph[er?]y[’]s---melody---bass---G---123254-3-212---round notation---
+tune_page: p. 17
+tune_title: Humph[er?]y[’]s
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: melody bass
+tune_key: G
+tune_melodic_incipit: 123254-3-212
+tune_text_incipit: round notation
+*******************
+Standish Tune---melody---bass---Am---13215432---round notation---
+tune_page: p. 17
+tune_title: Standish Tune
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: melody bass
+tune_key: Am
+tune_melodic_incipit: 13215432
+tune_text_incipit: round notation
+*******************
+Cambridge Tune---“Cantus”---“Bas[s]us”---if in Gm (only one flat in key signature)---13121D6#7U1---round notation---
+tune_page: p. 18
+tune_title: Cambridge Tune
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Cantus” “Bas[s]us”
+tune_key: if in Gm (only one flat in key signature)
+tune_melodic_incipit: 13121D6#7U1
+tune_text_incipit: round notation
+*******************
+Isle of Weight [sic]---“Cantus”---“B[assus?]”---Gm---1|5-43-4|57|54|5---round notation---
+tune_page: p. 18
+tune_title: Isle of Weight [sic]
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Cantus” “B[assus?]”
+tune_key: Gm
+tune_melodic_incipit: 1|5-43-4|57|54|5
+tune_text_incipit: round notation
+*******************
+Farnham---“Cantus”---“Bas[s]us”---G---13#4553,3|235#45---round notation---
+tune_page: p. 19
+tune_title: Farnham
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Cantus” “Bas[s]us”
+tune_key: G
+tune_melodic_incipit: 13#4553,3|235#45
+tune_text_incipit: round notation
+*******************
+Abington---melody---bass---G---11325432---round notation---
+tune_page: p. 19
+tune_title: Abington
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: melody bass
+tune_key: G
+tune_melodic_incipit: 11325432
+tune_text_incipit: round notation
+*******************
+Fareham---“Cantus”---“Bas[s]us”---Gm---5U1321D#7U12---round notation---
+tune_page: p. 20
+tune_title: Fareham
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Cantus” “Bas[s]us”
+tune_key: Gm
+tune_melodic_incipit: 5U1321D#7U12
+tune_text_incipit: round notation
+*******************
+Buckland---“Cantus”---“Bas[s]us”---G---123211D7U1---round notation---
+tune_page: p. 20
+tune_title: Buckland
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Cantus” “Bas[s]us”
+tune_key: G
+tune_melodic_incipit: 123211D7U1
+tune_text_incipit: round notation
+*******************
+Evening Hym[m?]---“Tenr”---Am---11D765U23-21D7---round notation with---for the first time---curious wedge-shaped note stems (that will recur)---
+tune_page: p. 21
+tune_title: Evening Hym[m?]
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Tenr”
+tune_key: Am
+tune_melodic_incipit: 11D765U23-21D7
+tune_text_incipit: round notation with, for the first time, curious wedge-shaped note stems (that will recur)
+*******************
+Sabath Hym [both sic]---“Tenor”---G---13455443---round notation---
+tune_page: p. 21
+tune_title: Sabath Hym [both sic]
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Tenor”
+tune_key: G
+tune_melodic_incipit: 13455443
+tune_text_incipit: round notation
+*******************
+Heslington Tune---“Tenor”---“Bas[s]us”---F---13253451---tenor in round notation---bassus in diamond notation [photo]---
+tune_page: p. 22
+tune_title: Heslington Tune
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Tenor” “Bas[s]us”
+tune_key: F
+tune_melodic_incipit: 13253451
+tune_text_incipit: tenor in round notation, bassus in diamond notation [photo]
+*******************
+Salem Tune---melody?---Am---12124321---diamond notation---
+tune_page: p. 22
+tune_title: Salem Tune
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: melody?
+tune_key: Am
+tune_melodic_incipit: 12124321
+tune_text_incipit: diamond notation
+*******************
+136 Psalm Tune---“altus”---medius?-*- “Tenor”---bass---G---1D65U321---round notation---
+tune_page: pp. 23-24
+tune_title: 136 Psalm Tune
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “altus” medius?, “Tenor” bass
+tune_key: G
+tune_melodic_incipit: 1D65U321
+tune_text_incipit: round notation
+*******************
+Wal[l]ingford Tune---“Tenor”---Gm---132154-321---round notation---
+tune_page: p. 25
+tune_title: Wal[l]ingford Tune
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Tenor”
+tune_key: Gm
+tune_melodic_incipit: 132154-321
+tune_text_incipit: round notation
+*******************
+An Hymn for Christmas Day---“Tenor”---G---11325432---round notation---
+tune_page: p. 26
+tune_title: An Hymn for Christmas Day
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Tenor”
+tune_key: G
+tune_melodic_incipit: 11325432
+tune_text_incipit: round notation
+*******************
+149 Psalm Tune---“Tenor”---“Bass”---Bb---5U1123512D7U1---tenor in round notation---bass in diamond notation---
+tune_page: p. 27
+tune_title: 149 Psalm Tune
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Tenor” “Bass”
+tune_key: Bb
+tune_melodic_incipit: 5U1123512D7U1
+tune_text_incipit: tenor in round notation, bass in diamond notation
+*******************
+Angels Song---“Tenor”---G (or possibly Gm; unnotated staff w/ bass clef below this melody has key signature of 2 flats)---11123425---round notation---
+tune_page: p. 28
+tune_title: Angels Song
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Tenor” G (or possibly Gm; unnotated staff w/ bass clef below this melody has key signature of 2 flats)
+tune_key: null
+tune_melodic_incipit: 11123425
+tune_text_incipit: round notation
+*******************
+Sapphick ode---“Tenor”---“Bass”---G---111|11|1D7U11|22---round notation---
+tune_page: p. 30
+tune_title: Sapphick ode
+tune_credit: null
+tune_is_secular: true
+tune_vocal_part: “Tenor” “Bass”
+tune_key: G
+tune_melodic_incipit: 111|11|1D7U11|22
+tune_text_incipit: round notation
+*******************
+Dunhead or Brunswick---“Tenor”---“Bass”---Am---11234-3251---round notation---
+tune_page: p. 32
+tune_title: Dunhead or Brunswick
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Tenor” “Bass”
+tune_key: Am
+tune_melodic_incipit: 11234-3251
+tune_text_incipit: round notation
+*******************
+Indulgent Parents Dear (! likely secular)---“Tenor”---“Bass”---if in G (no key signature)---5U121D7-65,5U123,2-345432,3212---254321,321D765,5U12-32[-]143221---round notation---
+tune_page: p. 34
+tune_title: Indulgent Parents Dear (! likely secular)
+tune_credit: null
+tune_is_secular: true
+tune_vocal_part: “Tenor” “Bass”
+tune_key: if in G (no key signature)
+tune_melodic_incipit: 5U121D7-65,5U123,2-345432,3212
+tune_text_incipit: 254321,321D765,5U12-32[-]143221, round notation
+*******************
+Ambition (secular?)---melody---G---1235421---“Rest”---32323#45---Let ambition fire thy mind; diamond notation---
+tune_page: p. 36
+tune_title: Ambition (secular?)
+tune_credit: null
+tune_is_secular: true
+tune_vocal_part: melody
+tune_key: G
+tune_melodic_incipit: 1235421
+tune_text_incipit: “Rest”, 32323#45, Let ambition fire thy mind; diamond notation
+*******************
+Meer Tune---“Tenor”---“Bass”---F---155331-232---diamond notation---title “Handel Tune” below this entry (no music)---
+tune_page: p. 38
+tune_title: Meer Tune
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Tenor” “Bass”
+tune_key: F
+tune_melodic_incipit: 155331-232
+tune_text_incipit: diamond notation, title “Handel Tune” below this entry (no music)
+*******************
+Hallifax Tune---“Tenor”---“Bass”---Am---112345-432---round notation---
+tune_page: p. 40
+tune_title: Hallifax Tune
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Tenor” “Bass”
+tune_key: Am
+tune_melodic_incipit: 112345-432
+tune_text_incipit: round notation
+*******************
+Bradford Tune---“Tenor”---13153424---diamond notation---
+tune_page: p. 42
+tune_title: Bradford Tune
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Tenor”
+tune_key: null
+tune_melodic_incipit: 13153424
+tune_text_incipit: diamond notation
+*******************
+Standish---“Base”---if in Gm (no clef or key signature)---11D5137U1D4 [last note sic]---round notation; very rough---with scratched-out notes---one pitch written over another---+ several clear errors of pitch---
+tune_page: p. 44
+tune_title: Standish
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Base”
+tune_key: if in Gm (no clef or key signature)
+tune_melodic_incipit: 11D5137U1D4 [last note sic]
+tune_text_incipit: round notation; very rough, with scratched-out notes, one pitch written over another, + several clear errors of pitch
+*******************
+St Edmund[’]s Tune---“Tenor”---“Bass”---if in Gm (only one flat in key signature)---1D5U523142---tenor in diamond notation---bass in round notation---
+tune_page: p. 48
+tune_title: St Edmund[’]s Tune
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Tenor” “Bass”
+tune_key: if in Gm (only one flat in key signature)
+tune_melodic_incipit: 1D5U523142
+tune_text_incipit: tenor in diamond notation, bass in round notation
+*******************
+York---“Bass”---F---111D64U11D5---round notation---
+tune_page: p. [55]
+tune_title: York
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Bass”
+tune_key: F
+tune_melodic_incipit: 111D64U11D5
+tune_text_incipit: round notation
+*******************
+Standish---“Bass”---Am---11D5137U1D5---round notation---“Rong” written next to title + part name---
+tune_page: p. [55]
+tune_title: Standish
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Bass”
+tune_key: Am
+tune_melodic_incipit: 11D5137U1D5
+tune_text_incipit: round notation, “Rong” written next to title + part name
+*******************
+Humphery[’]s---“Bass”---G---1D53-45U1D4-5-6-7U1D5---round notation---
+tune_page: p. [55]
+tune_title: Humphery[’]s
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Bass”
+tune_key: G
+tune_melodic_incipit: 1D53-45U1D4-5-6-7U1D5
+tune_text_incipit: round notation
+*******************
+Standish---“Bass”---if in Gm (no clef or key signature)---11D5137U1D4 [last note sic]---round notation---
+tune_page: p. [55]
+tune_title: Standish
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Bass”
+tune_key: if in Gm (no clef or key signature)
+tune_melodic_incipit: 11D5137U1D4 [last note sic]
+tune_text_incipit: round notation
+*******************
+Old Litchfeild [sic] Tune---melody---Gm---13452342---diamond notation---
+tune_page: p. [65]
+tune_title: Old Litchfeild [sic] Tune
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: melody
+tune_key: Gm
+tune_melodic_incipit: 13452342
+tune_text_incipit: diamond notation
+*******************
+108th Psalm Tune---“Tenor”---“Bass”---F---13254321---tenor in a mix of round + diamond notation---bass in diamond notation [photo]---
+tune_page: pp. [67]-68
+tune_title: 108th Psalm Tune
+tune_credit: null
+tune_is_secular: false
+tune_vocal_part: “Tenor” “Bass”
+tune_key: F
+tune_melodic_incipit: 13254321
+tune_text_incipit: tenor in a mix of round + diamond notation, bass in diamond notation [photo]
+*******************
+untitled tune---secular?---melody (labeled “Song”)---if in C (no clef or key signature)---12456534553,5321243212,4565124321---Fare Lady Lay your Costly Robes a Side / No Longer may you Glory in your Pride / Take Leave of All your Carnal vain Delites / I am Come to Summons you away this Night; diamond notation---
+tune_page: p. [73]
+tune_title: untitled tune
+tune_credit: null
+tune_is_secular: true
+tune_vocal_part: secular? melody (labeled “Song”)
+tune_key: if in C (no clef or key signature)
+tune_melodic_incipit: 12456534553,5321243212,4565124321
+tune_text_incipit: Fare Lady Lay your Costly Robes a Side / No Longer may you Glory in your Pride / Take Leave of All your Carnal vain Delites / I am Come to Summons you away this Night; diamond notation
+*******************
+
+xxxxxxxxxxxxxxxx End of Source Entries xxxxxxxxxxxxxxxx
+
 Source: 195
 Author: Walter, Thomas.  
 Title: The Grounds and Rules of Musick Explained: or, An Introduction to the Art of Singing by Note.
 Call number: Special M 2116 .W218
+Inscription: null
 Description:   [4th ed.]  Boston: for Samuel Gerrish, 1746.  [2], iii, [1], 25, [1] pp., 16 leaves.  Complete.	inscriptions: inside front cover, “40 1750   1700 and [?]as[?]a / [Sleap?] / 40 
 		1750 / 1758,” “Sam. Grant” [“Grant” partly obscured by pasted-on 
 		label], “[1]757,” “Samue[ll?]”; t. p., “James Tyler. / Jany 5.th [1?]756” 
@@ -12773,87 +13256,6 @@ Description:   [4th ed.]  Boston: for Samuel Gerrish, 1746.  [2], iii, [1], 25, 
 	most entries lack bar lines, with only double bars to indicate the ends of 
 		phrases; consider all bar lines included here as literal transcriptions 
 		of what is and isn't present in the MS.
-	MS. music entries (1st 4 on additional leaves preceding engraved music):
-		a. l. [1] recto: Meer [sic] Tune, “Cantus,” “Medus,” “Bassus,” cantus + 
-			medius crossed out, but still legible (“Rong” written after 
-			medius part, then crossed out), F, 1|5533|1-232, diamond 
-			notation
-		a. l. [1] recto: New York Tune, “Cantus,” F? (G clef, + possible key 
-			signature on middle line—looks like an S or 8), if in F, incipit is 
-			13541212,235345, round notation
-		a. l. [2] recto: 100 of New Tunes [sic!—“of” + “s” added later], “Cantus,” 
-			“Bassus,” Am, 11D7U354-321, round notation
-		a. l. [2] recto: Quercey, “Cantus,” “Bassus,” G, 133232D7U1, round 
-			notation
-		p. 17: Humph[er?]y[’]s, melody, bass, G, 123254-3-212, round 
-			notation
-		p. 17: Standish Tune, melody, bass, Am, 13215432, round notation
-		p. 18: Cambridge Tune, “Cantus,” “Bas[s]us,” if in Gm (only one flat in 
-			key signature), 13121D6#7U1, round notation
-		p. 18: Isle of Weight [sic], “Cantus,” “B[assus?],” Gm, 1|5-43-4|57|54|5, 
-			round notation
-		p. 19: Farnham, “Cantus,” “Bas[s]us,” G, 13#4553,3|235#45, round 
-			notation
-		p. 19: Abington, melody, bass, G, 11325432, round notation
-		p. 20: Fareham, “Cantus,” “Bas[s]us,” Gm, 5U1321D#7U12, round 
-			notation
-		p. 20: Buckland, “Cantus,” “Bas[s]us,” G, 123211D7U1, round notation
-		p. 21: Evening Hym[m?], “Tenr,” Am, 11D765U23-21D7, round 
-			notation with, for the first time, curious wedge-shaped note 
-			stems (that will recur)
-		p. 21: Sabath Hym [both sic], “Tenor,” G, 13455443, round notation
-		p. 22: Heslington Tune, “Tenor,” “Bas[s]us,” F, 13253451, tenor in 
-			round notation, bassus in diamond notation [photo]
-		p. 22: Salem Tune, melody?, Am, 12124321, diamond notation
-		pp. 23-24: 136 Psalm Tune, “altus,” medius?, “Tenor,” bass, G, 
-			1D65U321, round notation
-		p. 25: Wal[l]ingford Tune, “Tenor,” Gm, 132154-321, round notation
-		p. 26: An Hymn for Christmas Day, “Tenor,” G, 11325432, round 
-			notation
-		p. 27: 149 Psalm Tune, “Tenor,” “Bass,” Bb, 5U1123512D7U1, tenor in 
-			round notation, bass in diamond notation
-		p. 28: Angels Song, “Tenor,” G (or possibly Gm; unnotated staff w/ 
-			bass clef below this melody has key signature of 2 flats), 
-			11123425, round notation
-		p. 30: Sapphick ode, “Tenor,” “Bass,” G, 111|11|1D7U11|22, round 
-			notation 
-		p. 32: Dunhead or Brunswick, “Tenor,” “Bass,” Am, 11234-3251, round 
-			notation
-		p. 34: Indulgent Parents Dear (! likely secular), “Tenor,” “Bass,” if in G 
-			(no key signature), 5U121D7-65,5U123,2-345432,3212, 
-			254321,321D765,5U12-32[-]143221, round notation
-		p. 36: Ambition (secular?), melody, G, 1235421, “Rest,” 32323#45, Let 
-			ambition fire thy mind; diamond notation
-		p. 38: Meer Tune, “Tenor,” “Bass,” F, 155331-232, diamond notation, 
-			title “Handel Tune” below this entry (no music)
-		p. 40: Hallifax Tune, “Tenor,” “Bass,” Am, 112345-432, round 
-			notation
-		p. 42: Bradford Tune, “Tenor,” 13153424, diamond notation
-		p. 44: Standish, “Base,” if in Gm (no clef or key signature), 
-			11D5137U1D4 [last note sic], round notation; very rough, with 
-			scratched-out notes, one pitch written over another, + several 
-			clear errors of pitch
-		p. 48: St Edmund[’]s Tune, “Tenor,” “Bass,” if in Gm (only one flat in 
-			key signature), 1D5U523142, tenor in diamond notation, bass 
-			in round notation
-		p. [55]: York, “Bass,” F, 111D64U11D5, round notation
-		p. [55]: Standish, “Bass,” Am, 11D5137U1D5, round notation, “Rong” 
-			written next to title + part name
-		p. [55]: Humphery[’]s, “Bass,” G, 1D53-45U1D4-5-6-7U1D5, round 
-			notation
-		p. [55]: Standish, “Bass,” if in Gm (no clef or key signature), 
-			11D5137U1D4 [last note sic], round notation
-		p. [65]: Old Litchfeild [sic] Tune, melody, Gm, 13452342, diamond 
-			notation
-		pp. [67]-68: 108th Psalm Tune, “Tenor,” “Bass,” F, 13254321, tenor in a 
-			mix of round + diamond notation, bass in diamond notation 
-			[photo]
-		p. [73]: untitled tune, secular?, melody (labeled “Song”), if in C (no clef 
-			or key signature), 12456534553,5321243212,4565124321, 
-			Fare Lady Lay your Costly Robes a Side / No Longer may you 
-			Glory in your Pride / Take Leave of All your Carnal vain Delites 
-			/ I am  Come to Summons you away this Night; diamond 
-			notation
 
 
 ----------------end of source-------------
@@ -13458,6 +13860,7 @@ Source: 196
 Author: [Walter, Thomas.  
 Title: The Grounds and Rules of Musick Explained: or, An Introduction to the Art of Singing by Note.
 Call number: Special M 2116 .W218 c.2
+Inscription: null
 Description:   [4th ed.]  Boston: for Samuel Gerrish, 1746.]  Lacks all before p. 5.	no inscriptions
 	bookplate of Charles T. Wells pasted inside front cover
 	2 preliminary leaves contain MS. index of printed tunes, + of MS. tunes 
@@ -13492,6 +13895,7 @@ Source: 197
 Author: Walter, Thomas.  
 Title: The Grounds and Rules of Musick Explained: or, An Introduction to the Art of Singing by Note.
 Call number: Special M 2116 .W22
+Inscription: null
 Description:   [6th ed.]  Boston: Benjamin Mecom, for Thomas Johnston, [1759?].  ASMI 521.  Lacks only the final leaf (leaf 20) of music.  Nice clean copy, beautifully re-bound by one F. Bedford (though both covers are detached, the front cover taped to the marbled front endpaper); “GROUNDS / & RULES / OF / MUSICK / BY / T. WALTER / BOSTON / N. D.” tooled in gold on spine.	no inscriptions
 	no MS. music
 
@@ -14108,6 +14512,7 @@ Source: 198
 Author: Walter, Thomas.  
 Title: The Grounds and Rules of Musick Explained: or, An Introduction to the Art of Singing by Note.
 Call number: Special M 2116 .W22 c.2
+Inscription: null
 Description:   [6th ed.]  Boston: Benjamin Mecom, for Thomas Johnston, [1759?].  ASMI 521.  Complete.  Alternate blank versos and rectos of leaves with printed music are pasted together.	inscriptions: 1st preliminary leaf recto, “Joseph Peirce His Book bought 
 		Feb[y?] 24 / Domini 1762,” “price 36 / = 4 [?] 9 / Lawfull”; last 
 		additional leaf verso, “Joseph Peirce His Book / Bought February Ye 24 
@@ -14386,6 +14791,7 @@ Source: 199
 Author: Walter, Thomas.  
 Title: The Grounds and Rules of Musick Explained: or, An Introduction to the Art of Singing by Note.
 Call number: Special M 2116 .W22 c.3
+Inscription: null
 Description:   [6th ed.]  Boston: Benjamin Mecom, for Thomas Johnston, [1759?].  ASMI 521.  Lacks pp. 7-8; pp. 11-12, 13-14 fragmentary; leaves 2, 15 (printed music) fragmentary.  	inscriptions: p. 1 of printed instructions, “Nathan Merrill his Singinbook”; p. 
 		25 of instructions, “Nathan Merrill His Singing Book”; additional leaf 
 		22, “N                            M”
@@ -14500,6 +14906,7 @@ Source: 200
 Author: [Walter, Thomas.  
 Title: The Grounds and Rules of Musick Explained: or, An Introduction to the Art of Singing by Note.
 Call number: Special M 2116 .W22 c.4
+Inscription: null
 Description:   [6th ed.]  Boston: Benjamin Mecom, for Thomas Johnston, [1759?].]  ASMI 521.  Lacks 1st leaf, with t. p., + leaf 7 (printed music); leaves 15 + 16 of printed music bound between leaf 12 + leaf 13.  	inscriptions: p. i, “HannaH [sic] Brigham,” “Willard Brigham”; p. 1, 
 		“[ha?]nnahBrigh[a?]m,” “Willard / Brigham”; additional leaf [3] recto, 
 		“Marlborough march 18[“th” directly above “18”] / for Value 
@@ -14522,8 +14929,8 @@ Source: 201
 Author: Warriner, Solomon.  
 Title: The Springfield Collection of Sacred Music
 Call number: M 2116 .W3 S8 1813
-Description: .  Boston: Manning and Loring, for Warriner and Bontecou, 1813.  159, [1] pp.  Appears to be complete.	inscription: preliminary leaf recto, “Laban B. Hine”
-	no MS. music
+Inscription: preliminary leaf recto, “Laban B. Hine”
+Description: .  Boston: Manning and Loring, for Warriner and Bontecou, 1813.  159, [1] pp.  Appears to be complete.	no MS. music
 	in Preface, Warriner comments at length on disposition of vocal parts, and 
 		which part should sing the melody [photo]
 	
@@ -14534,6 +14941,7 @@ Source: 202
 Author: Washburn, Japheth Coombs.  
 Title: The Parish Harmony, or Fairfax Collection of Sacred Musick.
 Call number: M 2116 .P3 1813
+Inscription: null
 Description:   Exeter, N. H.: C. Norris and Company, for the author, [1813].  111, [1] pp.; appears to be complete.  P. 16 misnumbered 61; p. 28 misnumbered 38.	no inscriptions
 	bookplate of Charles T. Wells pasted inside back cover 
 	no MS. music
@@ -14831,8 +15239,8 @@ Source: 203
 Author: Watts, I[saac].  
 Title: The Psalms of David, imitated in the Language of the New Testament.
 Call number: Special BS 1440 .W3 1771 c.2
-Description:   27th ed.  Boston: Thomas and John Fleet, 1771.  Bound with: Watts, I[saac].  Hymns and Spiritual Songs.  27th ed.  Boston: Thomas and John Fleet, 1772.  Bound with: Worcester, Samuel.  Select Hymns: The Third Part of Christian Psalmody.  3rd ed.  Boston: CU. Crocker, for Samuel T. Armstrong, 1819.  	inscription: Watts Psalms t. p., “Sarah [?]”
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: Watts Psalms t. p., “Sarah [?]”
+Description:   27th ed.  Boston: Thomas and John Fleet, 1771.  Bound with: Watts, I[saac].  Hymns and Spiritual Songs.  27th ed.  Boston: Thomas and John Fleet, 1772.  Bound with: Worcester, Samuel.  Select Hymns: The Third Part of Christian Psalmody.  3rd ed.  Boston: CU. Crocker, for Samuel T. Armstrong, 1819.  	bookplate of Charles T. Wells pasted inside front cover
 	MS. music on p. [ii] of Watts Psalms; along bottoms of Watts Psalms, p. 298 + 
 		indices (pp. hand-numbered 1-20); on verso of Watts Hymns t. p.; and 
 		along bottoms of Watts Hymns, pp. ii-viii (hand-numbered 26-32) + 
@@ -14951,6 +15359,7 @@ Source: 204
 Author: [Watts, Isaac.  
 Title: The Psalms of David, imitated in the Language of the New-Testament.
 Call number: Special BS 1440 .W3 1780
+Inscription: null
 Description:   Hartford: Patten and Webster, 1780? –Watkinson Library annotation; this copy lacks all before p. 11].  Bound with:  Watts, I[saac].  Hymns and Spiritual Songs.  Hartford: Bavil Webste[r], 1781.  	no inscriptions
 	bookplate of Charles T. Wells pasted inside front cover
 	MS. music on sheet folded + (partly) cut, producing 8 leaves; laid inside front 
@@ -14966,8 +15375,8 @@ Source: 205
 Author: Willard, Samuel.  
 Title: Deerfield Collection of Sacred Music
 Call number: M 2116 .W56 D3 1814
-Description: .  Northampton, Mass.: Simeon Butler (Greenfield, Mass.: printed by H. Graves), 1814.  144 pp.  Appears to be complete.	inscription: p. [xviii], “Moses Fairbanks / Hydepark Janth 17th 1841”
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: p. [xviii], “Moses Fairbanks / Hydepark Janth 17th 1841”
+Description: .  Northampton, Mass.: Simeon Butler (Greenfield, Mass.: printed by H. Graves), 1814.  144 pp.  Appears to be complete.	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
 
@@ -14977,8 +15386,8 @@ Source: 206
 Author: Willard, Samuel.  
 Title: Deerfield Collection of Sacred Music
 Call number: M 2116 .W56 D3 1818
-Description: .  2nd ed.  Greenfield, Mass.: Denio and Phelps, 1818.  179, [1] pp.  Appears to be complete.	inscription: additional leaf verso, “Arthur [Root?] Albany” (pencil)
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: additional leaf verso, “Arthur [Root?] Albany” (pencil)
+Description: .  2nd ed.  Greenfield, Mass.: Denio and Phelps, 1818.  179, [1] pp.  Appears to be complete.	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
 Williams, Aaron. The American Harmony, or Universal Psalmodist – SEE
@@ -15004,8 +15413,8 @@ Source: 207
 Author: Wood, Abraham.  
 Title: Divine Songs, extracted from Mr. J. Hart’s Hymns, and set to Musick in Three and Four Parts.
 Call number: Special M 2116 .W55
-Description:   Boston: Isaiah Thomas and Company, 1789.  32 pp.  Complete (though missing back paper cover).	inscription: preliminary leaf recto, “Lemuel Crane – 1798 / Nathaniel Crane – 
-		1868” (all in same hand)
+Inscription: preliminary leaf recto, “Lemuel Crane – 1798 / Nathaniel Crane – 
+Description:   Boston: Isaiah Thomas and Company, 1789.  32 pp.  Complete (though missing back paper cover).		1868” (all in same hand)
 	no MS. music
 
 
@@ -15015,6 +15424,7 @@ Source: 208
 Author: Wood, Abraham.  
 Title: Divine Songs, extracted from Mr. J. Hart’s Hymns, and set to Musick in Three and Four Parts.
 Call number: Special M 2116 .W55 1789
+Inscription: null
 Description:   Boston: Isaiah Thomas and Company, 1789.  32 pp.  Complete.  Bound with: Holden, Oliver.  American Harmony.  Boston: Isaiah Thomas and Ebenezer T. Andrews, 1792.  32 pp.  Complete.  Bound with: Howe, Solomon.  Worshipper’s Assistant.  Northampton, Mass.: Andrew Wright, for the author, 1799.  32 pp.  Complete.  Bound with: Cooper, William.  An Anthem. Designed for Thanksgiving Day. But proper for any Publick Occasion.  Boston: Isaiah Thomas and Ebenezer T. Andrews, 1792.  16 pp.  Complete. 	no inscriptions
 	no MS. music
 
@@ -15025,6 +15435,7 @@ Source: 209
 Author: Wood, William.  
 Title: Harmonia Evangelica, a Collection of Sacred Music, from the most approved authors, in Three Numbers.  No. 1.
 Call number: M 2116 .W66 1810
+Inscription: null
 Description:   Exeter, N. H.: C. Norris and Company, [1810].  109, [1] pp.  Complete.  Many pages uncut, and all pages untrimmed.	no inscriptions
 	printed label with Charles T. Wells’s name + address pasted to p. [2]
 	no MS. music
@@ -15036,8 +15447,8 @@ Source: 210
 Author: 
 Title: Laus Deo!  The Worcester Collection of Sacred Harmony.  Part Third.
 Call number: M 2116 .W63
-Description:   Worcester, Mass.: Isaiah Thomas, [1786].  [2] pp., pp. 107-200.  Complete.	inscription: preliminary leaf recto, “Benja Goddard”
-	bookplate of Charles T. Wells pasted inside front cover
+Inscription: preliminary leaf recto, “Benja Goddard”
+Description:   Worcester, Mass.: Isaiah Thomas, [1786].  [2] pp., pp. 107-200.  Complete.	bookplate of Charles T. Wells pasted inside front cover
 	no MS. music
 
 
@@ -15073,6 +15484,7 @@ Source: 211
 Author: 
 Title: Laus Deo!  The Worcester Collection of Sacred Harmony
 Call number: Special M 2116 .W6 1788
+Inscription: null
 Description: .  2nd ed.  Worcester, Mass.: Isaiah Thomas, 1788.  [4], 120 pp.  Complete.	inscriptions: fragmentary preliminary leaf recto, “Lucy Perkin’s / Singing 
 		Book.”; verso, “Lucy Perkins [New?] / New Hampton / 1794”; inside 
 		back cover, “[letter?]rake”
@@ -15087,6 +15499,7 @@ Source: 212
 Author: 
 Title: Laus Deo!  The Worcester Collection of Sacred Harmony
 Call number: M 2116 .W6 1792
+Inscription: null
 Description: .  4th ed.  Boston: Isaiah Thomas and Ebenezer T. Andrews, 1792.  [4], 151, [1] pp.  Complete.	no inscriptions
 	no MS. music
 	bookplate of Charles T. Wells pasted inside front cover
@@ -15100,6 +15513,7 @@ Source: 213
 Author: 
 Title: Laus Deo!  The Worcester Collection of Sacred Harmony
 Call number: M 2116 .W6 1794
+Inscription: null
 Description: .  5th ed.  Boston: Isaiah Thomas and Ebenezer T. Andrews, 1794.  155, [1] pp.  Complete.	inscriptions: t. p., “Samll Pratt[’]s           Property 1798”; final (unnumbered) 
 		p., “Samuel Pratt[’]s Property”
 	bookplate of Charles T. Wells pasted inside front cover
@@ -15112,8 +15526,8 @@ Source: 214
 Author: Wyeth, John.  
 Title: Wyeth’s Repository of Sacred Music
 Call number: M 2116 .W93 R4 1814
-Description: .  3rd ed.  Harrisburgh, Pa.: John Wyeth, 1814.  120 pp.  Appears to be complete.  Leaves with pp. 54-56 chewed a bit, with some loss of text.  	inscription: 1st additional leaf verso, “William Bulkley,s / Berlin Conn”
-	no MS. music
+Inscription: 1st additional leaf verso, “William Bulkley,s / Berlin Conn”
+Description: .  3rd ed.  Harrisburgh, Pa.: John Wyeth, 1814.  120 pp.  Appears to be complete.  Leaves with pp. 54-56 chewed a bit, with some loss of text.  	no MS. music
 
 
 ----------------end of source-------------
