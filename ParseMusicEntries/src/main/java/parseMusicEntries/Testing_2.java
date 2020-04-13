@@ -3,15 +3,18 @@ package parseMusicEntries;
 public class Testing_2 {
 	public static void main(String[] args) {
 
+		System.out.println((char) 128413);
 		
-		String str = "                        leaf [5] recto: Friendship, treble?, Em, 553|7553|4, thy wrath lies heavy on                 my soul";
-		String str2 = 		"p. 33: WESTFIELD NEW TUNE, “Medius,” “Tenor,” “Bass,” G, 121365#45,				1st 8 notes of a possible altus part written in pencil on 				otherwise blank top staff";
+		
+//		String str = "                        leaf [5] recto: Friendship, treble?, Em, 553|7553|4, thy wrath lies heavy on                 my soul";
+//		String str2 = 		"p. 33: WESTFIELD NEW TUNE, “Medius,” “Tenor,” “Bass,” G, 121365#45,				1st 8 notes of a possible altus part written in pencil on 				otherwise blank top staff";
 //
 //		System.out.println(str.replaceAll("\\s+", " "));
 		
+//		String str3 = "Nathaniel R[oo?]t Jr / 			Coventry / 1816       Conn”; t. p., “William Dorrance[’]s / Book,” ";
 //		String str = "                        ";
-//		String str2 = "               ";
-//		for(char c: str.toCharArray()) {
+////		String str2 = "               ";
+//		for(char c: str3.toCharArray()) {
 //			System.out.println((int)c);
 //		}
 		

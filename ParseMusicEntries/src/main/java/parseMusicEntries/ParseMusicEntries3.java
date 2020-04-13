@@ -13,14 +13,18 @@ import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
 
-public class ParseMusicEntries2 {
+public class ParseMusicEntries3 {
 	 //TODO 195 not recorded
+	//TODO source 97 with 11 sources
+	//TODO remove periods at beginning of descriptions that spill over from title
+	//TODO inscription no spillover
 
 	FileInputStream fis = null;					//input stream to contain .docx file being analyzed
 	XWPFDocument xdoc = null;					//.docx reader
 	List<XWPFParagraph> paragraphList = null;	//list of paragraphs in docx file obtained from .docx reader
 	FileOutputStream fos = null,				//output stream for parsed information
 					dataDumpStream = null;		//output stream for data that could not be parsed
+	String file;
 	int dumpCount = 0,
 			entryCount = 0,
 			notIncipitCount = 0;							//number of entries placed in dump file
@@ -47,33 +51,24 @@ public class ParseMusicEntries2 {
 	String curSourceInscription = null;
 	String curSourceDesc = "";							//description of current source, containing all details that cannot be parsed
 														//	into individual fields
-//	List<String[]> strSrcEntries = new ArrayList<String[]>();	//list of all source information, delete eventually **********
-	String[] curStrArr = new String[4];					//array containing source information
-	
 	//entries variables
 	List<Boolean> isSecularList = null;		//list containing whether entry is secular					
 	List<String> entries = null;			//list of text of entries for current source
-	String tunePage = null;
-	String[] titleAndCredit = null;
-	String[] splitEntries = null;
-	String[] fullTuneEntry = null;			//entry containing all string values for current entry
-	String[] entryLabels = {"tune_page", "tune_title", "tune_credit", "tune_vocal_part",		//labels corresponding to fields
-								"tune_key", "tune_melodic_incipit", "tune_text_incipit"};
 	
 	
-	ParseMusicEntries2() {								//constructor with no parameters, mostly for testing purposes
-		curStr = new StringBuilder();;			//used for building strings for various fields on as-needed basis -make string builder*** 
+	ParseMusicEntries3() {								//constructor with no parameters, mostly for testing purposes
 		
 	}
 	
-	ParseMusicEntries2(String fileName){
+	ParseMusicEntries3(String fileName){
 		curStr = new StringBuilder();			//used for building strings for various fields on as-needed basis -make string builder*** 
-		
+		file = fileName;
 		try {
+			
 			long startTime = System.currentTimeMillis();
 			fos = new FileOutputStream("output.txt");	//output for parsed information
 			dataDumpStream = new FileOutputStream("dump.txt");	//output for information that could not be parsed
-			fis = new FileInputStream(fileName);			//file being analyzed
+			fis = new FileInputStream(file);			//file being analyzed
 			xdoc = new XWPFDocument(OPCPackage.open(fis));	//Apache POI .docx reader
 			paragraphList = xdoc.getParagraphs();			//convert document to paragraphs
 			parseCollectionInfo();		//parse information about collection (current document), which consists of all information
@@ -88,6 +83,7 @@ public class ParseMusicEntries2 {
 			System.out.println("It took " + (endTime - startTime) + " milliseconds");
 			//4/9 > 2827 for long doc
 				//2716 after converting to stringbuilder
+				//1542 after switching to entry objects instead of arrays
 			
 			xdoc.close();
 			fos.close();
@@ -99,26 +95,25 @@ public class ParseMusicEntries2 {
 	
 	//get information about collection which ends when source number occurs at beginning of paragraph
 	private void parseCollectionInfo(){
-		String collectionDesc = "";			//description of current collection
+		StringBuilder collectionDesc = new StringBuilder();//description of current collection
 		
 		
 		while(curParIndex < paragraphList.size()) {	//perform until beginning of source is found (see break below) or end of document reached
 			curParagraphText = paragraphList.get(curParIndex).getText();	
 			matcher = pattern.matcher(curParagraphText);	//matcher which utilizes regex to detect beginning of source
-			
+			//TODO delete matcher
 			if(!matcher.find()) {											//if source number IS NOT found at beginning of paragraph
-				collectionDesc += (curParagraphText + "\n");				//add current paragraph to collection description	
+				collectionDesc.append(curParagraphText + "\n");				//add current paragraph to collection description	
 			}
 			
 			else {														//if source number IS found
 //				System.out.println(collectionDesc);			
-				strToFile(collectionDesc + "\n");						
+				Collection collection = new Collection(file, collectionDesc.toString());
+				strToFile(collection.toString() + "\n");						
 				break;													//collection description is done. Move to source operations
 			}
 			curParIndex++;
 		}
-//		System.out.println("***********End of Collection Description********************\n\n\n");
-		strToFile("***********End of Collection Description********************\n\n\n\n");		
 	}	
 	//----------------------------------------------------------------------------------------------------	
 	//perform source/entries operations
@@ -164,20 +159,23 @@ public class ParseMusicEntries2 {
 					
 					else if(curSourceTitle.length() != 0) {		//if title has been recorded, all proceeding text is source description
 						curStr.append(curRun.toString());			//		add to current description
+
+						if(curSrc == 157) System.out.println(curParagraphText);
 					}
 					
 					else {									//curRun that is italicized on same line as source number is book title
 						i = getSrcTitleAuthor(i);			//record title and author and set index to where method left off
-					}
-					
+					}					
 				}
+
+				curStr.append("\n");
 //				System.out.println("Source: " + curSrc);
 //				System.out.println("Author: "  +  curSourceAuthor);
 //				System.out.println("Title: "  +  curSourceTitle);
 //				break;
 			}
 			
-			else if(curParagraphText.toLowerCase().indexOf("inscription:") != -1) {	//if inscription description detected
+			else if(curParagraphText.toLowerCase().indexOf("inscription:") != -1 || curParagraphText.toLowerCase().indexOf("inscriptions:") != -1) {	//if inscription description detected
 				curSourceInscription = curParagraphText.substring(curParagraphText.indexOf(":") + 2);	//pull text from paragraph, discard
 																									//"inscriptions: "
 			}
@@ -211,6 +209,7 @@ public class ParseMusicEntries2 {
 			
 			else {
 //				System.out.println("else");
+				if(curSrc == 157) System.out.println(curParagraphText);
 				curStr.append(curParagraphText + "\n");
 			}
 			curParIndex++;
@@ -239,7 +238,8 @@ public class ParseMusicEntries2 {
 	
 	//------------------------------------------------------------------
 	//parse current section of entries
-	private void parseEntrySection() {		
+	private void parseEntrySection() {	
+		Entry entry;
 
 //		ArrayList<Entry> entryList = new ArrayList<Entry>();		
 		
@@ -254,78 +254,11 @@ public class ParseMusicEntries2 {
 		for(int i = 0; i < entries.size(); i++) {
 			
 //			entryList.add(new Entry(entries.get(i), isSecularList.get(i)));
-			
-			parseEntry(entries.get(i), i);
+			entry = new Entry(entries.get(i), isSecularList.get(i));
+			strToFile(entry.toString() + "\n");
+//			parseEntry(entries.get(i), i);
 		}
-	}
-	//------------------------------------------------------------------
-	
-		//parse current entry from string format
-		//write information to text file
-		//TODO entry app
-		private void parseEntry(String curEntry, int curIndex) {
-			if(curEntry.indexOf(":") != -1){
-				tunePage = curEntry.substring(0, curEntry.indexOf(":"));				//get page number, which occurs up until colon character
-			}
-			else {
-				tunePage = null;
-			}
-			
-//			parseEntry(entry);
-			
-			curEntry = formatEntryStr(curEntry);								//format current entry, removing whitespace and setting up to optimize parsing operations
-			
-			
-			splitEntries = curEntry.split(", ");							//split entry into fields using ", " as delimiter			
-			
-			//entries to string				
-			//display/testing
-//			if(splitEntries.length == 6) {					
-				//display entries as separated
-			for(String str: splitEntries) {					
-//				System.out.print(str + "---");
-				strToFile(str + "---");
-			}
-//			System.out.println();
-			strToFile("\n");
-//			}
-			
-			
-//			System.out.println(splitEntries[3]);
-			titleAndCredit = parseTitleAndCredit(splitEntries[0]);
-			fullTuneEntry = new String[7];				//reset entry for current tune
-//			fullTuneEntry[0] = tunePage;
-//			fullTuneEntry[1] = titleAndCredit[0];
-//			fullTuneEntry[2] = titleAndCredit[1];
-
-			if(splitEntries.length < 25){	
-				fullTuneEntry = formatEntryArr(tunePage, titleAndCredit, splitEntries);				
-				
-//				/
-				
-				for(int i = 0; i < fullTuneEntry.length; i++) {
-					strToFile(entryLabels[i] + ": " + fullTuneEntry[i] + "\n");
-					if(i == 2) {	//if current field is title
-						strToFile("tune_is_secular: " + isSecularList.get(curIndex) + "\n");	//record secular value
-					}
-				}
-			strToFile("*******************\n");
-			entryCount++;
-			}
-			
-			
-			else {
-//				System.out.println("********Skipped**********");
-				strToDumpFile("Collection: " + collection + 
-								"\nSource number: " + curSrc +
-								"\n" + curEntry +
-								"\n****************************************\n\n");
-				strToFile("********Skipped********** + \n");
-				dumpCount++;
-			}
-		}
-		
-	
+	}	
 	//----------------------------------------------------------------	
 	//construct arrayList of 
 	private void getEntryStringListAndSecular() {
@@ -392,8 +325,10 @@ public class ParseMusicEntries2 {
 		return index;
 	}
 	
-	private int getSourceNumber(String parText, Matcher match) {
-		return Integer.parseInt(parText.substring(match.start(), match.end() - 1));
+	private int getSourceNumber(String text) {
+		matcher = pattern.matcher(text);		//set matcher to current paragraph
+		System.out.println("Get source text " + text);
+		return Integer.parseInt(text.substring(matcher.start(), matcher.end() - 1));		
 	}
 	
 	private void resetEntries() {		
@@ -417,9 +352,9 @@ public class ParseMusicEntries2 {
 		return "Source: " + curSrc +
 				"\nAuthor: "  +  curSourceAuthor + 
 				"\nTitle: "  +  curSourceTitle +
-				"\nCall number: " + srcCallNum + 				
-				"\nInscription: " + curSourceInscription +
 				"\nDescription: "  +  curStr.toString() +
+				"\nCall number: " + srcCallNum + 				
+				"\nInscription(s): " + curSourceInscription +
 				"\n----------------end of source-------------\n\n";
 	}
 	
@@ -515,148 +450,7 @@ public class ParseMusicEntries2 {
 			e.printStackTrace();
 		}
 	}
-	//---------------------------------------------------------------------------------------
-	
-	//TODO same as above, or just delete...this is not used anymore
-	private void strToDumpFile(String str) { 
-		buf = str.getBytes();
-		try {
-			dataDumpStream.write(buf);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
 	//-------------------------------------------------------------------------------------------
-	//TODO delete? entry app
-	//format string of entry to format optimal for parsing
-	private String formatEntryStr(String entryStr) {
-		int adj = 2;			//number of characters between colon and starting character of title
-								// there is a strange reason why some spaces are not being counted, and this adjusts for that
-		if(entryStr.indexOf(":") != -1){			//if entry includes page number, as indicated by ":"
-			if((int) entryStr.charAt(entryStr.indexOf(":") + 1) != 32) {
-				adj--;
-			}
-	
-			return entryStr.substring(entryStr.indexOf(":") + adj, entryStr.length())		//remove page number from current entry to analyze rest of text
-								.replace(",”", "”,")			//replace ," with ", so quotes are not put in next field
-								.replace(", so", "-*- so")			//remove false delimiter and replace with temporary symbol
-								.replace(", but", "-*- but")		// remove false delimiter and replace with temporary symbol
-								.replace(", by ", "-*- by ")		//remove false delimiter and replace with temporary symbol
-								.trim().replaceAll(" +", " ");	//trim extra spaces
-		}
-		
-		else {										//if no page number, no need to remove page number
-			return entryStr.replace(",”", "”,")		//replace ," with ", so quotes are contained together
-					.replace(", so", "-*- so")			//remove false delimiter and replace with temporary symbol
-					.replace(", but", "-*- but")		//remove false delimiter and replace with temporary symbol
-					.replace(", by",  "-*- by")		//remove false delimiter and replace with temporary symbol
-					.trim().replaceAll(" +", " ");	//trim extra spaces
-		}
-	}
-	//--------------------------------------------------------
-	
-	//TODO delete - entry operation
-	//sort current entry so that each piece of data is in its respective field
-	private String[] formatEntryArr(String page, String[] titleCredit, String[] entriesSplit) {
-//		String[] fullEntry = new String[entriesSplit.length + 3];		//arr containing all entry data; set to total length 
-//																		//of all arrays combined to start
-		String[] fullEntry = new String[7];
-			fullEntry[0] = tunePage;
-			fullEntry[1] = titleAndCredit[0];
-			fullEntry[2] = titleAndCredit[1];
-			int shifts = 0;				//amount of shifts that have been made to full array (left is negative, right positive)
-			//splitArr to fullArr 
-			for(int index = 1, arrLimit = 5, fullEntryAdjust = 2; index < entriesSplit.length && index < arrLimit; index++) {
-				//index - index of entries split being added, arrLimit - when to end additions. increased by from leftward shifts
-				//fullEntryAdjust - adjust difference between cur index being added from entries split and index of fullentries 
-				//that current value is being placed. Starts at 2 because of tunepage already being added and title/credit being in same index
-				if(index > 1 && index + fullEntryAdjust == 4) {
-					//method for combining multiple values for vocal part, represented in index 4
-					if(isVocalPart(entriesSplit, index)) {
-						//if extra vocal part value is recorded; " “ " indicates presence of vocal part description
-						shifts--;					//record leftward shift of indices relative to fullEntry
-						fullEntryAdjust--;			//record leftward shift for current for loop
-						arrLimit++;					//increment limit of how high of index in entriesSplit will be added to fullEntries
-						fullEntry[index + fullEntryAdjust] += " " + entriesSplit[index];	//combine extra vocal part value 
-					}
-					else {
-						fullEntry[index + fullEntryAdjust] = entriesSplit[index];			//if no extra vocal part value detected, proceed as normal
-					}
-				}
-				else {
-					fullEntry[index + fullEntryAdjust] = entriesSplit[index];		//add entry to fullentry
-				}
-//				fullEntry[i + 2] = entriesSplit[i];
-			}
-			
-			//if no vocal part was entered and  tune key was placed vocal part field, shift cells right
-			if(fullEntry[3] != null && fullEntry[3].length() < 4 ) {
-				shiftCellsRight(fullEntry, 3);
-				shifts++;
-			}			
-			
-			if(fullEntry[5] == null || !isMelodicIncipit(fullEntry[5])) {
-				for(int i = 3; i < 5; i++) {
-					if(isMelodicIncipit(fullEntry[i])){
-						shiftCellsRight(fullEntry, i);
-						shifts++;
-					}							
-				}
-			}
-			
-			//if extra information was given for incipit field, as indicated by mm., add incipit to correct field
-			//by shifting left
-			if(fullEntry[5] != null && fullEntry[5].indexOf("mm.") != -1) {
-				fullEntry[5] += (", " + fullEntry[6]);
-				fullEntry[6] = null;
-				shifts--;
-			}
-			
-
-			
-			//add all unrecorded entries that occur after melodic incipit to text field 
-			if(isMelodicIncipit(fullEntry[5])) {
-				for(int i = 5 - shifts; i < entriesSplit.length; i++) {
-					fullEntry[6] += (", " + entriesSplit[i]);
-				}
-			}
-			else {
-				for(int i = 5 - shifts; i < entriesSplit.length; i++) {
-					fullEntry[6] += (", " + entriesSplit[i]);
-				}
-//				System.out.println("Not incipit: " + fullEntry[1] + "\n" + fullEntry[5]);	
-				notIncipitCount++;
-				for(int i = 0; i < fullEntry.length; i++) {
-					System.out.println(entryLabels[i] + ": " + fullEntry[i]);
-				}
-				System.out.println();
-			}		
-			
-			//replace commas and colons that were substituted in source document
-			for(int i = 0; i < fullEntry.length; i++) {
-				if(fullEntry[i] != null) {
-					//melodic incipits that contained commas had commas replaced by ---. this corrects those
-					fullEntry[i] = fullEntry[i].replace("-*-", ",").replace("**&", ":");					
-				}
-			}			
-			
-		return fullEntry;		
-	}
-	
-	//TODO delete: is an entry app
-	private boolean isVocalPart(String[] entriesSplit, int index) {
-		String[] vocalPartKeywords = {"tenor", "counter", "bass", "treble", "cantus", "medus", "basus", "meaudus", "voice", "TCTB"};
-		if(entriesSplit[index].indexOf("“") != -1 )
-			return true;
-		for(String kw: vocalPartKeywords) {
-			if(entriesSplit[index].toLowerCase().indexOf(kw) != -1) {
-				return true;
-			}
-		}
-		return false;
-				
-	}
-	//-------------------------------------------------------------------------------
 	//determine next paragraph will contain entry
 	private boolean entryFound(int index) {		
 		
@@ -674,6 +468,22 @@ public class ParseMusicEntries2 {
 				(paragraphList.get(curParIndex + 1).getText().indexOf(":") < 60 && paragraphList.get(curParIndex + 1).getText().indexOf(":") >= 0)));
 		
 	}
+	
+	
+//	private boolean sourceFound(String text) {
+////		Pattern pattern = Pattern.compile("^[\\d]+[\\.]");	//regexp that determines if text begins with an indeterminate number of digits followed by period
+//		//	which indicates source number
+//		Matcher matcher = pattern.matcher(text);			//matcher for detecting pattern occurrence above
+//		if(matcher.find()) {
+//			System.out.println("Sourcefound text " + text + " " + Integer.parseInt(text.substring(matcher.start(), matcher.end() - 1)));
+//		}
+//		boolean found = matcher.find();
+//		return found;
+//	}
+	
+	private int getSourceNumber(String parText, Matcher match) {
+		return Integer.parseInt(parText.substring(match.start(), match.end() - 1));
+	}
+	
 }
-//source 102 not detecting ms entries because colon index late
 	
