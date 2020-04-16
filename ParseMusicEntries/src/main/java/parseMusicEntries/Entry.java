@@ -143,6 +143,7 @@ public class Entry {
 		}
 	}
 	//-----------------------------------------------------------------------------
+	//return array containing [0]: tune title and [1]: tune author by parsing string containing title and author
 	public String[] parseTitleCredit(String str) {
 		
 		String[] titleCredit = new String[2];				//array that will contain title and author

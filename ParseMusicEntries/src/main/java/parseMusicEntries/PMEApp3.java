@@ -6,11 +6,11 @@ import java.io.IOException;
 
 public class PMEApp3 {
 	public static void main(String[] args) {
-		String curCollection = "finalized collections/CT Hartford, Watkinson Library, Trinity College--sacred music INVENTORY.docx"; //name used for collection is file name
+//		String curCollection = "finalized collections/CT Hartford, Watkinson Library, Trinity College--sacred music INVENTORY.docx"; //name used for collection is file name
 //		String curCollection = "finalized collections/Atwill n. d. in Nym Cooke collection.docx"; //name used for collection is file name
 //		String curCollection = "finalized collections/MA Petersham, Nym Cooke collection INVENTORY (1).docx"; //name used for collection is file name
 //		String curCollection = "finalized collections/MA Boston, Congregational Library and Archives--INVENTORY (1).docx"; //name used for collection is file name
-//		String curCollection = "finalized collections/CT Hartford, Connecticut Historical Society--sacred music INVENTORY.docx"; //name used for collection is file name
+		String curCollection = "finalized collections/CT Hartford, Connecticut Historical Society--sacred music INVENTORY.docx"; //name used for collection is file name
 		ParseMusicEntries3 pme = new ParseMusicEntries3(curCollection);
 		Desktop desktop = Desktop.getDesktop();
 	    try {

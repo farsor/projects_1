@@ -14,22 +14,21 @@ import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
 
 public class ParseMusicEntries3 {
-	 //TODO 195 not recorded
 	//TODO source 97 with 11 sources
-	//TODO remove periods at beginning of descriptions that spill over from title
-	//TODO inscription no spillover
-
+	
+	//input file operations
 	FileInputStream fis = null;					//input stream to contain .docx file being analyzed
 	XWPFDocument xdoc = null;					//.docx reader
 	List<XWPFParagraph> paragraphList = null;	//list of paragraphs in docx file obtained from .docx reader
 	FileOutputStream fos = null,				//output stream for parsed information
 					dataDumpStream = null;		//output stream for data that could not be parsed
 	String file;
+	byte[] buf = null;							//buffer for writing text to output stream
+	
+	//testing variables
 	int dumpCount = 0,
 			entryCount = 0,
 			notIncipitCount = 0;							//number of entries placed in dump file
-	String collection = null;						//collection name, which will be name of file being parsed
-	byte[] buf = null;							//buffer for writing text to output stream
 	
 	String curParagraphText;				//text of current paragraph being analyzed
 	int curParIndex = 0;								//index pf current paragraph in paragraph list
@@ -37,23 +36,20 @@ public class ParseMusicEntries3 {
 	List<XWPFRun> curParagraphRuns = null;				//list of text "runs" contained within current paragraph, 
 														//	which enable analysis of text properties, such as italic/bold
 	XWPFRun curRun = null;								//current run being analyized
-	Pattern pattern = Pattern.compile("^[\\d]+[\\.]");	//regexp that determines if text begins with an indeterminate number of digits followed by period
+	
+	//matcher used for detecting starts of new source
+	Pattern pattern = Pattern.compile("^[\\d]+[\\.]");	//determines if text begins with an indeterminate number of digits followed by period,
 														//	which indicates source number
 	Matcher matcher = null;								//matcher for detecting pattern occurrence above 
 
-	StringBuilder curStr;			//used for building strings for various fields on as-needed basis -make string builder*** 
+	StringBuilder tempStr;			//used for building strings for various fields 
 	
-	//source/entry variables	
-	int curSrc;											//current source number
-	String srcCallNum = null;;							//call number for current source, indicated by bold text
-	String curSourceAuthor = "";						//
-	String curSourceTitle = "";							//
-	String curSourceInscription = null;
-	String curSourceDesc = "";							//description of current source, containing all details that cannot be parsed
-														//	into individual fields
+	//source/entry variables									
 	//entries variables
 	List<Boolean> isSecularList = null;		//list containing whether entry is secular					
 	List<String> entries = null;			//list of text of entries for current source
+	
+	Source source;
 	
 	
 	ParseMusicEntries3() {								//constructor with no parameters, mostly for testing purposes
@@ -61,7 +57,7 @@ public class ParseMusicEntries3 {
 	}
 	
 	ParseMusicEntries3(String fileName){
-		curStr = new StringBuilder();			//used for building strings for various fields on as-needed basis -make string builder*** 
+		tempStr = new StringBuilder();			//used for building strings for various fields on as-needed basis -make string builder*** 
 		file = fileName;
 		try {
 			
@@ -99,10 +95,8 @@ public class ParseMusicEntries3 {
 		
 		
 		while(curParIndex < paragraphList.size()) {	//perform until beginning of source is found (see break below) or end of document reached
-			curParagraphText = paragraphList.get(curParIndex).getText();	
-			matcher = pattern.matcher(curParagraphText);	//matcher which utilizes regex to detect beginning of source
-			//TODO delete matcher
-			if(!matcher.find()) {											//if source number IS NOT found at beginning of paragraph
+			curParagraphText = paragraphList.get(curParIndex).getText();
+			if(!sourceFound(curParagraphText)) {		//if source number IS NOT found at beginning of paragraph
 				collectionDesc.append(curParagraphText + "\n");				//add current paragraph to collection description	
 			}
 			
@@ -117,11 +111,8 @@ public class ParseMusicEntries3 {
 	}	
 	//----------------------------------------------------------------------------------------------------	
 	//perform source/entries operations
-	private void parseSourcesAndEntries(){ 		
-		curSrc = 0;							
-//		List<Integer> intSrcEntries = new ArrayList<Integer>();			//list of source entries, to be deleted later for memory purposes**
-//		intSrcEntries.add(curSrc);										//
-
+	private void parseSourcesAndEntries(){ 
+		source = null;
 		
 		//source/entry operations
 		while(curParIndex < paragraphList.size()) {		//perform until end of document is reached	
@@ -129,38 +120,35 @@ public class ParseMusicEntries3 {
 			//initialize variables for current paragraph
 			curParagraph = paragraphList.get(curParIndex);		//get current xwpf paragraph being analyzed
 			curParagraphText = curParagraph.getText();			//get current paragraph in string form
-			matcher = pattern.matcher(curParagraphText);		//set matcher to current paragraph
 			
 			//if current paragraph starts with source number (should always be case after collection description done)
-			
-			//TODO set up sourceFound method
-			if(matcher.find()) {	//check for source number, which indicates end of last source and beginning of new source				
+			if(sourceFound(curParagraphText)) {	//check for source number, which indicates end of last source and beginning of new source				
 				
 				//if this is not the first entry of collection, record previous source information
-				if(curStr.length() != 0) {	
+				if(source != null) {	
 //					System.out.println(sourceInfoToString());
-					strToFile(sourceInfoToString());		
-					resetEntries();			//reset entries for new source
+					source.setDescription(tempStr.toString());
+					tempStr.setLength(0);					
+					strToFile(source.toString());
 				}
-				
-				curSrc = getSourceNumber(curParagraphText, matcher);		//extract source number from paragraph-needs to be updated for title spanning more than one paragraph***
+				source = new Source(getSourceNumber(curParagraphText));	
+				System.out.println(getSourceNumber(curParagraphText));
 				
 				curParagraphRuns = curParagraph.getRuns();						//get list of runs for current paragraph							
 				//analyze runs of current paragraph to extract title and author
 				//start at index 1 because first run contains source number and does not need to be analyzed
 				for (int i = 1; i < curParagraph.getRuns().size(); i++) {
+					
 					curRun = curParagraphRuns.get(i);								//get run at current index from list of runs
 					
 					//source title not found and current curRun is not italicized, or if it is italicized, text is not "sic"
 					//(sic can give false positive for title detection, as it is written in italic but does not represent title)
-					if(curSourceTitle.length() == 0 && (!curRun.isItalic() || curRun.toString().toLowerCase().indexOf("sic") == 0)) {		
-						curStr.append(curRun.toString());			//		^^indicates text between source no. and title, which is author
+					if(source.getTitle() == null && (!curRun.isItalic() || curRun.toString().toLowerCase().indexOf("sic") == 0)) {		
+						tempStr.append(curRun.toString());			//		^^indicates text between source no. and title, which is author
 					}
 					
-					else if(curSourceTitle.length() != 0) {		//if title has been recorded, all proceeding text is source description
-						curStr.append(curRun.toString());			//		add to current description
-
-						if(curSrc == 157) System.out.println(curParagraphText);
+					else if(source.getTitle() != null) {		//if title has been recorded, all proceeding text is source description
+						tempStr.append(curRun.toString());			//		add to current description
 					}
 					
 					else {									//curRun that is italicized on same line as source number is book title
@@ -168,30 +156,25 @@ public class ParseMusicEntries3 {
 					}					
 				}
 
-				curStr.append("\n");
-//				System.out.println("Source: " + curSrc);
-//				System.out.println("Author: "  +  curSourceAuthor);
-//				System.out.println("Title: "  +  curSourceTitle);
-//				break;
+				tempStr.append("\n");
 			}
 			
-			else if(curParagraphText.toLowerCase().indexOf("inscription:") != -1 || curParagraphText.toLowerCase().indexOf("inscriptions:") != -1) {	//if inscription description detected
-				curSourceInscription = curParagraphText.substring(curParagraphText.indexOf(":") + 2);	//pull text from paragraph, discard
-																									//"inscriptions: "
+			else if(isInscription(curParagraphText)) {	//if inscription description detected
+				
+				source.setInscription(getInscription());	//pull text from paragraph, discard	"inscriptions: "
 			}
 			
 			//if current paragraph contains call number, which is denoted by a run of bold text
 			
 			else if(hasCallNumber(curParagraph)) {
-				srcCallNum = getCallNumber(curParagraph);		//record call number
+				source.setCallNumber(getCallNumber(curParagraph));		//record call number
 			}
 			
 			//if start of music entries are indicated to be present in source
 			//parse music entries for current source
 //			else if(curParagraphText.indexOf("MS. music entries:") != -1) {
 			else if(entryFound(curParIndex)) {
-				//record previous entry
-//				System.out.println(sourceInfoToString());
+				//record previous entry;
 				if(curParagraphText.indexOf("MS. music entries:") == -1) {	//if "MS. music entries:" is used to indicate start of entries in next paragraph,
 				//this indicates that no relevant information is present in "indicator" (as opposed to ways entries are indicated, which contain
 				// info relevant to entries in that source. so if this is not the case, record indicator
@@ -209,8 +192,7 @@ public class ParseMusicEntries3 {
 			
 			else {
 //				System.out.println("else");
-				if(curSrc == 157) System.out.println(curParagraphText);
-				curStr.append(curParagraphText + "\n");
+				tempStr.append(curParagraphText + "\n");
 			}
 			curParIndex++;
 		}		
@@ -248,7 +230,7 @@ public class ParseMusicEntries3 {
 		getEntryStringListAndSecular();
 		
 		//separate entries into fields
-		System.out.println("Current source: " + curSrc + ", " + entries.size());
+		System.out.println("Current source: " + source.getSourceNumber() + ", " + entries.size());
 		
 		//parse each entry from string form into array organized by field
 		for(int i = 0; i < entries.size(); i++) {
@@ -265,12 +247,13 @@ public class ParseMusicEntries3 {
 		isSecularList = new ArrayList<Boolean>();								//array containing whether each entry is secular
 		entries = new ArrayList<String>();										//list with entries in string form
 		boolean curEntrySecular = true;											//detects if entry is secular, true by default, false when small caps detected
-		StringBuilder entryStrBuilder = new StringBuilder();					//sb for progressively building entry string
-		matcher = pattern.matcher(paragraphList.get(curParIndex).getText());	//matcher that detects beginning of source, indicated by a number followed by a period	
+		StringBuilder entryStrBuilder = new StringBuilder();					//sb for progressively building entry string	
 		//while end of document has not been reached and new source is not found (as indicated by matcher), 
 		//and no call number detected (call numbers can occur after entry selection and before new source)
 		//separate each entry into a text of its own in preparation for analysis
-		while(curParIndex < paragraphList.size() && !matcher.find() && !hasCallNumber(paragraphList.get(curParIndex))) {			
+		curParagraphText = paragraphList.get(curParIndex).getText();
+		//TODO figure out why this wasn't working properly	
+		while(curParIndex < paragraphList.size() && !sourceFound(paragraphList.get(curParIndex + 1).getText()) && !hasCallNumber(paragraphList.get(curParIndex))) {			
 			curParagraph = paragraphList.get(curParIndex);		//current XWPFparagraph
 			curParagraphText = curParagraph.getText()			//get text of current paragraph
 					.replaceAll(Character.toString((char)160),"")
@@ -295,95 +278,30 @@ public class ParseMusicEntries3 {
 				curEntrySecular = false;					//	if so, entry is not secular
 			}	
 			
-			curParIndex++;									//move to next paragraph
-			if(curParIndex < paragraphList.size()) {
-				matcher = pattern.matcher(paragraphList.get(curParIndex).getText());	//prepare matcher prior to next iteration
-			}
-		}
-		
+			curParIndex++;									//move to next paragraph//		
+		}		
+
 		entries.add(entryStrBuilder.toString());			//add last entry of current source		
 		isSecularList.add(curEntrySecular);					//^^
-	}	
-	
-	
-	//--------------------------------------------------------------------
-	
+	}		
+	//--------------------------------------------------------------------	
 	//invoked when first italicized text run occurrence is found after source number, which represents source title
 	//returns integer containing index of where title left off
 	//parameter is starting index of source title
 	private int getSrcTitleAuthor(int index) {		
 		
-		curSourceTitle = curRun.toString();		//record source title
-		curSourceAuthor = curStr.toString();				//text between source number and source title is author
-		
-		while(curParagraphRuns.get(index + 1).isItalic()) {	//add each text run to source title while text is still italicized
+		String curSourceTitle = curRun.toString();		//record source title
+		source.setAuthor(tempStr.toString());		//text between source number and source title is author
+		index++;
+		while(index < curParagraphRuns.size() && curParagraphRuns.get(index).isItalic()) {	//add each text run to source title while text is still italicized
 			curSourceTitle += curParagraphRuns.get(index + 1).toString();	
 			index++;										//increment
 		}
-		
-		curStr.setLength(0);							//reset string to record description
+		source.setTitle(curSourceTitle);
+		tempStr.setLength(0);							//reset string to record description
 		return index;
 	}
-	
-	private int getSourceNumber(String text) {
-		matcher = pattern.matcher(text);		//set matcher to current paragraph
-		System.out.println("Get source text " + text);
-		return Integer.parseInt(text.substring(matcher.start(), matcher.end() - 1));		
-	}
-	
-	private void resetEntries() {		
-		curSourceAuthor = "";
-		curSourceTitle = "";
-		curSourceDesc = "";
-		curSourceInscription = null;
-		curStr.setLength(0);
-		srcCallNum = null;
-	}
-	
-//	private void recordSourceInfo() {
-//		curStrArr[0] = curSourceAuthor;
-//		curStrArr[1] = curSourceTitle;
-//		curStrArr[2] = curSourceDesc;
-//		curStrArr[3] = srcCallNum;
-//		strSrcEntries.add(curStrArr);
-//	}
-	
-	private String sourceInfoToString() {		
-		return "Source: " + curSrc +
-				"\nAuthor: "  +  curSourceAuthor + 
-				"\nTitle: "  +  curSourceTitle +
-				"\nDescription: "  +  curStr.toString() +
-				"\nCall number: " + srcCallNum + 				
-				"\nInscription(s): " + curSourceInscription +
-				"\n----------------end of source-------------\n\n";
-	}
-	
-	//TODO entry app
-	//return array containing [0]: tune title and [1]: tune author by parsing string containing title and author
-	public static String[] parseTitleAndCredit(String str) {
-		
-		String[] titleCredit = new String[2];				//array that will contain title and author
-		String[] authorIndicators = {"[by", "-by", " by "};			//strings that indicate presence of author
-		//check to see if any author indicators occur in parameter string
-		int authorIndex = -1;						//no matches by default
-		
-		for(String indicatorStr: authorIndicators) {
-			if(str.indexOf(indicatorStr) != -1) {			//if there is match
-			authorIndex = str.indexOf(indicatorStr);		//record index of match
-			}
-		}
-		
-		//separate tune title and author into individual strings
-		if(authorIndex != -1) {								//if author name is present
-			titleCredit[0] = str.substring(0, authorIndex);	//text before [by is tune title [0]
-			titleCredit[1] = str.substring(authorIndex, str.length());	//text where [by starts to end of string is tune author [1]
-			return titleCredit;	
-		}
-		
-		titleCredit[0] = str;								//if no author detected, return entire string as title with null author
-		return titleCredit;				
-	}
-	
+	//--------------------------------------------------------------------------------		
 	//cycle through text runs in first paragraph of entry to determine if it is secular or not
 	//secular entries are denoted by titles that are written in small caps
 	boolean isSecular(XWPFParagraph par) {
@@ -394,17 +312,6 @@ public class ParseMusicEntries3 {
 		return true;				//if no small caps detected in paragraph, entry is secular
 	}
 	
-	//TODO entry app, delete
-	//shift cells of input array right starting at index parameter
-	public String[] shiftCellsRight(String[] strArr, int startIndex) {
-		for(int i = strArr.length - 1; i > startIndex; i--) {
-			strArr[i] = strArr[i - 1];
-		}
-		strArr[startIndex] = null;
-		return strArr;
-	}
-	
-	//TODO entry app...either make void or leave copy here?
 	public boolean isMelodicIncipit(String str) {	//check if current entry is melodic incipit, indicated by more than three digits
 		int digitCount = 0,				//total digits in string
 				maxConsecDigits = 0,	//most consecutive digits that occur in a row in given string
@@ -433,14 +340,13 @@ public class ParseMusicEntries3 {
 		return ((digitCount >=3 && (str.indexOf("|") != -1) || str.indexOf("-") != -1) || maxConsecDigits  > 4|| digitCount >= 8) ? true: false;
 	}
 	
-	public boolean hasMelodicIncipit(XWPFParagraph par) {	//loose application if isMelodicIncipit method to detect if paragraph contains incipit	
+	private boolean hasMelodicIncipit(XWPFParagraph par) {	//loose application if isMelodicIncipit method to detect if paragraph contains incipit	
 		String curEnt = par.getText();
 			if(isMelodicIncipit(curEnt) && !hasCallNumber(par))
 				return true;
 		return false;
 	}
 	
-	//TODO rewrite this somehow so that works for collection, source, and entry objects
 	//write string to .txt file
 	private void strToFile(String str) { 
 		buf = str.getBytes();
@@ -470,19 +376,28 @@ public class ParseMusicEntries3 {
 	}
 	
 	
-//	private boolean sourceFound(String text) {
-////		Pattern pattern = Pattern.compile("^[\\d]+[\\.]");	//regexp that determines if text begins with an indeterminate number of digits followed by period
-//		//	which indicates source number
-//		Matcher matcher = pattern.matcher(text);			//matcher for detecting pattern occurrence above
-//		if(matcher.find()) {
-//			System.out.println("Sourcefound text " + text + " " + Integer.parseInt(text.substring(matcher.start(), matcher.end() - 1)));
-//		}
-//		boolean found = matcher.find();
-//		return found;
-//	}
+	private boolean sourceFound(String text) {
+		//	which indicates source number
+		matcher = pattern.matcher(text);			//matcher for detecting pattern occurrence above
+		return matcher.find();
+	}
 	
-	private int getSourceNumber(String parText, Matcher match) {
-		return Integer.parseInt(parText.substring(match.start(), match.end() - 1));
+	private int getSourceNumber(String text) {
+		return Integer.parseInt(text.substring(matcher.start(), matcher.end() - 1));
+	}
+	
+	//pull inscription from document; invoked after inscription has already been detected
+	private String getInscription() {
+		String inscription = curParagraphText.substring(curParagraphText.indexOf(":") + 2);
+		while(paragraphList.get(curParIndex + 1).getText().startsWith("		")) {
+			inscription += "\n" + paragraphList.get(curParIndex + 1).getText();
+			curParIndex++;
+		}
+		return inscription;
+	}
+	
+	private boolean isInscription(String text) {
+		return text.toLowerCase().indexOf("inscription:") != -1 || text.toLowerCase().indexOf("inscriptions:") != -1;
 	}
 	
 }
