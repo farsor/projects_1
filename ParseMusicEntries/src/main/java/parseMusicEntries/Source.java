@@ -39,6 +39,8 @@ public class Source {
 	}
 	//--------------------------------------------------------------------------------
 	public void setAuthor(String author) {
+		if(author.startsWith("["))
+			author = author.trim() + "]";
 		this.author = author;
 	}
 	//--------------------------------------------------------------------------------
@@ -47,6 +49,8 @@ public class Source {
 	}
 	//--------------------------------------------------------------------------------
 	public void setTitle(String title) {
+		if(title.trim().endsWith("]"))
+			title = "[" + title.trim();		
 		this.title = title;
 	}
 	//--------------------------------------------------------------------------------
@@ -94,7 +98,7 @@ public class Source {
 			if(title != null) {
 				title += "?]";
 			}
-			return description.substring(3).trim();
+			return description.substring(3);
 		}
 		else {	 
 			return description;

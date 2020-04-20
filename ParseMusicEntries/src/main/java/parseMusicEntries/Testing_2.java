@@ -2,8 +2,18 @@ package parseMusicEntries;
 
 public class Testing_2 {
 	public static void main(String[] args) {
-
-		System.out.println((char) 128413);
+		String str = "The American Harmony?]  ";
+		System.out.println(str.trim().endsWith("]"));
+		str = "[" + str.trim();
+		System.out.println(str);
+		
+//		int[] intArr = {0, 4, 1, 2};
+//		int secondNumber = intArr[1];
+//		System.out.println(secondNumber);
+//		intArr[1] = 5;
+//		System.out.println(secondNumber);
+		
+//		System.out.println((char) 128413);
 		
 		
 //		String str = "                        leaf [5] recto: Friendship, treble?, Em, 553|7553|4, thy wrath lies heavy on                 my soul";

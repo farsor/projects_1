@@ -61,7 +61,7 @@ public class Entry {
 		}
 		
 		//if no vocal part was entered and  tune key was placed vocal part field, shift cells right
-		if(entryArr[3] != null && entryArr[3].length() < 4 ) {
+		if(entryArr[3] != null && entryArr[3].length() < 4 && entryArr[3].indexOf("TTB") == -1) {
 			shiftCellsRight(entryArr, 3);
 			shifts++;
 		}			
@@ -74,13 +74,13 @@ public class Entry {
 				if(isMelodicIncipit(entryArr[i])){	//if melodic incipit is in current field
 					shiftCellsRight(entryArr, i);	//shift cells right
 					shifts++;						//account for shift for other operations
-				}							
+				}	
 			}
 		}
 		
 		//if extra information was given for incipit field, as indicated by mm., add incipit to correct field
 		//by shifting left
-		if(entryArr[5] != null && entryArr[5].indexOf("mm.") != -1) {
+		if(entryArr[5] != null && entryArr[5].indexOf("mm.") != -1 && isMelodicIncipit(entryArr[6])) {
 			entryArr[5] += (", " + entryArr[6]);
 			entryArr[6] = null;
 			shifts--;
@@ -100,19 +100,24 @@ public class Entry {
 			for(int i = 5 - shifts; i < splitEntries.length; i++) {
 				entryArr[6] += (", " + splitEntries[i]);
 			}
-			
-			for(int i = 0; i < entryArr.length; i++) {
-				System.out.println(entryLabels[i] + ": " + entryArr[i]);
-			}
-			System.out.println();
+
 		}		
 		
 		//replace commas and colons that were substituted in source document
 		for(int i = 0; i < entryArr.length; i++) {
 			if(entryArr[i] != null) {
-				//melodic incipits that contained commas had commas replaced by ---. this corrects those
+				//melodic incipits that contained commas had commas replaced by -*- 
+				//and colons replaced by **&
 				entryArr[i] = entryArr[i].replace("-*-", ",").replace("**&", ":");					
 			}
+		}
+		
+		if(!isMelodicIncipit(entryArr[5])) {
+			for(int i = 0; i < entryArr.length; i++) {
+				System.out.println(entryLabels[i] + ": " + entryArr[i]);
+			}
+			ParseMusicEntries3.notIncipitCount++;
+			System.out.println();
 		}
 
 	}	
@@ -131,7 +136,9 @@ public class Entry {
 								.replace(", so", "-*- so")			//remove false delimiter and replace with temporary symbol
 								.replace(", but", "-*- but")		// remove false delimiter and replace with temporary symbol
 								.replace(", by ", "-*- by ")		//remove false delimiter and replace with temporary symbol
-								.trim().replaceAll(" +", " ");	//trim extra spaces
+								.trim().replaceAll(" +", " ")	//trim extra spaces
+								.replace("i.e.,", "i.e.-*-")
+								.replace("solo:", "solo**&");
 		}
 		
 		else {										//if no page number, no need to remove page number
@@ -139,7 +146,9 @@ public class Entry {
 					.replace(", so", "-*- so")			//remove false delimiter and replace with temporary symbol
 					.replace(", but", "-*- but")		//remove false delimiter and replace with temporary symbol
 					.replace(", by",  "-*- by")		//remove false delimiter and replace with temporary symbol
-					.trim().replaceAll(" +", " ");	//trim extra spaces
+					.trim().replaceAll(" +", " ")	//trim extra spaces
+					.replace("i.e.,", "i.e.-*-")
+					.replace("solo:", "solo**&");	
 		}
 	}
 	//-----------------------------------------------------------------------------
@@ -200,7 +209,7 @@ public class Entry {
 	//--------------------------------------------------------------------------------------
 	//determine if string is vocal part
 	private boolean isVocalPart(String[] entriesSplit, int index) {
-		String[] vocalPartKeywords = {"tenor", "counter", "bass", "treble", "cantus", "medus", "basus", "meaudus", "voice", "TCTB"};
+		String[] vocalPartKeywords = {"tenor", "counter", "bass", "treble", "cantus", "medus", "basus", "meaudus", "voice", "TCTB", "fragment"};
 			//^^terms that represent vocal part description
 		if(entriesSplit[index].indexOf("“") != -1 )		//quote character that indicates vocal part
 			return true;
@@ -223,7 +232,7 @@ public class Entry {
 	//-----------------------------------------------------------------------------------------
 	//return string containing entry information
 	public String toString() {		
-		return "Entry Page: " + entryArr[0] +
+		return "Entry Location: " + entryArr[0] +
 				"\nEntry Title: "  +  entryArr[1] + 
 				"\nSecular Entry: " + isSecular +
 				"\nEntry Credit: "  +  entryArr[2] +

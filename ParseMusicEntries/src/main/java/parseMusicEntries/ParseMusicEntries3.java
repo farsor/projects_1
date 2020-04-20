@@ -14,20 +14,20 @@ import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
 
 public class ParseMusicEntries3 {
-	//TODO source 97 with 11 sources
+	//TODO remove periods at ends of author / title
+	//TODO end of document added to collection description
+	//TODO fix brackets
 	
 	//input file operations
 	FileInputStream fis = null;					//input stream to contain .docx file being analyzed
 	XWPFDocument xdoc = null;					//.docx reader
 	List<XWPFParagraph> paragraphList = null;	//list of paragraphs in docx file obtained from .docx reader
-	FileOutputStream fos = null,				//output stream for parsed information
-					dataDumpStream = null;		//output stream for data that could not be parsed
+	FileOutputStream fos = null;				//output stream for parsed information
 	String file;
 	byte[] buf = null;							//buffer for writing text to output stream
 	
 	//testing variables
-	int dumpCount = 0,
-			entryCount = 0,
+	static int entryCount = 0,
 			notIncipitCount = 0;							//number of entries placed in dump file
 	
 	String curParagraphText;				//text of current paragraph being analyzed
@@ -63,7 +63,6 @@ public class ParseMusicEntries3 {
 			
 			long startTime = System.currentTimeMillis();
 			fos = new FileOutputStream("output.txt");	//output for parsed information
-			dataDumpStream = new FileOutputStream("dump.txt");	//output for information that could not be parsed
 			fis = new FileInputStream(file);			//file being analyzed
 			xdoc = new XWPFDocument(OPCPackage.open(fis));	//Apache POI .docx reader
 			paragraphList = xdoc.getParagraphs();			//convert document to paragraphs
@@ -72,7 +71,6 @@ public class ParseMusicEntries3 {
 			parseSourcesAndEntries();	//parse information about sources and entries
 										//sources are initiated with a number followed by a period (23.),
 										//each source may contain multiple entries, indicated by "MS Music Entries: "
-			System.out.println("Total entries dumped: " + dumpCount);
 			System.out.println("Total entries recorded: " + entryCount);
 			System.out.println("Total not incipit: " + notIncipitCount);
 			long endTime = System.currentTimeMillis();
@@ -127,17 +125,19 @@ public class ParseMusicEntries3 {
 				//if this is not the first entry of collection, record previous source information
 				if(source != null) {	
 //					System.out.println(sourceInfoToString());
-					source.setDescription(tempStr.toString());
+					source.setDescription(tempStr.toString().replace("**&", ":"));
 					tempStr.setLength(0);					
 					strToFile(source.toString());
 				}
 				source = new Source(getSourceNumber(curParagraphText));	
-				System.out.println(getSourceNumber(curParagraphText));
 				
 				curParagraphRuns = curParagraph.getRuns();						//get list of runs for current paragraph							
 				//analyze runs of current paragraph to extract title and author
-				//start at index 1 because first run contains source number and does not need to be analyzed
-				for (int i = 1; i < curParagraph.getRuns().size(); i++) {
+				//start at index 1 because first run contains source number and does not need to be analyzed				
+				for (int i = 1;
+				//in cases where 2nd run starts with period as a result of author of document changing font, and does not have more text in same run,
+				//skip run and start at run 2	
+				i < curParagraph.getRuns().size(); i++) {
 					
 					curRun = curParagraphRuns.get(i);								//get run at current index from list of runs
 					
@@ -152,7 +152,8 @@ public class ParseMusicEntries3 {
 					}
 					
 					else {									//curRun that is italicized on same line as source number is book title
-						i = getSrcTitleAuthor(i);			//record title and author and set index to where method left off
+						i = getSrcTitleAuthor(i) - 1;			//record title and author and set index to where method left off( - 1 because
+															//it will be incremented in next iteration of for loop)
 					}					
 				}
 
@@ -237,6 +238,7 @@ public class ParseMusicEntries3 {
 			
 //			entryList.add(new Entry(entries.get(i), isSecularList.get(i)));
 			entry = new Entry(entries.get(i), isSecularList.get(i));
+			entryCount++;
 			strToFile(entry.toString() + "\n");
 //			parseEntry(entries.get(i), i);
 		}
@@ -252,11 +254,10 @@ public class ParseMusicEntries3 {
 		//and no call number detected (call numbers can occur after entry selection and before new source)
 		//separate each entry into a text of its own in preparation for analysis
 		curParagraphText = paragraphList.get(curParIndex).getText();
-		//TODO figure out why this wasn't working properly	
-		while(curParIndex < paragraphList.size() && !sourceFound(paragraphList.get(curParIndex + 1).getText()) && !hasCallNumber(paragraphList.get(curParIndex))) {			
+		while(curParIndex < paragraphList.size() && !sourceFound(paragraphList.get(curParIndex).getText()) && !hasCallNumber(paragraphList.get(curParIndex))) {			
 			curParagraph = paragraphList.get(curParIndex);		//current XWPFparagraph
 			curParagraphText = curParagraph.getText()			//get text of current paragraph
-					.replaceAll(Character.toString((char)160),"")
+					.replaceAll(Character.toString((char)160),"")	//remove non-whitespace space
 					.replace("	", "");							//remove whitespace caused by tabbing
 			
 			//separate each entry into its own string and record if secular
@@ -292,14 +293,12 @@ public class ParseMusicEntries3 {
 		
 		String curSourceTitle = curRun.toString();		//record source title
 		source.setAuthor(tempStr.toString());		//text between source number and source title is author
-		index++;
-		while(index < curParagraphRuns.size() && curParagraphRuns.get(index).isItalic()) {	//add each text run to source title while text is still italicized
-			curSourceTitle += curParagraphRuns.get(index + 1).toString();	
-			index++;										//increment
+		while(++index < curParagraphRuns.size() && curParagraphRuns.get(index).isItalic()) {	//add each text run to source title while text is still italicized
+			curSourceTitle += curParagraphRuns.get(index + 1).toString();
 		}
 		source.setTitle(curSourceTitle);
 		tempStr.setLength(0);							//reset string to record description
-		return index;
+		return index;								//return index of where to start next iteration
 	}
 	//--------------------------------------------------------------------------------		
 	//cycle through text runs in first paragraph of entry to determine if it is secular or not
