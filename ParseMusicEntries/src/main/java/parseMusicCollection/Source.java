@@ -1,7 +1,7 @@
 /**
  * 
  */
-package parseMusicEntries;
+package parseMusicCollection;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,10 +20,8 @@ public class Source {
 	private String title;							//
 	private String inscription;
 	private String description;							//description of current source, containing all details that cannot be parsed
-	//"source_collection", 
-	private static String[] fields = {"source_number", "source_call_number", 
-			"source_author", "source_title", "source_inscription", "source_description"};
-	List<Entry> entries = new ArrayList<Entry>();
+	
+	List<Entry> entries;
 	
 	Source(String collection, int src){
 		this.collection = collection;
@@ -33,11 +31,12 @@ public class Source {
 		title = null;							//
 		inscription = null;
 		description = null;							//description of current source, containing all details that cannot be parsed		
+		entries = new ArrayList<Entry>();
 	}
 	//--------------------------------------------------------------------------------
 	public String[] toArray() {					//source information in array format
 		//collection, 
-		String[] arr = {Integer.toString(sourceNumber), callNumber, author, title, inscription, description};
+		String[] arr = {collection, Integer.toString(sourceNumber), callNumber, author, title, inscription, description};
 		return arr;
 	}
 	//--------------------------------------------------------------------------------
@@ -67,7 +66,7 @@ public class Source {
 	//--------------------------------------------------------------------------------
 	public void setTitle(String title) {
 		title = title.trim();
-		if(title.endsWith("]") && !title.endsWith("[sic]"))
+		if(title.endsWith("]") && !title.startsWith("[") && !title.endsWith("[sic]"))
 			title = "[" + title;		
 		this.title = title;
 	}
@@ -102,11 +101,8 @@ public class Source {
 				"\n----------------end of source-------------\n\n";
 	}
 	//--------------------------------------------------------------------------------
-	public static String[] getFields(){
-		return fields;
-	}
-	//--------------------------------------------------------------------------------
 	private String trimmedDescription(String description) {
+		description = description.trim();
 		if(description.startsWith(".")) {
 			return description.substring(2).trim();
 		}
@@ -120,10 +116,18 @@ public class Source {
 			if(title != null) {
 				title += "?]";
 			}
-			return description.substring(3);
+			return description.substring(3).trim();
 		}
 		else {	 
-			return description;
+			return description.trim();
 		}		
+	}
+	//--------------------------------------------------------------------------------
+	public void addEntry(Entry entry) {
+		entries.add(entry);
+	}
+	//--------------------------------------------------------------------------------
+	public List<Entry> getEntries() {
+		return entries;
 	}
 }

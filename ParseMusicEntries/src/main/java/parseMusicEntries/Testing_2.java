@@ -2,10 +2,18 @@ package parseMusicEntries;
 
 public class Testing_2 {
 	public static void main(String[] args) {
-		String str = "The American Harmony?]  ";
-		System.out.println(str.trim().endsWith("]"));
-		str = "[" + str.trim();
-		System.out.println(str);
+		char c = '\'';
+		System.out.println((int) c);
+		
+//		String auth = "..E";
+//		auth.replace(".", "");
+//		System.out.println(auth);
+				
+		
+//		String str = "The American Harmony?]  ";
+//		System.out.println(str.trim().endsWith("]"));
+//		str = "[" + str.trim();
+//		System.out.println(str);
 		
 //		int[] intArr = {0, 4, 1, 2};
 //		int secondNumber = intArr[1];

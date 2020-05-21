@@ -2,38 +2,43 @@
 		Parses string containing entry information into fields
  * 
  */
-package parseMusicEntries;
+package parseMusicCollection;
 
 
 public class Entry {
 	private boolean isSecular;
-	private String[] entryArr;
-			
-	private static String[] fields = { "tune_page", "tune_title", "tune_credit", "tune_vocal_part",		//labels corresponding to fields
-								"tune_key", "tune_melodic_incipit", "tune_text_incipit", "tune_is_secular"};
-	
+	private String collection,
+					source,
+					location,
+					title,
+					credit,
+					vocalPart,
+					key,
+					melodicIncipit,
+					textIncipit;	
 	Entry(){		
 	}
 	
-	Entry(String entryStr, boolean secular){
+	Entry(String collection, String source, String entryStr, boolean isSecular){
 		//prepare data for entry array construction
+		this.collection = collection;
+		this.source = source;
+		this.isSecular = isSecular;
 		String tunePage = getTunePage(entryStr);		//pull tune page from entry string	
 		entryStr = formatEntryStr(entryStr);			//format current entry, removing tunepage, whitespace and unwanted commas
 		String[] splitEntries = entryStr.split(", ");	//split entry into fields using ", " as delimiter
 		String[] titleCredit = parseTitleCredit(splitEntries[0]);	//get title and credit from first entry of split array, which
 																//contains both title and credit
+		
 		//parse entry
 		parseEntry(tunePage, titleCredit, splitEntries);		
 		
 	}
 	//---------------------------------------------------------------------------
-	public static String[] getFields() {
-		return fields;
-	}
-	//---------------------------------------------------------------------------
 	//sort  entry so that each piece of data is in its respective field
 	private void parseEntry(String tunePage, String[] titleCredit, String[] splitEntries) {	
-		entryArr = new String[7];
+
+		String[] entryArr = new String[7];
 		entryArr[0] = tunePage;
 		entryArr[1] = titleCredit[0];
 		entryArr[2] = titleCredit[1];
@@ -118,11 +123,13 @@ public class Entry {
 		
 		if(!isMelodicIncipit(entryArr[5])) {
 			for(int i = 0; i < entryArr.length; i++) {
-				System.out.println(fields[i] + ": " + entryArr[i]);
+//				System.out.println(fields[i] + ": " + entryArr[i]);
 			}
-			ParseMusicEntries3.notIncipitCount++;
+			Collection.notIncipitCount++;
 			System.out.println();
 		}
+		
+		setVariables(entryArr);
 
 	}	
 	//-----------------------------------------------------------------------------
@@ -236,29 +243,21 @@ public class Entry {
 	//-----------------------------------------------------------------------------------------
 	//return string containing entry information
 	public String toString() {		
-		return "Entry Location: " + entryArr[0] +
-				"\nEntry Title: "  +  entryArr[1] + 
+		return "Entry Location: " + location +
+				"\nEntry Title: "  +  title + 
 				"\nSecular Entry: " + isSecular +
-				"\nEntry Credit: "  +  entryArr[2] +
-				"\nEntry Vocal Part: " + entryArr[3] + 				
-				"\nEntry Key: " + entryArr[4] +
-				"\nEntry Melodic Incipit: "  +  entryArr[5] +
-				"\nEntry Text Incipit: "  +  entryArr[6] + 
+				"\nEntry Credit: "  +  credit +
+				"\nEntry Vocal Part: " + vocalPart + 				
+				"\nEntry Key: " + key +
+				"\nEntry Melodic Incipit: "  +  melodicIncipit +
+				"\nEntry Text Incipit: "  +  textIncipit + 
 				"\n\n";
 	}
 	//---------------------------------------------------------------------------------------
 	//return array containing parsed entries
 	public String[] toArray(){
-		String[] tempArr = new String[entryArr.length + 1];
-		for(int i = 0; i < tempArr.length; i++) {
-			if(i == tempArr.length - 1) {
-				tempArr[i] = Boolean.toString(isSecular);
-			}
-			else {
-				tempArr[i] = entryArr[i];
-			}
-		}
-		return tempArr;
+		String[] arr = {collection, source, location, title, credit, vocalPart, key, melodicIncipit, textIncipit, Boolean.toString(isSecular)};
+		return arr;
 	}
 	//---------------------------------------------------------------------------------------
 	//return whether entry is secular
@@ -273,6 +272,34 @@ public class Entry {
 		else {											//no page number indicated
 			return null;			
 		}	
+	}
+	//---------------------------------------------------------------------------------------
+	private void setVariables(String[] entryArr) {
+		location = entryArr[0];
+		setTitle(entryArr[1]);
+		setCredit(entryArr[2]);
+		vocalPart = entryArr[3];
+		key = entryArr[4];
+		melodicIncipit = entryArr[5];
+		textIncipit = entryArr[6];						
+	}
+	//---------------------------------------------------------------------------------------
+	private void setCredit(String credit) {
+		if(credit != null) {
+			credit = credit.trim();
+			if(credit.endsWith("]") && !credit.startsWith("[") && !credit.endsWith("[sic]"))
+				credit = "[" + credit;
+		}
+		this.credit = credit;
+	}
+	//---------------------------------------------------------------------------------------
+	private void setTitle(String title) {
+		if(title != null) {
+			title = title.trim();
+			if(title.startsWith("[") && !title.endsWith("]"))
+				title +=  "]";
+		}
+		this.title = title;
 	}
 	
 }

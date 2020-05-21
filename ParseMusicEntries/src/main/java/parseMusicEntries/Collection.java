@@ -9,6 +9,7 @@ package parseMusicEntries;
 public class Collection {
 	String collectionName,
 			collectionDesc;
+	String[] fieldLabels = {"collection_name", "collection_description"};
 	
 	Collection(){
 		
@@ -25,8 +26,18 @@ public class Collection {
 				"\n\n------------------------------------End of Collection Description------------------------------------";
 	}
 	
+	public String[] getFieldLabels() {		
+		return fieldLabels;
+	}
 	
+	public String[] toArray() {
+		String[] arr = {collectionName, collectionDesc};
+		return arr;
+	}
 	
+	public String getName() {
+		return collectionName;
+	}
 	
 	
 }

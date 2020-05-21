@@ -24,22 +24,18 @@ public class WriteSpreadsheet {
 	private static FileOutputStream fos;
 	private static Row row;
 	private static Cell cell;
+	int num;
 	
 	WriteSpreadsheet(String[] columnLabels) throws Exception{
-		for(int i = 0; i < columnLabels.length; i++) {
-			
-		}
 		fos = new FileOutputStream("finalized collections/spreadsheet outputs/test.xlsx");
 		workbook = new XSSFWorkbook();
 		sheet = workbook.createSheet("Random Numbers");
-		for(int i = 0; i < 20; i++) {
-			row = sheet.createRow(i);
-			for(int j = 0; j < 8; j++) {
-				cell = row.createCell(j);
-				num = random.nextInt(100);
-				cell.setCellValue(num);
-			}
+		row = sheet.createRow(0);		
+		for(int i = 0; i < columnLabels.length; i++) {
+			cell = row.createCell(i);
+			cell.setCellValue(columnLabels[i]);
 		}
+		fos = new FileOutputStream("finalized collections/spreadsheet outputs/test.xlsx");
 		workbook.write(fos);
 		fos.flush();
 		fos.close();
@@ -47,22 +43,27 @@ public class WriteSpreadsheet {
 	
 	
 	public static void main(String[] args) throws Exception {
-		fos = new FileOutputStream("finalized collections/spreadsheet outputs/test.xlsx");
-		Random random = new Random();
-		int num;	
-		workbook = new XSSFWorkbook();
-		sheet = workbook.createSheet("Random Numbers");
-		for(int i = 0; i < 20; i++) {
-			row = sheet.createRow(i);
-			for(int j = 0; j < 8; j++) {
-				cell = row.createCell(j);
-				num = random.nextInt(100);
-				cell.setCellValue(num);
-			}
-		}
-		workbook.write(fos);
-		fos.flush();
-		fos.close();
+		String[] labels = {"tune_page", "tune_title", "tune_credit", "tune_vocal_part",		//labels corresponding to fields
+				"tune_key", "tune_melodic_incipit", "tune_text_incipit"};
+		WriteSpreadsheet writeSheet = new WriteSpreadsheet(labels);
+		
+		
+//		fos = new FileOutputStream("finalized collections/spreadsheet outputs/test.xlsx");
+//		Random random = new Random();
+//		int num;	
+//		workbook = new XSSFWorkbook();
+//		sheet = workbook.createSheet("Random Numbers");
+//		for(int i = 0; i < 20; i++) {
+//			row = sheet.createRow(i);
+//			for(int j = 0; j < 8; j++) {
+//				cell = row.createCell(j);
+//				num = random.nextInt(100);
+//				cell.setCellValue(num);
+//			}
+//		}
+//		workbook.write(fos);
+//		fos.flush();
+//		fos.close();
 		
 		
 		

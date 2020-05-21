@@ -1,6 +1,5 @@
-package parseMusicEntries;
+package parseMusicCollection;
 
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,31 +7,27 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.apache.poi.openxml4j.opc.OPCPackage;
-import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
 
-public class ParseMusicEntries3 {
+public class Collection {
 	//TODO remove periods at ends of author / title
 	//TODO end of document added to collection description
 	//TODO fix brackets
 	//TODO source 105 not being read
 	
 	//input file operations
-	FileInputStream fis = null;					//input stream to contain .docx file being analyzed
-	XWPFDocument xdoc = null;					//.docx reader
-	List<XWPFParagraph> paragraphList = null;	//list of paragraphs in docx file obtained from .docx reader
+	List<XWPFParagraph> paragraphList;	//list of paragraphs in docx file obtained from .docx reader
 	FileOutputStream fos = null;				//output stream for parsed information
 	String file;
 	byte[] buf = null;							//buffer for writing text to output stream
-	SpreadsheetWriter collSheet, 
-					sourceSheet,
-					entrySheet;
+//	SpreadsheetWriter collSheet, 
+//					sourceSheet,
+//					entrySheet;
 	
 	//testing variables
 	static int entryCount = 0,
-			notIncipitCount = 0;			//number of entries placed in dump file
+			notIncipitCount = 0;							//number of entries placed in dump file
 	
 	String curParagraphText;				//text of current paragraph being analyzed
 	int curParIndex = 0;								//index pf current paragraph in paragraph list
@@ -50,27 +45,28 @@ public class ParseMusicEntries3 {
 	
 	//source/entry variables									
 	//entries variables
-	List<Boolean> isSecularList = null;		//list containing whether entry is secular					
-	List<String> entries = null;			//list of text of entries for current source
+	List<Boolean> isSecularList;		//list containing whether entry is secular					
+	List<String> entryStrings;			//list of text of entries for current source
+	
+	List<Source> sources = new ArrayList<Source>();
 	
 	Source source;
-	Collection collection;
+
+	String collectionName;
+	StringBuilder collectionDesc;
 	
 	
-	ParseMusicEntries3() {								//constructor with no parameters, mostly for testing purposes
+	Collection() {								//constructor with no parameters, mostly for testing purposes
 		
 	}
 	
-	ParseMusicEntries3(String fileName){
+	Collection(List<XWPFParagraph> paragraphList, String fileName){
 		tempStr = new StringBuilder();			//used for building strings for various fields on as-needed basis -make string builder*** 
 		file = fileName;
+		collectionName = fileName.substring(fileName.lastIndexOf("/") + 1, fileName.indexOf("."));
+		this.paragraphList = paragraphList;
 		try {
-			
-			long startTime = System.currentTimeMillis();
 			fos = new FileOutputStream("output.txt");	//output for parsed information
-			fis = new FileInputStream(file);			//file being analyzed
-			xdoc = new XWPFDocument(OPCPackage.open(fis));	//Apache POI .docx reader
-			paragraphList = xdoc.getParagraphs();			//convert document to paragraphs
 			parseCollectionInfo();		//parse information about collection (current document), which consists of all information
 										//occurring before first source			
 			
@@ -79,24 +75,19 @@ public class ParseMusicEntries3 {
 										//each source may contain multiple entries, indicated by "MS Music Entries: "
 			System.out.println("Total entries recorded: " + entryCount);
 			System.out.println("Total not incipit: " + notIncipitCount);
-			long endTime = System.currentTimeMillis();
-			System.out.println("It took " + (endTime - startTime) + " milliseconds");
 			//4/9 > 2827 for long doc
 				//2716 after converting to stringbuilder
-				//1542 after switching to entry objects instead of arrays	
-			sourceSheet.closeStream();		
-//			entrySheet.closeStream();
-			xdoc.close();
+				//1542 after switching to entry objects instead of arrays
 			fos.close();
-			fis.close();
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
+		System.out.println(collectionName);
 	}
 	
 	//get information about collection which ends when source number occurs at beginning of paragraph
 	private void parseCollectionInfo() throws Exception{
-		StringBuilder collectionDesc = new StringBuilder();//description of current collection
+		collectionDesc = new StringBuilder();//description of current collection
 		
 		
 		while(curParIndex < paragraphList.size()) {	//perform until beginning of source is found (see break below) or end of document reached
@@ -107,11 +98,8 @@ public class ParseMusicEntries3 {
 			
 			else {														//if source number IS found
 //				System.out.println(collectionDesc);	
-				collection = new Collection(file, collectionDesc.toString());				
-				collSheet = new SpreadsheetWriter(collection.getFieldLabels(), "collection");
-				collSheet.writeRow(collection.toArray());
-				collSheet.closeStream();
-//				strToFile(collection.toString() + "\n");						
+				strToFile(collectionDesc.toString() + "\n");
+				strToFile("\n************************End of Collection Description************************\n\n");
 				break;													//collection description is done. Move to source operations
 			}
 			curParIndex++;
@@ -120,9 +108,6 @@ public class ParseMusicEntries3 {
 	//----------------------------------------------------------------------------------------------------	
 	//perform source/entries operations
 	private void parseSourcesAndEntries() throws Exception{ 
-		sourceSheet = new SpreadsheetWriter(Source.getFields(), "sources");
-		//TODO fix overwriting issues
-		entrySheet = new SpreadsheetWriter(Entry.getFields(), "entries");
 		source = null;
 		//source/entry operations
 		while(curParIndex < paragraphList.size()) {		//perform until end of document is reached	
@@ -138,11 +123,12 @@ public class ParseMusicEntries3 {
 				if(source != null) {	
 //					System.out.println(sourceInfoToString());
 					source.setDescription(tempStr.toString().replace("**&", ":"));
+					sources.add(source);
 					tempStr.setLength(0);
-					sourceSheet.writeRow(source.toArray());
+//					sourceSheet.writeRow(source.toArray());
 					strToFile(source.toString());
 				}
-				source = new Source(collection.getName(), getSourceNumber(curParagraphText));	
+				source = new Source(collectionName, getSourceNumber(curParagraphText));	
 				
 				curParagraphRuns = curParagraph.getRuns();						//get list of runs for current paragraph							
 				//analyze runs of current paragraph to extract title and author
@@ -244,14 +230,14 @@ public class ParseMusicEntries3 {
 		getEntryStringListAndSecular();
 		
 		//separate entries into fields
-		System.out.println("Current source: " + source.getSourceNumber() + ", " + entries.size());
+		System.out.println("Current source: " + source.getSourceNumber() + ", " + entryStrings.size());
 		
 		//parse each entry from string form into array organized by field
-		for(int i = 0; i < entries.size(); i++) {
+		for(int i = 0; i < entryStrings.size(); i++) {
 			
 //			entryList.add(new Entry(entries.get(i), isSecularList.get(i)));
-			entry = new Entry(entries.get(i), isSecularList.get(i));
-			entrySheet.writeRow(entry.toArray());
+			entry = new Entry(collectionName, Integer.toString(source.getSourceNumber()), entryStrings.get(i), isSecularList.get(i));
+			source.addEntry(entry);
 			entryCount++;
 			strToFile(entry.toString() + "\n");
 //			parseEntry(entries.get(i), i);
@@ -259,9 +245,10 @@ public class ParseMusicEntries3 {
 	}	
 	//----------------------------------------------------------------	
 	//construct arrayList of 
+	//TODO all are being recorded as non-secular
 	private void getEntryStringListAndSecular() {
 		isSecularList = new ArrayList<Boolean>();								//array containing whether each entry is secular
-		entries = new ArrayList<String>();										//list with entries in string form
+		entryStrings = new ArrayList<String>();										//list with entries in string form
 		boolean curEntrySecular = true;											//detects if entry is secular, true by default, false when small caps detected
 		StringBuilder entryStrBuilder = new StringBuilder();					//sb for progressively building entry string	
 		//while end of document has not been reached and new source is not found (as indicated by matcher), 
@@ -280,7 +267,7 @@ public class ParseMusicEntries3 {
 				// (first sources sometimes do not have a : 
 				
 				//record previous entry information
-				entries.add(entryStrBuilder.toString());			//add previous entry to arraylist	
+				entryStrings.add(entryStrBuilder.toString());		//add previous entry to arraylist	
 				isSecularList.add(curEntrySecular);			//record if entry was secular
 				curEntrySecular = true;						//current entry secular by default (may have been changed by isSecularArray()
 				entryStrBuilder = new StringBuilder();		//initiate next entry
@@ -296,7 +283,7 @@ public class ParseMusicEntries3 {
 			curParIndex++;									//move to next paragraph//		
 		}		
 
-		entries.add(entryStrBuilder.toString());			//add last entry of current source		
+		entryStrings.add(entryStrBuilder.toString());			//add last entry of current source		
 		isSecularList.add(curEntrySecular);					//^^
 	}		
 	//--------------------------------------------------------------------	
@@ -411,6 +398,29 @@ public class ParseMusicEntries3 {
 	
 	private boolean isInscription(String text) {
 		return text.toLowerCase().indexOf("inscription:") != -1 || text.toLowerCase().indexOf("inscriptions:") != -1;
+	}
+	
+	public String toString() {
+		return "Collection Name: " + collectionName + 
+				"\n\n------------------------------------Collection Description------------------------------------\n" + collectionDesc + 
+				"\n\n------------------------------------End of Collection Description------------------------------------";
+	}
+	
+	public String[] toArray() {
+		String[] arr = {collectionName, collectionDesc.toString().trim()};
+		return arr;
+	}
+	
+	public String getName() {
+		return collectionName;
+	}
+	
+	public String getDescription() {
+		return collectionDesc.toString();
+	}
+	//-------------------------------------------------------------------
+	public List<Source> getSources(){	//return arraylist of sources
+		return sources;
 	}
 	
 }
