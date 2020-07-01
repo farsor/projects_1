@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Sources</title>
+</head>
+<body>     
+    <h1>Search Tables</h1>
+    <form id="search">
+        <input autofocus="autofocus" name="req" id="searchform" size="60" maxlength="200" value="">
+        <button id="submit">Search</button>
+        <br>
+        <div id="tableSelect">
+            <input type="radio" name="table" value="collections" checked="">
+            Collections    
+            <input type="radio" name="table" value="sources" checked="">
+            Sources
+            <input type="radio" name="table" value="entries" checked="">
+            Entries
+        </div>
+        <br>
+        
+    </form>
+
+    <button id="getSrcBtn">Get Sources</button>
+    <br><br>
+    <h1>Users</h1>
+    <div id="srcs"></div>
+
+    <script type="text/javascript" src='home.js'></script>
+</body>
+</html>
