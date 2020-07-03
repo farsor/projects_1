@@ -28,7 +28,7 @@ public class Sources {
 	@Column(name="source_description")
 	private String description;							//description of current source, containing all details that cannot be parsed
 	
-	Sources(){
+	public Sources(){
 		
 	}
 	
@@ -79,6 +79,13 @@ public class Sources {
 	}
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	@Override
+	public String toString() {
+		return "Sources [id=" + id + ", collection=" + collection + ", sourceNumber=" + sourceNumber + ", callNumber="
+				+ callNumber + ", author=" + author + ", title=" + title + ", inscription=" + inscription
+				+ ", description=" + description + "]";
 	}
 	
 	
