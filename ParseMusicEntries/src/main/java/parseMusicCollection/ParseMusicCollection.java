@@ -46,7 +46,7 @@ public class ParseMusicCollection {
 				fis = new FileInputStream(files[i]);			//file being analyzed
 				xdoc = new XWPFDocument(OPCPackage.open(fis));	//Apache POI .docx reader
 				paragraphList = xdoc.getParagraphs();			//convert document to paragraphs
-				collections[i]= new Collection(paragraphList, files[i]);
+				collections[i] = new Collection(paragraphList, files[i]);
 			}
 			long endTime = System.currentTimeMillis();
 			System.out.println("It took " + (endTime - startTime) + " milliseconds");

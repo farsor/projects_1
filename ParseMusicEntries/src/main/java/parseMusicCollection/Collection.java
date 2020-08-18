@@ -10,26 +10,33 @@ import java.util.regex.Pattern;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
 
+/**
+ * 
+ * @author Andrew
+ * Parse Word collection document
+ *
+ */
+
+
 public class Collection {
 	//TODO remove periods at ends of author / title
-	//TODO end of document added to collection description
 	//TODO fix brackets
 	//TODO source 105 not being read
 	
 	//input file operations
-	List<XWPFParagraph> paragraphList;	//list of paragraphs in docx file obtained from .docx reader
-	FileOutputStream fos = null;				//output stream for parsed information
+	List<XWPFParagraph> paragraphList;					//list of paragraphs in docx file obtained from .docx reader
+	FileOutputStream fos = null;						//output stream for parsed information
 	String file;
-	byte[] buf = null;							//buffer for writing text to output stream
+	byte[] buf = null;									//buffer for writing text to output stream
 //	SpreadsheetWriter collSheet, 
 //					sourceSheet,
 //					entrySheet;
 	
 	//testing variables
 	static int entryCount = 0,
-			notIncipitCount = 0;							//number of entries placed in dump file
+			notIncipitCount = 0;						//number of entries placed in dump file
 	
-	String curParagraphText;				//text of current paragraph being analyzed
+	String curParagraphText;							//text of current paragraph being analyzed
 	int curParIndex = 0;								//index pf current paragraph in paragraph list
 	XWPFParagraph curParagraph = null;					//actual current paragraph
 	List<XWPFRun> curParagraphRuns = null;				//list of text "runs" contained within current paragraph, 
@@ -41,12 +48,12 @@ public class Collection {
 														//	which indicates source number
 	Matcher matcher = null;								//matcher for detecting pattern occurrence above 
 
-	StringBuilder tempStr;			//used for building strings for various fields 
+	StringBuilder tempStr;								//used for building strings for various fields 
 	
 	//source/entry variables									
 	//entries variables
-	List<Boolean> isSecularList;		//list containing whether entry is secular					
-	List<String> entryStrings;			//list of text of entries for current source
+	List<Boolean> isSecularList;						//list containing whether entry is secular					
+	List<String> entryStrings;							//list of text of entries for current source
 	
 	List<Source> sources = new ArrayList<Source>();
 	
@@ -56,23 +63,23 @@ public class Collection {
 	StringBuilder collectionDesc;
 	
 	
-	Collection() {								//constructor with no parameters, mostly for testing purposes
+	Collection() {										//constructor with no parameters, mostly for testing purposes
 		
 	}
 	
 	Collection(List<XWPFParagraph> paragraphList, String fileName){
-		tempStr = new StringBuilder();			//used for building strings for various fields on as-needed basis -make string builder*** 
+		tempStr = new StringBuilder();					//used for building strings for various fields on as-needed basis -make string builder*** 
 		file = fileName;
 		collectionName = fileName.substring(fileName.lastIndexOf("/") + 1, fileName.indexOf("."));
 		this.paragraphList = paragraphList;
 		try {
 			fos = new FileOutputStream("output.txt");	//output for parsed information
-			parseCollectionInfo();		//parse information about collection (current document), which consists of all information
-										//occurring before first source			
+			parseCollectionInfo();						//parse information about collection (current document), which consists of all information
+														//occurring before first source			
 			
-			parseSourcesAndEntries();	//parse information about sources and entries
-										//sources are initiated with a number followed by a period (23.),
-										//each source may contain multiple entries, indicated by "MS Music Entries: "
+			parseSourcesAndEntries();					//parse information about sources and entries
+														//sources are initiated with a number followed by a period (23.),
+														//each source may contain multiple entries, indicated by "MS Music Entries: "
 			System.out.println("Total entries recorded: " + entryCount);
 			System.out.println("Total not incipit: " + notIncipitCount);
 			//4/9 > 2827 for long doc
@@ -90,10 +97,10 @@ public class Collection {
 		collectionDesc = new StringBuilder();//description of current collection
 		
 		
-		while(curParIndex < paragraphList.size()) {	//perform until beginning of source is found (see break below) or end of document reached
+		while(curParIndex < paragraphList.size()) {				//perform until beginning of source is found (see break below) or end of document reached
 			curParagraphText = paragraphList.get(curParIndex).getText();
-			if(!sourceFound(curParagraphText)) {		//if source number IS NOT found at beginning of paragraph
-				collectionDesc.append(curParagraphText + "\n");				//add current paragraph to collection description	
+			if(!sourceFound(curParagraphText)) {				//if source number IS NOT found at beginning of paragraph
+				collectionDesc.append(curParagraphText + "\n");	//add current paragraph to collection description	
 			}
 			
 			else {														//if source number IS found
@@ -185,7 +192,7 @@ public class Collection {
 //				strToFile(sourceInfoToString());	//write current source information to file
 				
 				strToFile("\nxxxxxxxxxxxxxxxx Start of Source Entries xxxxxxxxxxxxxxxx\n\n");
-				parseEntrySection();			//parse entries for current
+				parseEntrySection();			//parse entries for current paragraph
 				strToFile("\nxxxxxxxxxxxxxxxx End of Source Entries xxxxxxxxxxxxxxxx\n\n");			
 				curParIndex--;
 			}
@@ -236,7 +243,7 @@ public class Collection {
 		for(int i = 0; i < entryStrings.size(); i++) {
 			
 //			entryList.add(new Entry(entries.get(i), isSecularList.get(i)));
-			entry = new Entry(collectionName, Integer.toString(source.getSourceNumber()), entryStrings.get(i), isSecularList.get(i));
+			entry = new Entry(collectionName, Integer.toString(source.getSourceNumber()), entryStrings.get(i), isSecularList.get(i)); 
 			source.addEntry(entry);
 			entryCount++;
 			strToFile(entry.toString() + "\n");

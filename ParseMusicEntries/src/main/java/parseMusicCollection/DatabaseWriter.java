@@ -8,9 +8,10 @@ public class DatabaseWriter {
 	Statement myStatement;
 	String sql;
 	
+	//construct database writer with table name as parameter
 	DatabaseWriter(String table){
 		try {
-			myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/collections","root","password");
+			myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/collections_2","root","password");
 			myStatement = myConn.createStatement();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -18,7 +19,8 @@ public class DatabaseWriter {
 		}
 	}
 	
-
+	//construct sql string with field 
+	//@param fields - string array with names of fields
 	public String fieldsToSQLStr(String[] fields) {
 		StringBuilder fieldsStr = new StringBuilder();
 		fieldsStr.append(fields[0]);
@@ -47,22 +49,28 @@ public class DatabaseWriter {
 		}
 	}
 	
+//	//create tables
 //	public static void main(String[] args) {
 //		
 //		try {
-//			Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/collections","root","password");
+//			Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/collections_2","root","password");
 //			
 //			Statement myStatement = myConn.createStatement();
 //			
 //			//create source table
-////			String sql = "CREATE TABLE `collections`.`sources`(`collection_name` TEXT NULL, `source_number` TEXT NULL, `source_call_number` TEXT NULL,"
-////					+ " `source_author` TEXT NULL, `source_title` TEXT NULL, `source_inscription` TEXT NULL, `source_description` TEXT NULL);";
+//			//make sure to change schema below***
+//			String sql = "CREATE TABLE `collections_2`.`sources`(`source_id` INT NOT NULL AUTO_INCREMENT, `collection_name` TEXT NOT NULL`source_number` TEXT NOT NULL, `source_call_number` TEXT NOT NULL,"
+//					+ " `source_author` TEXT NOT NULL, `source_title` TEXT NOT NULL, `source_inscription` TEXT NOT NULL, `source_description` TEXT NOT NULL, PRIMARY KEY (`source_id`));";
 //			
-//			//create entries table
-//			String sql = "CREATE TABLE `collections`.`entries`(`collection_name` TEXT NULL, `source_number` TEXT NULL, `entry_location` TEXT NULL,"
-//					+ " `entry_title` TEXT NULL, `entry_credit` TEXT NULL, `entry_vocal_part` TEXT NULL, `entry_key` TEXT NULL, `entry_melodic_incipit` TEXT NULL,"
-//					+ " `entry_text_incipit` TEXT NULL, `entry_is_secular` TEXT NULL);";
+//////			//create entries table
+////			String sql = "CREATE TABLE `collections_2`.`entries`(`entry_id` INT NOT NULL AUTO_INCREMENT, `collection_name` TEXT NOT NULL, `source_number` TEXT NOT NULL, `entry_location` TEXT NOT NULL,"
+////					+ " `entry_title` TEXT NOT NULL, `entry_credit` TEXT NOT NULL, `entry_vocal_part` TEXT NOT NULL, `entry_key` TEXT NOT NULL, `entry_melodic_incipit` TEXT NOT NULL,"
+////					+ " `entry_text_incipit` TEXT NOT NULL, `entry_is_secular` TEXT NOT NULL, PRIMARY KEY (`entry_id`));";
+//						
+////			//create collections table		
+////			String sql = "CREATE TABLE `collections_2`.`collections`(`collection_id` INT NOT NULL AUTO_INCREMENT, `collection_name` TEXT NOT NULL, `collection_description` TEXT NOT NULL, PRIMARY KEY (`collection_id`));";
 //			
+//
 //			myStatement.executeUpdate(sql);
 //			
 ////			ResultSet myResults = myStatement.executeQuery("SELECT * FROM city");

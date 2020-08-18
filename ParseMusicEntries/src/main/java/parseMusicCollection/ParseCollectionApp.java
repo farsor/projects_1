@@ -15,8 +15,10 @@ public class ParseCollectionApp {
 				"finalized collections/MA Boston, Congregational Library and Archives--INVENTORY (1).docx"}; 
 		
 		ParseMusicCollection pmc = new ParseMusicCollection(collectionFiles); //parse files
-//		pmc.toSpreadsheets("collections", "sources", "entries");
-		pmc.entriesToDatabase();		//write to database
+		pmc.toSpreadsheets("collections", "sources", "entries");
+//		pmc.entriesToDatabase();		//write to database
+//		pmc.collectionToDatabase();
+//		pmc.sourcesToDatabase();
 		
 		//open file automatically
 //		Desktop desktop = Desktop.getDesktop();

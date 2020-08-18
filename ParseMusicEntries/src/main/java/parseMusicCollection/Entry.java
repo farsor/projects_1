@@ -16,6 +16,9 @@ public class Entry {
 					key,
 					melodicIncipit,
 					textIncipit;	
+	private static String[] fields = {"collection_name", "source_number", "entry_location", 	//labels for entry table columns
+			"entry_title", "entry_credit", "entry_vocal_part",
+			"entry_key", "entry_melodic_incipit", "entry_text_incipit", "entry_is_secular"};
 	Entry(){		
 	}
 	
@@ -300,6 +303,10 @@ public class Entry {
 				title +=  "]";
 		}
 		this.title = title;
+	}
+	
+	public static String[] getFields() {
+		return fields;
 	}
 	
 }

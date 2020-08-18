@@ -3,7 +3,6 @@
  */
 package parseMusicCollection;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,7 +20,7 @@ public class Source {
 	private String inscription;
 	private String description;							//description of current source, containing all details that cannot be parsed
 	
-	List<Entry> entries;
+	Entries entries;
 	
 	Source(String collection, int src){
 		this.collection = collection;
@@ -31,7 +30,7 @@ public class Source {
 		title = null;							//
 		inscription = null;
 		description = null;							//description of current source, containing all details that cannot be parsed		
-		entries = new ArrayList<Entry>();
+		entries = new Entries();
 	}
 	//--------------------------------------------------------------------------------
 	public String[] toArray() {					//source information in array format
@@ -128,6 +127,7 @@ public class Source {
 	}
 	//--------------------------------------------------------------------------------
 	public List<Entry> getEntries() {
-		return entries;
+		return entries.toArrayList();
 	}
+	//--------------------------------------------------------------------------------
 }
