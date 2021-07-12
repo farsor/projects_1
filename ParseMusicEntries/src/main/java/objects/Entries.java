@@ -14,9 +14,9 @@ import writers.SpreadsheetWriter;
  *	Array of entries objects
  */
 public class Entries {
-	
-	//list containing entry objects
-	List<Entry> entries;
+
+	private static int columnWidths[] = { 25, 10, 20, 20, 35, 30, 10, 75, 75, 15 }; //widths of columns for spreadsheet cells corresponding to field index
+	List<Entry> entries;			//list containing entry objects
 	
 	//default constructor
 	public Entries(){
@@ -59,9 +59,9 @@ public class Entries {
 	}
 		
 	//add entries within entry object to spreadsheet
-	public void toSpreadsheet(String fileName, String path) {
+	public void toSpreadsheet(SheetInfo sheetInfo) {
 		try {
-			SpreadsheetWriter sw = new SpreadsheetWriter(Entry.getFields(), fileName, "entries", path);
+			SpreadsheetWriter sw = new SpreadsheetWriter(Entry.getFields(), columnWidths, sheetInfo);
 			for(Entry entry: entries) {
 				sw.writeRow(entry.toArray());	//write entry information to spreadsheet
 			}

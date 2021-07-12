@@ -17,6 +17,7 @@ import writers.SpreadsheetWriter;
 
 public class Collections {
 	Collection[] collections;
+	private static int columnWidths[] = { 25, 100 };		//widths of columns for spreadsheet cells corresponding to field index
 	
 	/**
 	 * Parse music collection file and construct music collection object
@@ -46,9 +47,9 @@ public class Collections {
 	 * @param fileName Name of spreadsheet output file.
 	 * @param path Path file will be written to.
 	 */
-	public void toSpreadsheet(String fileName, String path) {
+	public void toSpreadsheet(SheetInfo sheetInfo) {
 		try {
-			SpreadsheetWriter sw = new SpreadsheetWriter(Collection.getFields(), fileName, "collections", path);
+			SpreadsheetWriter sw = new SpreadsheetWriter(Collection.getFields(), columnWidths, sheetInfo);
 			for(Collection collection: collections) {
 				sw.writeRow(collection.toArray());	//write source information to spreadsheet
 			}

@@ -17,6 +17,7 @@ import writers.SpreadsheetWriter;
 public class Collection {
 	
 	private static String[] fields = {"collection_name", "collection_description"};	//labels for collection table columns	
+	private static int columnWidths[] = { 25, 100 };		//widths of columns for spreadsheet cells corresponding to field index
 	private Sources sources = new Sources();				//source objects contained within collection
 	private String collectionName,							//name of collection
 					collectionDescription = "";				//information about collection
@@ -82,9 +83,9 @@ public class Collection {
 	}
 	
 	//write collection data to spreadsheet
-	public void toSpreadsheet(String fileName, String path) {
+	public void toSpreadsheet(SheetInfo sheetInfo) {
 		try {
-			SpreadsheetWriter sw = new SpreadsheetWriter(fields, fileName, "collections", path);
+			SpreadsheetWriter sw = new SpreadsheetWriter(fields, columnWidths, sheetInfo);
 			sw.writeRow(toArray());	//write source information to spreadsheet
 			sw.closeStream();
 		} catch(Exception e) {

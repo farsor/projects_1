@@ -6,55 +6,113 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import objects.SheetInfo;
+
 public class SpreadsheetWriter {
 	
-	
 	private Workbook workbook;			//workbook being created
-	private Sheet sheet;					//sheet within workbook
+	private Sheet sheet;				//sheet within workbook
+	CellStyle style;
 	private FileOutputStream fos;		//excel file output
-	private Row row;						//spreadsheet row
+	private Row row;					//spreadsheet row
 	private Cell cell;					//spreadsheet cell
-	int curRow;									//row to which next entry will be written
+	int curRow;							//row to which next entry will be written
+	static final int WIDTH_CONSTANT = 256;	//constant by which cell width will be multiplied, since Apache POI
+											//cell width unit of measurement is 1/256th of character width
+	File file;
 	
-	//constructor
-	public SpreadsheetWriter(String[] columnLabels, String fileName, String sheetName, String path) throws Exception{
-		File file = new File(path + fileName + ".xlsx");		//excel file being read/written to
+	public SpreadsheetWriter(String[] columnLabels, int[] columnWidths, SheetInfo sheetInfo) throws Exception{
+		file = sheetInfo.getWorkbookFile();		//excel file being read/written to
 		if(file.exists()) {										//check if file exists
-			FileInputStream fis = new FileInputStream(file);
-			workbook = new XSSFWorkbook(fis);					//if it does exist, open file
-			sheet = workbook.getSheet(sheetName);				//get sheet that will be written to
-			if(sheet == null) {									//if sheet does not exist										
-				sheet = workbook.createSheet(sheetName);			//create sheet
+			initializeExistingWorkbook(file);
+			initializeCurrentSheet(sheetInfo.getSheetName());
+			initializeCellStyle();
+		}
+		else {
+			createBlankWorkbook(file);
+			initializeCurrentSheet(sheetInfo.getSheetName());
+			initializeCellStyle();
+		}
+		fos = new FileOutputStream(file);
+		initializeCurrentRow();
+		if(isNewSheet()) {
+			for(int i = 0; i < columnLabels.length; i++) {			//for the length of column label array	
+				writeColumnLabel(columnLabels, i);
+				formatColumn(columnWidths, i);
 			}
 		}
-		else {													//if file does not exist
-			workbook = new XSSFWorkbook();						//create blank workbook
-			sheet = workbook.createSheet(sheetName);				//and blank sheet
-		}
-		fos = new FileOutputStream(file);						//create output stream
-		curRow = sheet.getLastRowNum() + 1;						//first row that will be written to
-		if(curRow == 1) curRow--;								//if new document, start at 0 instead of 1(no last row)		
-		row = sheet.createRow(curRow++);						//create new row to be written to
-		if(curRow == 1) {
-			for(int i = 0; i < columnLabels.length; i++) {			//for the length of column label array			
-				cell = row.createCell(i);							//create cell
-				cell.setCellValue(columnLabels[i]);					//then write column label
-			}
-		}
+	}
+	
+	//opens existing workbook for editing
+	private void initializeExistingWorkbook(File file) throws Exception{
+		FileInputStream fis = new FileInputStream(file);
+		workbook = new XSSFWorkbook(fis);					//if it does exist, open file	
+	}	
+	
+	private void createBlankWorkbook(File file){
+		workbook = new XSSFWorkbook();						//create blank workbook		
+	}	
+	
+	//initialize sheet that is about to be written to
+	private void initializeCurrentSheet(String sheetName){
+		sheet = workbook.getSheet(sheetName);				//get sheet that will be written to
+		if(sheet == null) {									//if sheet does not exist										
+			sheet = workbook.createSheet(sheetName);			//create sheet
+		}	
+	}
+	
+	//create style that will be applied to forthcoming cells that are created
+	private void initializeCellStyle() {
+		style = workbook.createCellStyle();
+		style.setWrapText(true);			//make it so text in sheet will be wrapped
+	}
+	
+	//initialize current row for operations
+	private void initializeCurrentRow() {
+		curRow = sheet.getLastRowNum() + 1;		//set first row that will be written to
+		//if new sheet (current row is 1), start at 0 instead of 1(no last row)	to prepare to write column labels
+		if(isNewSheet()) curRow--;
+		row = sheet.createRow(curRow++);		//create new row to 
+	}
+	
+	private boolean isNewSheet() {
+		return curRow == 1;					//only cases when row will be 1 is when it is new sheet
+	}
+	
+	
+	private void writeColumnLabel(String[] columnLabels, int index) {
+		cell = row.createCell(index);					//create cell
+		cell.setCellStyle(style);						//apply cell style
+		cell.setCellValue(columnLabels[index]);			//then write column label		
+	}
+	
+	private void formatColumn(int[] columnWidths, int index) {
+		sheet.setColumnWidth(index, columnWidths[index] * WIDTH_CONSTANT);	//set width of column
 	}
 	
 	//write row with string array as parameter
 	public void writeRow(String[] dataArr) throws Exception {
 		row = sheet.createRow(curRow++);			//create new row that will be written to
 		for(int i = 0; i < dataArr.length; i++) {	//for all strings in data array
-			cell = row.createCell(i);				//create cell to be written to
-			cell.setCellValue(dataArr[i]);			//write string to cell
+			writeCell(dataArr, i);
 		}
+	}
+	
+	private void writeCell(String[] dataArr, int index) {
+		cell = row.createCell(index);				//create cell to be written to
+		if(index > 0) applyCellStyle();
+		cell.setCellValue(dataArr[index]);			//write string to cell
+	}
+	
+	//apply cell style to current cell
+	private void applyCellStyle() {
+		cell.setCellStyle(style);		
 	}
 	
 	//finalize document and close stream
@@ -63,7 +121,4 @@ public class SpreadsheetWriter {
 		fos.close();								//close stream
 	}
 	
-	
-	
-
 }

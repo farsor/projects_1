@@ -57,9 +57,9 @@ public class ParseCollection {
 	XWPFRun curRun = null;								//current run being analyzed
 	
 	//matcher used for detecting starts of new source
-	Pattern pattern = Pattern.compile("^[\\d]+[\\.]");	//determines if text begins with an indeterminate number of digits followed by period,
+	Pattern sourceNumberPattern = Pattern.compile("^[\\d]+[\\.]");	//determines if text begins with an indeterminate number of digits followed by period,
 														//	which indicates source number
-	Matcher matcher = null;								//matcher for detecting pattern occurrence above 
+	Matcher sourceNumberMatcher = null;								//matcher for detecting pattern occurrence above 
 
 	StringBuilder tempStr;								//used for building strings for various fields 
 	
@@ -73,13 +73,10 @@ public class ParseCollection {
 	Source source;
 
 	String collectionName;
-	StringBuilder collectionDesc;
+	StringBuilder collectionDescription;
 	
 	
-	public ParseCollection() {										//constructor with no parameters, mostly for testing purposes
-		
-	}
-	
+	public ParseCollection() {}										//constructor with no parameters, mostly for testing purposes	
 	
 	public ParseCollection(File file, Collection collection){
 		this.collection = collection;
@@ -100,7 +97,7 @@ public class ParseCollection {
 	public void execute() {
 		try {
 			fos = new FileOutputStream("output.txt");	//output for parsed information
-			parseCollectionInfo();						//parse information about collection (current document), which consists of all information
+			parseCollectionDescription();						//parse information about collection (current document), which consists of all information
 														//occurring before first source			
 			
 			parseSourcesAndEntries();					//parse information about sources and entries
@@ -119,39 +116,36 @@ public class ParseCollection {
 	}
 	
 	//get information about collection which ends when source number occurs at beginning of a paragraph
-	private void parseCollectionInfo() throws Exception{
-		collectionDesc = new StringBuilder();//description of current collection
-		
-		
-		while(curParIndex < paragraphList.size()) {				//perform until beginning of source is found (see break below) or end of document reached
-			curParagraphText = paragraphList.get(curParIndex).getText();
-			if(!sourceFound(curParagraphText)) {				//if source number IS NOT found at beginning of paragraph
-				collectionDesc.append(curParagraphText + "\n");	//add current paragraph to collection description
-				collection.setDescription(collectionDesc);
-			}
-			
-			else {														//if source number IS found
-//				System.out.println(collectionDesc);	
-				strToFile(collectionDesc.toString() + "\n");
-				strToFile("\n************************End of Collection Description************************\n\n");
-				break;													//collection description is done. Move to source operations
-			}
-			curParIndex++;
+	private void parseCollectionDescription() throws Exception{
+		collectionDescription = new StringBuilder();//description of current collection
+		initializeParagraphInfo();
+		while(!endOfDocumentReached() && !sourceNumberFound(curParagraphText)) {
+			collectionDescription.append(curParagraphText + "\n");	//add current paragraph to collection description			
+			curParagraphText = paragraphList.get(++curParIndex).getText();	//move to next paragraph
 		}
+		collection.setDescription(collectionDescription);			//set description of Collection object
 	}	
-	//----------------------------------------------------------------------------------------------------	
+	
+	//determine if current paragraph index exceeds number of paragraphs in document, indicating
+	//	that end of document has been reached
+	private boolean endOfDocumentReached() {
+		return curParIndex >= paragraphList.size();
+	}	
+	
+	//determine if source number is found in string, as indicated by a number followed by a period
+	private boolean sourceNumberFound(String text) {
+		sourceNumberMatcher = sourceNumberPattern.matcher(text);
+		return sourceNumberMatcher.find();
+	}
+	
+
 	//perform source/entries operations
 	private void parseSourcesAndEntries() throws Exception{ 
 		source = null;
 		//source/entry operations
-		while(curParIndex < paragraphList.size()) {		//perform until end of document is reached	
-			
-			//initialize variables for current paragraph
-			curParagraph = paragraphList.get(curParIndex);		//get current xwpf paragraph being analyzed
-			curParagraphText = curParagraph.getText();			//get current paragraph in string form
-			
-			//if current paragraph starts with source number (should always be case after collection description done)
-			if(sourceFound(curParagraphText)) {	//check for source number, which indicates end of last source and beginning of new source				
+		while(!endOfDocumentReached()) {
+			initializeParagraphInfo();
+			if(sourceNumberFound(curParagraphText)) {	//check for source number, indicating end of last source and beginning of new source				
 				
 				//if this is not the first entry of collection, record previous source information
 				if(source != null) {	
@@ -162,16 +156,15 @@ public class ParseCollection {
 //					sourceSheet.writeRow(source.toArray());
 					strToFile(source.toString());
 				}
-				System.out.println("************CollectionName" + collectionName);
+				System.out.println("************CollectionName: " + collectionName);
 				source = new Source(collectionName, getSourceNumber(curParagraphText));	
 				
 				curParagraphRuns = curParagraph.getRuns();						//get list of runs for current paragraph							
 				//analyze runs of current paragraph to extract title and author
-				//start at index 1 because first run contains source number and does not need to be analyzed				
-				for (int i = 1;
+				//start at index 1 because first run contains source number and does not need to be analyzed	
 				//in cases where 2nd run starts with period as a result of author of document changing font, and does not have more text in same run,
-				//skip run and start at run 2	
-				i < curParagraph.getRuns().size(); i++) {
+				//skip run and start at run 2				
+				for (int i = 1; i < curParagraph.getRuns().size(); i++) {
 					
 					curRun = curParagraphRuns.get(i);								//get run at current index from list of runs
 					
@@ -237,7 +230,13 @@ public class ParseCollection {
 //		sourceSheet.writeRow(source.toArray());
 		strToFile(source.toString());
 	}
-	//----------------------------------------------------------------------
+	
+	//initialize paragraph information to prepare for analysis
+	private void initializeParagraphInfo() {
+		curParagraph = paragraphList.get(curParIndex);		//get current xwpf paragraph being analyzed
+		curParagraphText = curParagraph.getText();			//get current paragraph in string form
+	}
+
 	//search current run for call number and return call number in string form
 	private String getCallNumber(XWPFParagraph par) {	
 		String callNumStr = "";
@@ -248,7 +247,6 @@ public class ParseCollection {
 		return callNumStr.length() > 0 ? callNumStr : null; 
 	}
 				
-	//-----------------------------------------------------------------------
 	//check to see if current paragraph contains a call number, as indicated by bold text
 	private boolean hasCallNumber(XWPFParagraph par) {
 		for(XWPFRun run: par.getRuns()) {
@@ -257,8 +255,7 @@ public class ParseCollection {
 		}			
 		return false;		
 	}
-	
-	//------------------------------------------------------------------
+
 	//parse current section of entries
 	private void parseEntrySection() throws Exception{
 		Entry entry;
@@ -283,9 +280,8 @@ public class ParseCollection {
 //			parseEntry(entries.get(i), i);
 		}
 	}	
-	//----------------------------------------------------------------	
+
 	//construct arrayList of 
-	//TODO all are being recorded as non-secular
 	private void getEntryStringListAndSecular() {
 		isSecularList = new ArrayList<Boolean>();								//array containing whether each entry is secular
 		entryStrings = new ArrayList<String>();										//list with entries in string form
@@ -295,7 +291,7 @@ public class ParseCollection {
 		//and no call number detected (call numbers can occur after entry selection and before new source)
 		//separate each entry into a text of its own in preparation for analysis
 		curParagraphText = paragraphList.get(curParIndex).getText();
-		while(curParIndex < paragraphList.size() && !sourceFound(paragraphList.get(curParIndex).getText()) && !hasCallNumber(paragraphList.get(curParIndex))) {			
+		while(curParIndex < paragraphList.size() && !sourceNumberFound(paragraphList.get(curParIndex).getText()) && !hasCallNumber(paragraphList.get(curParIndex))) {			
 			curParagraph = paragraphList.get(curParIndex);		//current XWPFparagraph
 			curParagraphText = curParagraph.getText()			//get text of current paragraph
 					.replaceAll(Character.toString((char)160),"")	//remove non-whitespace space
@@ -326,7 +322,7 @@ public class ParseCollection {
 		entryStrings.add(entryStrBuilder.toString());			//add last entry of current source		
 		isSecularList.add(curEntrySecular);					//^^
 	}		
-	//--------------------------------------------------------------------	
+
 	//invoked when first italicized text run occurrence is found after source number, which represents source title
 	//returns integer containing index of where title left off
 	//parameter is starting index of source title
@@ -341,7 +337,7 @@ public class ParseCollection {
 		tempStr.setLength(0);							//reset string to record description
 		return index;								//return index of where to start next iteration
 	}
-	//--------------------------------------------------------------------------------		
+
 	//cycle through text runs in first paragraph of entry to determine if it is secular or not
 	//secular entries are denoted by titles that are written in small caps
 	boolean isSecular(XWPFParagraph par) {
@@ -395,7 +391,7 @@ public class ParseCollection {
 			e.printStackTrace();
 		}
 	}
-	//-------------------------------------------------------------------------------------------
+
 	//determine next paragraph will contain entry
 	private boolean entryFound(int index) {		
 		
@@ -414,15 +410,8 @@ public class ParseCollection {
 		
 	}
 	
-	
-	private boolean sourceFound(String text) {
-		//	which indicates source number
-		matcher = pattern.matcher(text);			//matcher for detecting pattern occurrence above
-		return matcher.find();
-	}
-	
 	private int getSourceNumber(String text) {
-		return Integer.parseInt(text.substring(matcher.start(), matcher.end() - 1));
+		return Integer.parseInt(text.substring(sourceNumberMatcher.start(), sourceNumberMatcher.end() - 1));
 	}
 	
 	//pull inscription from document; invoked after inscription has already been detected

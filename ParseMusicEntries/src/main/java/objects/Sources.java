@@ -14,7 +14,8 @@ import writers.SpreadsheetWriter;
 
 
 public class Sources {
-	
+
+	private static int columnWidths[] = { 25, 15, 30, 30, 30, 75, 75 };		//widths of columns for spreadsheet cells corresponding to field index
 	List<Source> sources;		//list containing source objects
 	
 	//default constructor
@@ -41,9 +42,9 @@ public class Sources {
 	}
 	
 	//add sources within sources object to spreadsheet
-	public void toSpreadsheet(String fileName, String path) {
+	public void toSpreadsheet(SheetInfo sheetInfo) {
 		try {
-			SpreadsheetWriter sw = new SpreadsheetWriter(Source.getFields(), fileName, "sources", path);
+			SpreadsheetWriter sw = new SpreadsheetWriter(Source.getFields(), columnWidths, sheetInfo);
 			for(Source source: sources) {
 				sw.writeRow(source.toArray());	//write source information to spreadsheet
 			}
