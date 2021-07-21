@@ -137,4 +137,8 @@ public class Source {
 	public static String[] getFields() {
 		return fields;
 	}
+	
+	public int getEntryCount() {
+		return entries.getCount();
+	}
 }

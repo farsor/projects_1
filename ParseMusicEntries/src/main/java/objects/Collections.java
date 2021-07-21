@@ -49,7 +49,8 @@ public class Collections {
 	 */
 	public void toSpreadsheet(SheetInfo sheetInfo) {
 		try {
-			SpreadsheetWriter sw = new SpreadsheetWriter(Collection.getFields(), columnWidths, sheetInfo);
+			ColumnInfo columnInfo = new ColumnInfo(Collection.getFields(), columnWidths);
+			SpreadsheetWriter sw = new SpreadsheetWriter(columnInfo, sheetInfo);
 			for(Collection collection: collections) {
 				sw.writeRow(collection.toArray());	//write source information to spreadsheet
 			}

@@ -35,12 +35,12 @@ public class Entry {
 	 * @param entryStr		non-parsed string with entry information 
 	 * @param isSecular		is music entry secular?
 	 */	
-	public Entry(String collection, String source, String entryStr, boolean isSecular){
+	public Entry(String collection, int source, RoughEntry roughEntry){
 		//prepare data for entry array construction
 		this.collection = collection;
-		this.source = source;
-		this.isSecular = isSecular;
-		ParseEntry pe = new ParseEntry(entryStr, this);
+		this.source =  Integer.toString(source);
+		this.isSecular = roughEntry.isSecular();
+		ParseEntry pe = new ParseEntry(roughEntry.getNonParsedFields(), this);
 		pe.parseEntry();
 	}
 	

@@ -67,6 +67,10 @@ public class Collection {
 		return sources;
 	}
 	
+	public void addSource(Source source) {
+		sources.addSource(source);
+	}
+	
 	//return column labels for collection 
 	public static String[] getFields() {
 		return fields;
@@ -85,7 +89,8 @@ public class Collection {
 	//write collection data to spreadsheet
 	public void toSpreadsheet(SheetInfo sheetInfo) {
 		try {
-			SpreadsheetWriter sw = new SpreadsheetWriter(fields, columnWidths, sheetInfo);
+			ColumnInfo columnInfo = new ColumnInfo(Entry.getFields(), columnWidths);
+			SpreadsheetWriter sw = new SpreadsheetWriter(columnInfo, sheetInfo);
 			sw.writeRow(toArray());	//write source information to spreadsheet
 			sw.closeStream();
 		} catch(Exception e) {

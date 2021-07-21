@@ -1,16 +1,3 @@
-Source: 1
-Author: Bailey [sic], Daniel
-Title: The Essex Harmony
-Description: Newburyport, Mass.: the author, 1770.  Complete.  ASMI 64, with pp. 16-17 and 20-21 in diamond notation.  Bound with: Brady, N[icholas], and N[ahum] Tate.  A New Version of the Psalms of David fitted to the Tunes used in Churches. Boston: W[illia]m M’Alpine, 1767.  Bound with: Hymns [caption title; leaf with t. p. missing; 103 hymns on 78 pp.]. 
-	no inscriptions
-	no MS. music
-Call number: 1979.001.1; 783 Ba 
-Inscription(s): null
-----------------end of source-------------
-
-
-xxxxxxxxxxxxxxxx Start of Source Entries xxxxxxxxxxxxxxxx
-
 Entry Location: leaf [2] recto
 Entry Title: Evening Hymn
 Secular Entry: false
@@ -40,99 +27,6 @@ Entry Key: D
 Entry Melodic Incipit: 5|36|5U1|1D7tr|U1
 Entry Text Incipit: null
 
-
-
-xxxxxxxxxxxxxxxx End of Source Entries xxxxxxxxxxxxxxxx
-
-Source: 2
-Author: null
-Title: null
-Description: French, Jonathan.  MS. music booklet.  20 unnumbered leaves, 3 of them partial; most leaves blank.
-	leaf [3] recto, poem for finding the “Me” (leading tone)
-Call number: 3500.136.1; Ms S 46
-Inscription(s): leaf [1] recto, “Jonatha. French, Castle William / January, the 4th 
-		1762 / Boston”; leaf [16] verso, “Andover July 25 . 1781 / Recd. of the 
-		Revd. Mr: Jona. French – eighty”; leaf [20] verso, “Porter,” “Worter,” 
-		“WP[o?]rter,” “William Salisbury” [crossed out]
-----------------end of source-------------
-
-Source: 3
-Author: [Gram, Hans, Samuel Holyoke, and Oliver Holden]
-Title: The Massachusetts Compiler of Theoretical and Practical Elements of Sacred Vocal Music
-Description: Boston: Isaiah Thomas and Ebenezer T. Andrews, 1795.  xxxvi, 71, [1] pp.  Complete; a neat copy, still secure in original covers.
-	typed leaf pasted inside front cover provides biographical detail on this Amos 
-		Blanchard [photo]
-	no MS. music
-Call number: 2500.030.1; 784 Tho
-Inscription(s): preliminary leaf recto, “Amos Blanchard’s Book      August 31 
-		1797.” / [in pencil, different hand:] “of Lynn       not Deacon of 
-		Andover” [photo]
-----------------end of source-------------
-
-Source: 4
-Author: 
-Title: Harmonia Sacra, or A Compilation of Psalm and Hymn Tunes…
-Description: Andover, Mass.: Flagg and Gould, 1816.  243 pp.  Appears to be complete.
-	“E. A. Roadway” stamped on preliminary leaf [1] recto
-	no MS. music
-Call number: A 783 Ha
-Inscription(s): preliminary leaf [1] recto, “Stephen Parker Jr”; preliminary leaf 
-		[2] recto, “The Property of Stephen Parker”
-----------------end of source-------------
-
-Source: 5
-Author: Holden, Oliver
-Title: The Union Harmony, or Universal Collection of Sacred Music…Vol. II.
-Description: Boston: Isaiah Thomas and Ebenezer T. Andrews, 1793.  Ca. 3/5 of final leaf missing; otherwise complete.
-	no MS. music
-Call number: 1988.007.4; 783 Ho Rare
-Inscription(s): inside front cover, “Asa Abbot      1795”; p. [3], “Gift of South 
-		Church” (pencil)
-----------------end of source-------------
-
-Source: 6
-Author: Holyoke, Samuel
-Title: The Columbian Repository of Sacred Harmony
-Description: Exeter, N. H.: Henry Ranlet, [1803].  xxiv, 471, [1] pp.  Complete; a neat copy, still secure in original covers.
-	no inscriptions
-	no MS. music
-Call number: 2005.507.1; 783.3 Hol
-Inscription(s): null
-----------------end of source-------------
-
-Source: 7
-Author: Roberts, Eli
-Title: The Hartford Collection, of Classical Church Music.
-Description: New London, Conn.: Samuel Green, for the compiler, 1812.  Lacks pp. 7-14, most of final full-sized, unpaged leaf with subscribers’ names; otherwise apparently complete.
-	no MS. music
-Call number: 1988.007.6; 783 Rob
-Inscription(s): inside front cover, “[Cyrus?] Griffin his [actually, triple-
-		underlined] Book / [crossed out:] Amos C [Tappan?]” (pencil), “John C. 
-		Allen,” “Susquehannah,” “to Constance,” “Sylvester Abbott,” 
-		“Constance / & Pulch[eri?]a”; t. p., “Gift of South Church” (pencil), 
-		“John C. Allen,” “Sylvester Abbott”; p. [3], “Sylvester Abbott[’]s Book  
-		Presented By John C. Allen”; verso of small printed leaf bearing  
-		ERRATA, bound inside back cover after stub of leaf bearing 
-		subscribers’ names, “John C Allen”; inside back cover, “John C. Allen” 
-		[3 times]
-----------------end of source-------------
-
-Source: 8
-Author: []
-Title: The Village Harmony
-Description: 11th or 12th ed.  Newburyport, Mass.: E. Little and Company, [1813] or [1815].]  Lacks all before p. 5, + final unnumbered leaf is fragmentary; otherwise, appears complete, with 323, [3] pp. 
-	no MS. music
-Call number: 1965.354.1; 783 Vi
-Inscription(s): preliminary leaf [1] recto, “A. Wardwell’s 1815.”; preliminary 
-		leaf [2] recto, “Amos Wardwell / Andover / Massachusetts”; 
-		preliminary leaf [2] verso, “A.Wardwell[’]s. 1816.,” “Quia ne 
-		siserat[um?],” “Jonathan Griffin” (pencil); preliminary leaf [3] recto, 
-		“A.Wardwell. 1817.”; additional leaves [1-4], lists of tunes according 			to poetic meter + mode (e. g., “C. M. Flat Key”; “8s & 7s”); additional 			leaf [5] verso, “Mary Holt”; additional leaf [6] verso, “Hon Will Eustis 			Gov / Marcus Molton”; additional leaf [8] verso, “Amos Wardwell / 			March the 1 [“the” written directly above “1”] / 1824,” “Dean H[olt?] / 			Andover / South Parrish”; leaf [9] verso, “Amesbury 289 page,” 				“Vil[l]age harmony / Book,” “Andover / Massachusetts,” “Benj[n?] 			Jenki[n?],” “Andover January th16 1824,” “Andover / Dean Holt / Dean 
-		Holt [jr?]”
-----------------end of source-------------
-
-
-xxxxxxxxxxxxxxxx Start of Source Entries xxxxxxxxxxxxxxxx
 
 Entry Location: recto of leaf following p. 24
 Entry Title: Ely Tune or 9th Psalm Tune
@@ -573,32 +467,4 @@ Entry Key: G
 Entry Melodic Incipit: 13234-21
 Entry Text Incipit: United Zeal be shown; “to 148th Psalm”
 
-
-
-xxxxxxxxxxxxxxxx End of Source Entries xxxxxxxxxxxxxxxx
-
-Source: 9
-Author: Walter, Thomas
-Title: The Grounds and Rules of  Explained: or, An Introduction to the Art of Singing by Note.  Boston: J. Franklin, for S.
-Description: Boston: J. Franklin, for S. Gerrish, 1721.  Lacks 1st unnumbered leaf with t. p., pp. 21-22 (of “Some brief and very plain Instructions for Singing by NOTE”).  Assumed to be 1st ed., ASMI 516, because p. 24 lacks beginning of “Postscript” and because Recommendatory Preface is undated on p. iii.  See ASMI, pp. 603, 606 et seq.  Peculiarities of this copy: what is described in ASMI as leaf [1] (recto blank; “Rules for tuning the Voice” on verso) is, here, 2 leaves pasted together; the following pairs of leaves have their blank versos + rectos pasted together (2+3, 4+5, 6+7, 8+9, 10+11, 12+13, 14+15, 16+leaf blank on both sides).
-	44 tunes in MS. on recto of blank leaf following p. 24 of “Some brief and very 
-		plain Instructions” + on 26 additional leaves following printed book; 
-		at least 1 leaf missing (between leaves [20] + [21])
-	all music written with diamond-shaped note-heads; some tunes lack bar 
-		lines, having only lines at ends of phrases
-	pitching numerals written here + there; these indicate an upper voice’s 
-		interval above the bass, or (if written over a bass note) the bass’s 
-		interval below the next voice up; examples: Evening Hymn, leaf [6] 
-		verso, “5th” next to “Bass” signifies that the bass starts a 5th below the 
-		medius part; Bromsgrove Tune, leaf [12] verso, “1” next to “Tenor” 
-		signifies that the tenor starts in unison with the bass, and “8” over 
-		tenor’s last note signifies that it ends an octave above the bass
-	several different hands in evidence; these are not distinguished here
-	almost all texted tunes have “Tate & Brady” listed as authors of text
-	wide variety of numbers of voices, names of voice parts, + locations of 
-		melody; all this noted below, with parts listed from top down
-Call number: 1979.002.1; 783 Wa
-Inscription(s): inside front cover, “[J E?] Che[?]” (pencil); preliminary leaf recto, 
-		“Willm Blair Townsend.”; p. i, “James Townsend 17223 [sic] / Mr”
-----------------end of source-------------
 

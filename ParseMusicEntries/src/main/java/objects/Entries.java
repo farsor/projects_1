@@ -61,7 +61,8 @@ public class Entries {
 	//add entries within entry object to spreadsheet
 	public void toSpreadsheet(SheetInfo sheetInfo) {
 		try {
-			SpreadsheetWriter sw = new SpreadsheetWriter(Entry.getFields(), columnWidths, sheetInfo);
+			ColumnInfo columnInfo = new ColumnInfo(Entry.getFields(), columnWidths);
+			SpreadsheetWriter sw = new SpreadsheetWriter(columnInfo, sheetInfo);
 			for(Entry entry: entries) {
 				sw.writeRow(entry.toArray());	//write entry information to spreadsheet
 			}
@@ -93,6 +94,10 @@ public class Entries {
 	 */
 	public void add(Entry entry) {
 		entries.add(entry);
+	}
+	
+	public int getCount() {
+		return entries.size();
 	}
 
 }

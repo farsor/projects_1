@@ -12,6 +12,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import objects.ColumnInfo;
 import objects.SheetInfo;
 
 public class SpreadsheetWriter {
@@ -27,7 +28,7 @@ public class SpreadsheetWriter {
 											//cell width unit of measurement is 1/256th of character width
 	File file;
 	
-	public SpreadsheetWriter(String[] columnLabels, int[] columnWidths, SheetInfo sheetInfo) throws Exception{
+	public SpreadsheetWriter(ColumnInfo columnInfo, SheetInfo sheetInfo) throws Exception{
 		file = sheetInfo.getWorkbookFile();		//excel file being read/written to
 		if(file.exists()) {										//check if file exists
 			initializeExistingWorkbook(file);
@@ -42,9 +43,9 @@ public class SpreadsheetWriter {
 		fos = new FileOutputStream(file);
 		initializeCurrentRow();
 		if(isNewSheet()) {
-			for(int i = 0; i < columnLabels.length; i++) {			//for the length of column label array	
-				writeColumnLabel(columnLabels, i);
-				formatColumn(columnWidths, i);
+			for(int i = 0; i < columnInfo.getLabels().length; i++) {			//for the length of column label array	
+				writeColumnLabel(columnInfo.getLabels(), i);
+				formatColumn(columnInfo.getWidths(), i);
 			}
 		}
 	}

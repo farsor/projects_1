@@ -44,7 +44,8 @@ public class Sources {
 	//add sources within sources object to spreadsheet
 	public void toSpreadsheet(SheetInfo sheetInfo) {
 		try {
-			SpreadsheetWriter sw = new SpreadsheetWriter(Source.getFields(), columnWidths, sheetInfo);
+			ColumnInfo columnInfo = new ColumnInfo(Source.getFields(), columnWidths);
+			SpreadsheetWriter sw = new SpreadsheetWriter(columnInfo, sheetInfo);
 			for(Source source: sources) {
 				sw.writeRow(source.toArray());	//write source information to spreadsheet
 			}
@@ -77,6 +78,15 @@ public class Sources {
 	
 	public List<Source> toArrayList(){
 		return sources;
+	}
+	
+	/**
+	 * Get count of total entries in all sources.
+	 * @return Entry count.
+	 */
+	public int getEntryCount() {
+		int entryCount = 0;
+		return entryCount;
 	}
 	
 	
